@@ -23,7 +23,7 @@ class LandingViewController: UIViewController {
         super.viewDidLoad()
         
         // sway background
-        UIView.animate(withDuration: 8.5, delay: 0, options: [.repeat, .autoreverse, .curveLinear], animations: {
+        UIView.animate(withDuration: 6.5, delay: 0, options: [.repeat, .autoreverse, .curveLinear], animations: {
             self.bgView.frame.origin.x = self.view.frame.origin.x + 30
         }, completion: nil)
 
