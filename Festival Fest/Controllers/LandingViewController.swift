@@ -11,6 +11,7 @@ import UIKit
 class LandingViewController: UIViewController {
     
     // MARK: - Outlets
+    @IBOutlet weak var bgView: UIImageView!
     @IBOutlet var blurViews: [UIVisualEffectView]!
     
     @IBOutlet var buttonViews: [UIView]!
@@ -20,14 +21,15 @@ class LandingViewController: UIViewController {
     // MARK: - Setup
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // sway background
+        UIView.animate(withDuration: 8.5, delay: 0, options: [.repeat, .autoreverse, .curveLinear], animations: {
+            self.bgView.frame.origin.x = self.view.frame.origin.x + 30
+        }, completion: nil)
 
         // round buttons
         for blurView in blurViews {
             blurView.roundCorners()
-        }
-        
-        for buttonView in buttonViews {
-            buttonView.roundCorners()
         }
     }
     

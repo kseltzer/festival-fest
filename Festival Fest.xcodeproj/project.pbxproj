@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E11BC3821F6DA5700C041F0 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E11BC3721F6DA5700C041F0 /* Global.swift */; };
 		4E1E289321F6723800A55FD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E289221F6723800A55FD2 /* AppDelegate.swift */; };
 		4E1E289821F6723800A55FD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E1E289621F6723800A55FD2 /* Main.storyboard */; };
 		4E1E289A21F6723900A55FD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E1E289921F6723900A55FD2 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E11BC3721F6DA5700C041F0 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		4E1E288F21F6723800A55FD2 /* Festival Fest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Festival Fest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E1E289221F6723800A55FD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E1E289721F6723800A55FD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		4E1E289121F6723800A55FD2 /* Festival Fest */ = {
 			isa = PBXGroup;
 			children = (
+				4E11BC3721F6DA5700C041F0 /* Global.swift */,
 				4E1E289221F6723800A55FD2 /* AppDelegate.swift */,
 				4E1E28A621F6735000A55FD2 /* Models */,
 				4E1E28A521F6734B00A55FD2 /* Views */,
@@ -174,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E11BC3821F6DA5700C041F0 /* Global.swift in Sources */,
 				4E1E289321F6723800A55FD2 /* AppDelegate.swift in Sources */,
 				4E4CB1B921F6C33800C7E08C /* LandingViewController.swift in Sources */,
 				4E4CB1BE21F6C63100C7E08C /* HomeViewController.swift in Sources */,

@@ -20,7 +20,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dtla" translatesAutoresizingMaskIntoConstraints="NO" id="6NB-eC-Ftx" userLabel="Background Image">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XgQ-X6-hNn">
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XgQ-X6-hNn">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -169,7 +169,6 @@ FEST</string>
                             <constraint firstItem="7T6-qc-AHQ" firstAttribute="centerX" secondItem="7bh-iq-SsK" secondAttribute="centerX" id="2KK-37-UPa"/>
                             <constraint firstItem="lCa-mH-IqF" firstAttribute="trailing" secondItem="7T6-qc-AHQ" secondAttribute="trailing" constant="44" id="6Nr-Yc-0FB"/>
                             <constraint firstItem="Es6-6s-1DN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lCa-mH-IqF" secondAttribute="leading" constant="20" id="DGo-1e-AnS"/>
-                            <constraint firstItem="6NB-eC-Ftx" firstAttribute="leading" secondItem="7bh-iq-SsK" secondAttribute="leading" id="DXD-PY-ESb"/>
                             <constraint firstItem="XgQ-X6-hNn" firstAttribute="bottom" secondItem="7bh-iq-SsK" secondAttribute="bottom" id="FHc-ww-b9v"/>
                             <constraint firstItem="pMl-bz-BYk" firstAttribute="top" secondItem="7T6-qc-AHQ" secondAttribute="top" id="NG9-Vs-WhA"/>
                             <constraint firstAttribute="trailing" secondItem="XgQ-X6-hNn" secondAttribute="trailing" id="RK8-rq-dX3"/>
@@ -191,6 +190,7 @@ FEST</string>
                         <viewLayoutGuide key="safeArea" id="lCa-mH-IqF"/>
                     </view>
                     <connections>
+                        <outlet property="bgView" destination="6NB-eC-Ftx" id="oQ2-SB-3SW"/>
                         <outletCollection property="blurViews" destination="mUe-Ta-UNy" collectionClass="NSMutableArray" id="qAw-gD-CZ4"/>
                         <outletCollection property="blurViews" destination="e26-H7-mB2" collectionClass="NSMutableArray" id="eCZ-Pk-9NY"/>
                         <outletCollection property="buttonViews" destination="Khc-8w-615" collectionClass="NSMutableArray" id="zeE-Ny-w4m"/>

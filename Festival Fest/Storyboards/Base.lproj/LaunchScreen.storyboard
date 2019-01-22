@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dtla" translatesAutoresizingMaskIntoConstraints="NO" id="hV9-80-19A" userLabel="Background Image">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="-60" y="0.0" width="435" height="667"/>
                             </imageView>
                             <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfq-Yy-JQx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -36,7 +36,6 @@ FEST</string>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hV9-80-19A" firstAttribute="top" secondItem="5qE-2F-6jR" secondAttribute="top" id="9nX-Aq-bwI"/>
-                            <constraint firstItem="hV9-80-19A" firstAttribute="leading" secondItem="5qE-2F-6jR" secondAttribute="leading" id="BJp-gv-4RZ"/>
                             <constraint firstItem="3QT-hx-ex9" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nze-lD-jZG" secondAttribute="trailing" constant="20" id="H84-XD-fWJ"/>
                             <constraint firstItem="nze-lD-jZG" firstAttribute="top" secondItem="3QT-hx-ex9" secondAttribute="top" constant="31" id="RsF-vh-j62"/>
                             <constraint firstItem="nze-lD-jZG" firstAttribute="centerX" secondItem="5qE-2F-6jR" secondAttribute="centerX" id="Z1b-Qv-yRH"/>
@@ -44,7 +43,7 @@ FEST</string>
                             <constraint firstItem="hV9-80-19A" firstAttribute="bottom" secondItem="5qE-2F-6jR" secondAttribute="bottom" id="ggX-dx-Hbl"/>
                             <constraint firstItem="Bfq-Yy-JQx" firstAttribute="bottom" secondItem="5qE-2F-6jR" secondAttribute="bottom" id="iEt-K1-GAe"/>
                             <constraint firstItem="hV9-80-19A" firstAttribute="trailing" secondItem="5qE-2F-6jR" secondAttribute="trailing" id="leS-yl-b3M"/>
-                            <constraint firstItem="hV9-80-19A" firstAttribute="leading" secondItem="5qE-2F-6jR" secondAttribute="leading" id="m7U-8I-tOC"/>
+                            <constraint firstItem="hV9-80-19A" firstAttribute="leading" secondItem="5qE-2F-6jR" secondAttribute="leading" constant="-60" id="m7U-8I-tOC"/>
                             <constraint firstItem="nze-lD-jZG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3QT-hx-ex9" secondAttribute="leading" constant="20" id="oNo-yL-dS8"/>
                             <constraint firstItem="Bfq-Yy-JQx" firstAttribute="top" secondItem="5qE-2F-6jR" secondAttribute="top" id="wk2-10-ETN"/>
                             <constraint firstItem="Bfq-Yy-JQx" firstAttribute="leading" secondItem="5qE-2F-6jR" secondAttribute="leading" id="yyY-kW-YSB"/>
