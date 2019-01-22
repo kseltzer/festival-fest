@@ -43,8 +43,22 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        collectionView.reloadData()
-        collectionView.collectionViewLayout.invalidateLayout()
+    
+        self.collectionView.reloadData()
+        self.collectionView.collectionViewLayout.invalidateLayout()
+        self.collectionView.reloadData()
+        self.collectionView.performBatchUpdates(nil, completion: {
+            (result) in
+            // ready
+            guard let collectionView = self.collectionView else { return }
+            if let visibleCells = collectionView.visibleCells as? [CustomSlantedCollectionViewCell] {
+                for parallaxCell in visibleCells {
+                    let yOffset = (collectionView.contentOffset.y - parallaxCell.frame.origin.y) / parallaxCell.imageHeight
+                    let xOffset = (collectionView.contentOffset.x - parallaxCell.frame.origin.x) / parallaxCell.imageWidth
+                    parallaxCell.offset(CGPoint(x: xOffset * xOffsetSpeed, y: yOffset * yOffsetSpeed))
+                }
+            }
+        })
     }
     
     override var prefersStatusBarHidden: Bool {
