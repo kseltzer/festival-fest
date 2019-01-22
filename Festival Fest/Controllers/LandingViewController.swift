@@ -11,17 +11,23 @@ import UIKit
 class LandingViewController: UIViewController {
     
     // MARK: - Outlets
-    @IBOutlet var proceedButtons: [UIButton]!
+    @IBOutlet var blurViews: [UIVisualEffectView]!
     
-
+    @IBOutlet var buttonViews: [UIView]!
+    
+    
     
     // MARK: - Setup
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // round buttons
-        for button in proceedButtons {
-            button.roundCorners()
+        for blurView in blurViews {
+            blurView.roundCorners()
+        }
+        
+        for buttonView in buttonViews {
+            buttonView.roundCorners()
         }
     }
     
