@@ -12,17 +12,47 @@
         <!--Home View Controller-->
         <scene sceneID="1e4-AX-FT9">
             <objects>
-                <viewController id="Ugu-IM-FTc" customClass="HomeViewController" customModule="Festival_Fest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ugu-IM-FTc" customClass="HomeViewController" customModule="Festival_Fest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zIb-cW-3pi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FESTIVAL FEST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEo-eB-1dd">
+                                <rect key="frame" x="114.5" y="40" width="146" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cXO-ZS-FOc">
+                                <rect key="frame" x="0.0" y="94" width="375" height="573"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sIB-De-H53">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cXO-ZS-FOc" firstAttribute="top" secondItem="wEo-eB-1dd" secondAttribute="bottom" constant="30" id="4Ib-st-KBJ"/>
+                            <constraint firstItem="wEo-eB-1dd" firstAttribute="centerX" secondItem="zIb-cW-3pi" secondAttribute="centerX" id="JeJ-nZ-Jwc"/>
+                            <constraint firstItem="cXO-ZS-FOc" firstAttribute="trailing" secondItem="RN4-Dd-WnZ" secondAttribute="trailing" id="R9y-v5-mVR"/>
+                            <constraint firstItem="cXO-ZS-FOc" firstAttribute="leading" secondItem="RN4-Dd-WnZ" secondAttribute="leading" id="W1l-jk-NiY"/>
+                            <constraint firstItem="cXO-ZS-FOc" firstAttribute="bottom" secondItem="RN4-Dd-WnZ" secondAttribute="bottom" id="ZDb-LR-Nir"/>
+                            <constraint firstItem="wEo-eB-1dd" firstAttribute="top" secondItem="RN4-Dd-WnZ" secondAttribute="top" constant="20" id="zWI-53-Hv8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RN4-Dd-WnZ"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="cXO-ZS-FOc" id="929-QY-9Q6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xSx-Is-ooM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-537" y="-334"/>
+            <point key="canvasLocation" x="-538.39999999999998" y="-334.18290854572717"/>
         </scene>
     </scenes>
 </document>

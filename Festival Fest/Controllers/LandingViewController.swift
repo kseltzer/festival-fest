@@ -42,7 +42,8 @@ class LandingViewController: UIViewController {
     
     // MARK: - Navigation
     func navigateToHomeScreen() {
-        
+        let homeVC = UIStoryboard(name: kHomeStoryboard, bundle: nil).instantiateViewController(withIdentifier: kHomeViewController) as! HomeViewController
+        present(homeVC, animated: true, completion: nil)
     }
 
 }
