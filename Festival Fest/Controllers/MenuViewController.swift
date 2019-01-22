@@ -37,7 +37,7 @@ class MenuViewController: UIViewController {
     private let items = [
         ImageItem(
             index: 0,
-            title: "Lineup",
+            title: "LINEUP",
             headerImage: UIImage(named: "4")!,
             images: [
                 UIImage(named: "green-1")!,
@@ -47,8 +47,78 @@ class MenuViewController: UIViewController {
                 ]),
         ImageItem(
             index: 1,
-            title: "Food",
+            title: "SCHEDULE",
             headerImage: UIImage(named: "food-1")!,
+            images: [
+                UIImage(named: "food-1")!,
+                UIImage(named: "food-2")!,
+                UIImage(named: "food-3")!,
+                UIImage(named: "food-4")!,
+                ]),
+        ImageItem(
+            index: 2,
+            title: "MAP",
+            headerImage: UIImage(named: "food-4")!,
+            images: [
+                UIImage(named: "food-1")!,
+                UIImage(named: "food-2")!,
+                UIImage(named: "food-3")!,
+                UIImage(named: "food-4")!,
+                ]),
+        ImageItem(
+            index: 3,
+            title: "STAGES",
+            headerImage: UIImage(named: "food-2")!,
+            images: [
+                UIImage(named: "food-1")!,
+                UIImage(named: "food-2")!,
+                UIImage(named: "food-3")!,
+                UIImage(named: "food-4")!,
+                ]),
+        ImageItem(
+            index: 4,
+            title: "FREE THERAPY",
+            headerImage: UIImage(named: "food-3")!,
+            images: [
+                UIImage(named: "food-1")!,
+                UIImage(named: "food-2")!,
+                UIImage(named: "food-3")!,
+                UIImage(named: "food-4")!,
+                ]),
+        ImageItem(
+            index: 5,
+            title: "FAQ",
+            headerImage: UIImage(named: "green-2")!,
+            images: [
+                UIImage(named: "food-1")!,
+                UIImage(named: "food-2")!,
+                UIImage(named: "food-3")!,
+                UIImage(named: "food-4")!,
+                ]),
+        ImageItem(
+            index: 6,
+            title: "SUSTAINABILITY",
+            headerImage: UIImage(named: "green-3")!,
+            images: [
+                UIImage(named: "food-1")!,
+                UIImage(named: "food-2")!,
+                UIImage(named: "food-3")!,
+                UIImage(named: "food-4")!,
+                ]),
+        ImageItem(
+            index: 7,
+            title: "ABOUT",
+            headerImage: UIImage(named: "green-4")!,
+            images: [
+                UIImage(named: "food-1")!,
+                UIImage(named: "food-2")!,
+                UIImage(named: "food-3")!,
+                UIImage(named: "food-4")!,
+                ]),
+        ImageItem(
+            index: 8,
+            title: "CONTACT",
+            headerImage: UIImage(named: "food-2")!,
             images: [
                 UIImage(named: "food-1")!,
                 UIImage(named: "food-2")!,
@@ -102,7 +172,7 @@ class MenuViewController: UIViewController {
         pagingViewController.menuItemSize = .fixed(width: menuItemSize.width, height: menuItemSize.height)
         pagingViewController.menuItemSpacing = 8
         pagingViewController.menuInsets = menuInsets
-        pagingViewController.borderColor = UIColor(white: 0, alpha: 0.1)
+        pagingViewController.borderColor = .clear
         pagingViewController.indicatorColor = .clear // .black
         pagingViewController.menuBackgroundColor = .clear //.black
         
