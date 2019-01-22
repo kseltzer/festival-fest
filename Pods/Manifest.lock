@@ -1,0 +1,16 @@
+PODS:
+  - CollectionViewSlantedLayout (3.1.1)
+
+DEPENDENCIES:
+  - CollectionViewSlantedLayout (~> 3.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CollectionViewSlantedLayout
+
+SPEC CHECKSUMS:
+  CollectionViewSlantedLayout: 24397455acd2461960bc45d394e0ef99c17d03ce
+
+PODFILE CHECKSUM: 0fb3b04a250facc73735adc17759a589344d85d0
+
+COCOAPODS: 1.5.3

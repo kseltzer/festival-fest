@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SlantedCell" id="gTV-IL-0wX" customClass="CustomSlantedCollectionViewCell" customModule="Festival_Fest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="151"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="151"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gum-cI-dFU" userLabel="BackgroundView">
+                        <rect key="frame" x="0.0" y="0.0" width="329" height="151"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sD6-Tw-88L">
+                                <rect key="frame" x="0.0" y="0.0" width="329" height="151"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sD6-Tw-88L" firstAttribute="leading" secondItem="gum-cI-dFU" secondAttribute="leading" id="AuE-Gw-Scw"/>
+                            <constraint firstAttribute="trailing" secondItem="sD6-Tw-88L" secondAttribute="trailing" id="fYr-dV-ds4"/>
+                            <constraint firstItem="sD6-Tw-88L" firstAttribute="top" secondItem="gum-cI-dFU" secondAttribute="top" id="mA3-6J-KTw"/>
+                            <constraint firstAttribute="bottom" secondItem="sD6-Tw-88L" secondAttribute="bottom" id="zr0-TZ-9Es"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="gum-cI-dFU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9yk-k2-6dV"/>
+                <constraint firstAttribute="bottom" secondItem="gum-cI-dFU" secondAttribute="bottom" id="Dz5-Vq-kMG"/>
+                <constraint firstItem="gum-cI-dFU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Sch-Nc-Iue"/>
+                <constraint firstAttribute="trailing" secondItem="gum-cI-dFU" secondAttribute="trailing" id="YLI-us-k7c"/>
+                <constraint firstItem="gum-cI-dFU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jDV-v9-QbU"/>
+                <constraint firstAttribute="trailing" secondItem="gum-cI-dFU" secondAttribute="trailing" id="wjH-XV-lYl"/>
+                <constraint firstAttribute="bottom" secondItem="gum-cI-dFU" secondAttribute="bottom" id="zDI-74-7ZF"/>
+                <constraint firstItem="gum-cI-dFU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zW9-uT-e7q"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="329" height="151"/>
+            <connections>
+                <outlet property="imageView" destination="sD6-Tw-88L" id="nBb-x9-Kyo"/>
+            </connections>
+            <point key="canvasLocation" x="360.80000000000001" y="199.25037481259372"/>
+        </collectionViewCell>
+    </objects>
+</document>

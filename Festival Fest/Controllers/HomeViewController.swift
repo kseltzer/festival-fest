@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import CollectionViewSlantedLayout
 
-class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class HomeViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var collectionViewLayout: CollectionViewSlantedLayout!
     
     
     // MARK: - Variables
+    internal var covers = [[String: String]]()
     
     
     // MARK: - Setup
@@ -22,17 +25,44 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         super.viewDidLoad()
         
         // configure collection view
-        
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        navigationController?.isNavigationBarHidden = true
+        collectionViewLayout.isFirstCellExcluded = true
+        collectionViewLayout.isLastCellExcluded = true
+
     }
     
-    
-    // MARK: - Collection View
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+    override func loadView() {
+        super.loadView()
+        if let url = Bundle.main.url(forResource: "covers", withExtension: "plist"),
+            let contents = NSArray(contentsOf: url) as? [[String: String]] {
+            covers = contents
+        }
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        collectionView.reloadData()
+        collectionView.collectionViewLayout.invalidateLayout()
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+        return UIStatusBarAnimation.slide
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        guard segue.identifier == "ShowSettings" ,
+//            let settingsController = segue.destination as? SettingsController,
+//            let layout = collectionView.collectionViewLayout as? CollectionViewSlantedLayout else {
+//                return
+//        }
+//
+//        settingsController.collectionViewLayout = layout
     }
     
     
@@ -40,4 +70,55 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     
     // MARK: - Navigation
+}
+
+
+
+extension HomeViewController: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return covers.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kSlantedCellReuseIdentifier, for: indexPath)
+            as? CustomSlantedCollectionViewCell else {
+                fatalError()
+        }
+        
+        cell.image = UIImage(named: covers[indexPath.row]["picture"]!)!
+        
+        if let layout = collectionView.collectionViewLayout as? CollectionViewSlantedLayout {
+            cell.contentView.transform = CGAffineTransform(rotationAngle: layout.slantingAngle)
+        }
+        
+        return cell
+    }
+}
+
+extension HomeViewController: CollectionViewDelegateSlantedLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        NSLog("Did select item at indexPath: [\(indexPath.section)][\(indexPath.row)]")
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: CollectionViewSlantedLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGFloat {
+        return collectionViewLayout.scrollDirection == .vertical ? 275 : 325
+    }
+}
+
+extension HomeViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard let collectionView = collectionView else {return}
+        guard let visibleCells = collectionView.visibleCells as? [CustomSlantedCollectionViewCell] else {return}
+        for parallaxCell in visibleCells {
+            let yOffset = (collectionView.contentOffset.y - parallaxCell.frame.origin.y) / parallaxCell.imageHeight
+            let xOffset = (collectionView.contentOffset.x - parallaxCell.frame.origin.x) / parallaxCell.imageWidth
+            parallaxCell.offset(CGPoint(x: xOffset * xOffsetSpeed, y: yOffset * yOffsetSpeed))
+        }
+    }
 }

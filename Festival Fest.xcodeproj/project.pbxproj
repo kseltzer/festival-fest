@@ -15,6 +15,10 @@
 		4E4CB1B921F6C33800C7E08C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4CB1B821F6C33800C7E08C /* LandingViewController.swift */; };
 		4E4CB1BC21F6C61A00C7E08C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4CB1BB21F6C61A00C7E08C /* Home.storyboard */; };
 		4E4CB1BE21F6C63100C7E08C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4CB1BD21F6C63100C7E08C /* HomeViewController.swift */; };
+		4EE0CE7921F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0CE7721F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift */; };
+		4EE0CE7A21F6E59700CB0B3D /* CustomSlantedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE0CE7821F6E59700CB0B3D /* CustomSlantedCollectionViewCell.xib */; };
+		4EE0CE7D21F6E61300CB0B3D /* covers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EE0CE7C21F6E61300CB0B3D /* covers.plist */; };
+		861DE70D270D70149F9A45A1 /* Pods_Festival_Fest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D44F15B92493F655CD0265 /* Pods_Festival_Fest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,12 @@
 		4E4CB1B821F6C33800C7E08C /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		4E4CB1BB21F6C61A00C7E08C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		4E4CB1BD21F6C63100C7E08C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4EE0CE7721F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlantedCollectionViewCell.swift; sourceTree = "<group>"; };
+		4EE0CE7821F6E59700CB0B3D /* CustomSlantedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomSlantedCollectionViewCell.xib; sourceTree = "<group>"; };
+		4EE0CE7C21F6E61300CB0B3D /* covers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = covers.plist; sourceTree = "<group>"; };
+		A5D44F15B92493F655CD0265 /* Pods_Festival_Fest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Festival_Fest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B65F2AF122928CFA08C809 /* Pods-Festival Fest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Festival Fest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Festival Fest/Pods-Festival Fest.release.xcconfig"; sourceTree = "<group>"; };
+		ED3522D42F2C0BD47EF528EC /* Pods-Festival Fest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Festival Fest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Festival Fest/Pods-Festival Fest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				861DE70D270D70149F9A45A1 /* Pods_Festival_Fest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +57,8 @@
 			children = (
 				4E1E289121F6723800A55FD2 /* Festival Fest */,
 				4E1E289021F6723800A55FD2 /* Products */,
+				FF872D5066623BA374A26DC1 /* Pods */,
+				AB35DF7019FC669D66546816 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +79,7 @@
 				4E1E28A521F6734B00A55FD2 /* Views */,
 				4E1E28A421F6734500A55FD2 /* Controllers */,
 				4E4CB1BA21F6C4BC00C7E08C /* Storyboards */,
+				4EE0CE7B21F6E5F500CB0B3D /* Resources */,
 				4E1E289921F6723900A55FD2 /* Assets.xcassets */,
 				4E1E289E21F6723900A55FD2 /* Info.plist */,
 			);
@@ -84,6 +98,8 @@
 		4E1E28A521F6734B00A55FD2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4EE0CE7721F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift */,
+				4EE0CE7821F6E59700CB0B3D /* CustomSlantedCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -105,6 +121,31 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		4EE0CE7B21F6E5F500CB0B3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4EE0CE7C21F6E61300CB0B3D /* covers.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AB35DF7019FC669D66546816 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5D44F15B92493F655CD0265 /* Pods_Festival_Fest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF872D5066623BA374A26DC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED3522D42F2C0BD47EF528EC /* Pods-Festival Fest.debug.xcconfig */,
+				E4B65F2AF122928CFA08C809 /* Pods-Festival Fest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E1E28A121F6723900A55FD2 /* Build configuration list for PBXNativeTarget "Festival Fest" */;
 			buildPhases = (
+				F3FCBFBB62101048DC44A028 /* [CP] Check Pods Manifest.lock */,
 				4E1E288B21F6723800A55FD2 /* Sources */,
 				4E1E288C21F6723800A55FD2 /* Frameworks */,
 				4E1E288D21F6723800A55FD2 /* Resources */,
+				11B79285150962CA46A72168 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,7 +206,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EE0CE7A21F6E59700CB0B3D /* CustomSlantedCollectionViewCell.xib in Resources */,
 				4E1E289D21F6723900A55FD2 /* LaunchScreen.storyboard in Resources */,
+				4EE0CE7D21F6E61300CB0B3D /* covers.plist in Resources */,
 				4E1E289A21F6723900A55FD2 /* Assets.xcassets in Resources */,
 				4E1E289821F6723800A55FD2 /* Main.storyboard in Resources */,
 				4E4CB1BC21F6C61A00C7E08C /* Home.storyboard in Resources */,
@@ -172,12 +217,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11B79285150962CA46A72168 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Festival Fest/Pods-Festival Fest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CollectionViewSlantedLayout/CollectionViewSlantedLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionViewSlantedLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Festival Fest/Pods-Festival Fest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3FCBFBB62101048DC44A028 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Festival Fest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4E1E288B21F6723800A55FD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4E11BC3821F6DA5700C041F0 /* Global.swift in Sources */,
+				4EE0CE7921F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift in Sources */,
 				4E1E289321F6723800A55FD2 /* AppDelegate.swift in Sources */,
 				4E4CB1B921F6C33800C7E08C /* LandingViewController.swift in Sources */,
 				4E4CB1BE21F6C63100C7E08C /* HomeViewController.swift in Sources */,
@@ -324,6 +409,7 @@
 		};
 		4E1E28A221F6723900A55FD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED3522D42F2C0BD47EF528EC /* Pods-Festival Fest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -343,6 +429,7 @@
 		};
 		4E1E28A321F6723900A55FD2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4B65F2AF122928CFA08C809 /* Pods-Festival Fest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

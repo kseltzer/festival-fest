@@ -9,6 +9,11 @@
 import Foundation
 
 // MARK: - Storyboard Ids
+
+// Storyboards
 let kMainStoryboard = "Main"
 let kHomeStoryboard = "Home"
 let kHomeViewController = "HomeViewController"
+
+// Cells
+let kSlantedCellReuseIdentifier = "customViewCell"
