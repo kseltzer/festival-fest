@@ -15,6 +15,11 @@
 		4E4CB1B921F6C33800C7E08C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4CB1B821F6C33800C7E08C /* LandingViewController.swift */; };
 		4E4CB1BC21F6C61A00C7E08C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4CB1BB21F6C61A00C7E08C /* Home.storyboard */; };
 		4E4CB1BE21F6C63100C7E08C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4CB1BD21F6C63100C7E08C /* HomeViewController.swift */; };
+		4E4FE53021F730E9009DAF02 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4FE52F21F730E9009DAF02 /* MenuViewController.swift */; };
+		4EB48AC321F732AF00DCDE7D /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB48AC221F732AF00DCDE7D /* UIView+Constraints.swift */; };
+		4EB48AC721F732DF00DCDE7D /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB48AC421F732DF00DCDE7D /* ImagesViewController.swift */; };
+		4EB48AC821F732DF00DCDE7D /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB48AC521F732DF00DCDE7D /* ImageCollectionViewCell.swift */; };
+		4EB48AC921F732DF00DCDE7D /* ImagePagingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB48AC621F732DF00DCDE7D /* ImagePagingCell.swift */; };
 		4EE0CE7921F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0CE7721F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift */; };
 		4EE0CE7D21F6E61300CB0B3D /* covers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EE0CE7C21F6E61300CB0B3D /* covers.plist */; };
 		861DE70D270D70149F9A45A1 /* Pods_Festival_Fest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D44F15B92493F655CD0265 /* Pods_Festival_Fest.framework */; };
@@ -31,6 +36,11 @@
 		4E4CB1B821F6C33800C7E08C /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		4E4CB1BB21F6C61A00C7E08C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		4E4CB1BD21F6C63100C7E08C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4E4FE52F21F730E9009DAF02 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		4EB48AC221F732AF00DCDE7D /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		4EB48AC421F732DF00DCDE7D /* ImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		4EB48AC521F732DF00DCDE7D /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		4EB48AC621F732DF00DCDE7D /* ImagePagingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePagingCell.swift; sourceTree = "<group>"; };
 		4EE0CE7721F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlantedCollectionViewCell.swift; sourceTree = "<group>"; };
 		4EE0CE7C21F6E61300CB0B3D /* covers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = covers.plist; sourceTree = "<group>"; };
 		A5D44F15B92493F655CD0265 /* Pods_Festival_Fest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Festival_Fest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +63,7 @@
 		4E1E288621F6723800A55FD2 = {
 			isa = PBXGroup;
 			children = (
+				4EB48AC121F7329500DCDE7D /* Menu */,
 				4E1E289121F6723800A55FD2 /* Festival Fest */,
 				4E1E289021F6723800A55FD2 /* Products */,
 				FF872D5066623BA374A26DC1 /* Pods */,
@@ -89,6 +100,7 @@
 			children = (
 				4E4CB1B821F6C33800C7E08C /* LandingViewController.swift */,
 				4E4CB1BD21F6C63100C7E08C /* HomeViewController.swift */,
+				4E4FE52F21F730E9009DAF02 /* MenuViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -116,6 +128,17 @@
 				4E4CB1BB21F6C61A00C7E08C /* Home.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4EB48AC121F7329500DCDE7D /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				4EB48AC221F732AF00DCDE7D /* UIView+Constraints.swift */,
+				4EB48AC521F732DF00DCDE7D /* ImageCollectionViewCell.swift */,
+				4EB48AC621F732DF00DCDE7D /* ImagePagingCell.swift */,
+				4EB48AC421F732DF00DCDE7D /* ImagesViewController.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		4EE0CE7B21F6E5F500CB0B3D /* Resources */ = {
@@ -222,10 +245,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Festival Fest/Pods-Festival Fest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CollectionViewSlantedLayout/CollectionViewSlantedLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/Parchment/Parchment.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionViewSlantedLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parchment.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -258,8 +283,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E11BC3821F6DA5700C041F0 /* Global.swift in Sources */,
+				4E4FE53021F730E9009DAF02 /* MenuViewController.swift in Sources */,
+				4EB48AC721F732DF00DCDE7D /* ImagesViewController.swift in Sources */,
 				4EE0CE7921F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift in Sources */,
+				4EB48AC321F732AF00DCDE7D /* UIView+Constraints.swift in Sources */,
+				4EB48AC921F732DF00DCDE7D /* ImagePagingCell.swift in Sources */,
 				4E1E289321F6723800A55FD2 /* AppDelegate.swift in Sources */,
+				4EB48AC821F732DF00DCDE7D /* ImageCollectionViewCell.swift in Sources */,
 				4E4CB1B921F6C33800C7E08C /* LandingViewController.swift in Sources */,
 				4E4CB1BE21F6C63100C7E08C /* HomeViewController.swift in Sources */,
 			);

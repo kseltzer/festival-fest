@@ -203,6 +203,21 @@ FEST</string>
             </objects>
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="oBP-zr-Yb8">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xh0-xy-3CK" customClass="MenuViewController" customModule="Festival_Fest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6G9-af-qFp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vFr-JF-JdK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kpt-wB-INo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="375"/>
+        </scene>
     </scenes>
     <resources>
         <image name="dtla" width="1080" height="1618"/>

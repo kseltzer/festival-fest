@@ -1,16 +1,20 @@
 PODS:
   - CollectionViewSlantedLayout (3.1.1)
+  - Parchment (1.5.0)
 
 DEPENDENCIES:
   - CollectionViewSlantedLayout (~> 3.1)
+  - Parchment
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CollectionViewSlantedLayout
+    - Parchment
 
 SPEC CHECKSUMS:
   CollectionViewSlantedLayout: 24397455acd2461960bc45d394e0ef99c17d03ce
+  Parchment: 5a8c9c73549a6d73a7c1b606c27246910d2e5720
 
-PODFILE CHECKSUM: 0fb3b04a250facc73735adc17759a589344d85d0
+PODFILE CHECKSUM: 8b4b9df5d66b90db79464e680b6c8c2bedeb1971
 
 COCOAPODS: 1.5.3

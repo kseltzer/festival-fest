@@ -7,5 +7,6 @@ target 'Festival Fest' do
 
   # Pods for Festival Fest
   pod 'CollectionViewSlantedLayout', '~> 3.1'
+  pod 'Parchment'
 
 end

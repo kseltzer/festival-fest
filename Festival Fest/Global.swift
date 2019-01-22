@@ -13,6 +13,9 @@ import Foundation
 // Storyboards
 let kMainStoryboard = "Main"
 let kHomeStoryboard = "Home"
+
+// View Controllers
+let kMenuViewController = "MenuViewController"
 let kHomeViewController = "HomeViewController"
 
 // Cells
