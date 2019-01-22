@@ -30,7 +30,6 @@ class HomeViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
         collectionViewLayout.isFirstCellExcluded = true
         collectionViewLayout.isLastCellExcluded = true
-
     }
     
     override func loadView() {

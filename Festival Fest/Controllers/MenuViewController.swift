@@ -37,8 +37,8 @@ class MenuViewController: UIViewController {
     private let items = [
         ImageItem(
             index: 0,
-            title: "Green",
-            headerImage: UIImage(named: "green-1")!,
+            title: "Lineup",
+            headerImage: UIImage(named: "4")!,
             images: [
                 UIImage(named: "green-1")!,
                 UIImage(named: "green-2")!,
@@ -63,8 +63,8 @@ class MenuViewController: UIViewController {
     // Store the menu insets and item size and use that to calculate
     // the height of the collection view. We will use these values later
     // to calculate the height of the menu based on the scroll.
-    private let menuInsets = UIEdgeInsets(top: 22, left: 18, bottom: 12, right: 18)
-    private let menuItemSize = CGSize(width: 120, height: 100)
+    private let menuInsets = UIEdgeInsets(top: 42, left: 8, bottom: 12, right: 8)
+    private let menuItemSize = CGSize(width: 120, height: 80)
     
     private var menuHeight: CGFloat {
         return menuItemSize.height + menuInsets.top + menuInsets.bottom
@@ -103,7 +103,8 @@ class MenuViewController: UIViewController {
         pagingViewController.menuItemSpacing = 8
         pagingViewController.menuInsets = menuInsets
         pagingViewController.borderColor = UIColor(white: 0, alpha: 0.1)
-        pagingViewController.indicatorColor = .black
+        pagingViewController.indicatorColor = .clear // .black
+        pagingViewController.menuBackgroundColor = .clear //.black
         
         pagingViewController.indicatorOptions = .visible(
             height: 1,
@@ -115,14 +116,14 @@ class MenuViewController: UIViewController {
         pagingViewController.borderOptions = .visible(
             height: 1,
             zIndex: Int.max - 1,
-            insets: UIEdgeInsets(top: 0, left: 18, bottom: 0, right: 18)
+            insets: UIEdgeInsets(top: 60, left: 8, bottom: 0, right: 8)
         )
         
         // Add the paging view controller as a child view controller and
         // contrain it to all edges.
         addChild(pagingViewController)
         view.addSubview(pagingViewController.view)
-        view.constrainToEdges(pagingViewController.view)
+        view.constrainToEdges(pagingViewController.view, topPadding: 20)
         pagingViewController.didMove(toParent: self)
         
         // Set our data source and delegate.
@@ -264,4 +265,15 @@ extension MenuViewController: PagingViewControllerDelegate {
         updateMenu(height: height)
     }
     
+}
+
+
+extension MenuViewController { // hide status bar
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+        return UIStatusBarAnimation.slide
+    }
 }

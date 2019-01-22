@@ -12,13 +12,13 @@
         <!--Lineup-->
         <scene sceneID="1e4-AX-FT9">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" title="Lineup" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ugu-IM-FTc" customClass="HomeViewController" customModule="Festival_Fest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" title="Lineup" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ugu-IM-FTc" customClass="HomeViewController" customModule="Festival_Fest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Tg-nU-SKp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MiA-6H-Psc">
-                                <rect key="frame" x="0.0" y="87.5" width="375" height="579.5"/>
+                                <rect key="frame" x="0.0" y="152" width="375" height="515"/>
                                 <collectionViewLayout key="collectionViewLayout" id="cd2-ji-4Qz" customClass="CollectionViewSlantedLayout" customModule="CollectionViewSlantedLayout"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="customViewCell" reuseIdentifier="customViewCell" id="Uiw-AM-sx2" customClass="CustomSlantedCollectionViewCell" customModule="Festival_Fest" customModuleProvider="target">
@@ -49,20 +49,12 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FESTIVAL FEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vn6-nh-JJL">
-                                <rect key="frame" x="113.5" y="40" width="148.5" height="27.5"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="MiA-6H-Psc" firstAttribute="bottom" secondItem="b6i-Fm-XtN" secondAttribute="bottom" id="6gv-kt-CQM"/>
+                            <constraint firstItem="MiA-6H-Psc" firstAttribute="top" secondItem="b6i-Fm-XtN" secondAttribute="top" constant="132" id="PCR-n8-97P"/>
                             <constraint firstItem="MiA-6H-Psc" firstAttribute="leading" secondItem="b6i-Fm-XtN" secondAttribute="leading" id="Qh6-yw-kDF"/>
-                            <constraint firstItem="MiA-6H-Psc" firstAttribute="top" secondItem="Vn6-nh-JJL" secondAttribute="bottom" constant="20" id="fZt-yy-pmk"/>
-                            <constraint firstItem="Vn6-nh-JJL" firstAttribute="centerX" secondItem="1Tg-nU-SKp" secondAttribute="centerX" id="fvi-kk-DHc"/>
-                            <constraint firstItem="Vn6-nh-JJL" firstAttribute="top" secondItem="b6i-Fm-XtN" secondAttribute="top" constant="20" id="tB4-bJ-ADH"/>
                             <constraint firstItem="MiA-6H-Psc" firstAttribute="trailing" secondItem="b6i-Fm-XtN" secondAttribute="trailing" id="ukW-KO-s5Z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="b6i-Fm-XtN"/>

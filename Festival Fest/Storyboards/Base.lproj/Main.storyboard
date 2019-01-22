@@ -210,7 +210,19 @@ FEST</string>
                     <view key="view" contentMode="scaleToFill" id="6G9-af-qFp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FESTIVAL FEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Db1-BD-POU">
+                                <rect key="frame" x="105.5" y="40" width="164" height="31"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Db1-BD-POU" firstAttribute="top" secondItem="vFr-JF-JdK" secondAttribute="top" constant="20" id="l0b-lK-9Pf"/>
+                            <constraint firstItem="Db1-BD-POU" firstAttribute="centerX" secondItem="6G9-af-qFp" secondAttribute="centerX" id="rS9-zy-CGq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vFr-JF-JdK"/>
                     </view>
                 </viewController>
