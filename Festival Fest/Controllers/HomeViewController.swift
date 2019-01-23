@@ -29,7 +29,8 @@ class HomeViewController: UIViewController {
         collectionView.delegate = self
         navigationController?.isNavigationBarHidden = true
         collectionViewLayout.isFirstCellExcluded = true
-        collectionViewLayout.isLastCellExcluded = true
+        collectionViewLayout.isLastCellExcluded = true        
+        collectionViewLayout.lineSpacing = 10
     }
     
     override func loadView() {

@@ -186,7 +186,7 @@ class MenuViewController: UIViewController {
         
         pagingViewController.menuItemSource = .class(type: ImagePagingCell.self)
         pagingViewController.menuItemSize = .fixed(width: menuItemSize.width, height: menuItemSize.height)
-        pagingViewController.menuItemSpacing = 8
+        pagingViewController.menuItemSpacing = 10
         pagingViewController.menuInsets = menuInsets
         pagingViewController.borderColor = .clear
         pagingViewController.indicatorColor = .clear // .black
@@ -310,31 +310,12 @@ extension MenuViewController: PagingViewControllerDataSource {
         
         switch index {
         case Screen.chatbot.rawValue:
-            let viewController = UIStoryboard(name: kChatBotStoryboard, bundle: nil).instantiateViewController(withIdentifier: kConversationViewController) as! ConversationViewController
-//            viewController.view.frame = CGRect(x: 0, y: menuHeight, width: view.frame.width, height: view.frame.height - menuHeight)
-            viewController.tableView.contentInset = UIEdgeInsets(top: menuHeight, left: 0, bottom: 0, right: 0)
-
-//            let titleLabel = UILabel(frame: CGRect(x: 0, y: -menuHeight, width: viewController.view.frame.width, height: menuInsets.top))
-//            titleLabel.textAlignment = .center
-//            titleLabel.text = "FESTIVAL FEST"
-//            titleLabel.font = UIFont(name: "AvenirNext-Heavy", size: 22.0)
-//            titleLabel.textColor = .white
-//            titleLabel.backgroundColor = .black
-//            viewController.view.addSubview(titleLabel)
-            
-            return viewController
+            if let vc = UIStoryboard(name: kChatBotStoryboard, bundle: nil).instantiateInitialViewController() as? UIViewController {
+                return vc
+            }
         default:
             break
-        }
-        
-        
-        // Set the `ImagesViewControllerDelegate` that allows us to get
-        // notified when the images view controller scrolls.
-//        viewController.delegate = self
-        
-//        viewController.collectionView.contentInset = insets
-//        viewController.collectionView.scrollIndicatorInsets = insets
-//        viewController.view.bounds = CGRect(x: 0, y: menuHeight, width: view.bounds.width, height: view.bounds.height)
+        }        
         
         return viewController
     }
