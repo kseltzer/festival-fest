@@ -14,12 +14,15 @@ import Foundation
 let kMainStoryboard = "Main"
 let kHomeStoryboard = "Home"
 let kChatBotStoryboard = "ChatBot"
+let kScheduleStoryboard = "Schedule"
 
 // View Controllers
 let kMenuViewController = "MenuViewController"
 let kHomeViewController = "HomeViewController"
 let kConversationViewController = "ConversationViewController"
+let kScheduleViewController = "ScheduleViewController"
 
 // Cells
 let kSlantedCellReuseIdentifier = "customViewCell"
+let kEventCell = "EventCell"
 

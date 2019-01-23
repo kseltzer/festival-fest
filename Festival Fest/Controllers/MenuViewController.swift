@@ -296,8 +296,19 @@ class CustomPagingViewController: PagingViewController<ImageItem> {
 extension MenuViewController: PagingViewControllerDataSource {
     
     func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, viewControllerForIndex index: Int) -> UIViewController {
-        var viewController = UIStoryboard(name: kHomeStoryboard, bundle: nil).instantiateViewController(withIdentifier: kHomeViewController)
-
+        switch index {
+        case Screen.chatbot.rawValue:
+            if let vc = UIStoryboard(name: kChatBotStoryboard, bundle: nil).instantiateInitialViewController() {
+                return vc
+            }
+        case Screen.schedule.rawValue:
+            return UIStoryboard(name: kScheduleStoryboard, bundle: nil).instantiateViewController(withIdentifier: kScheduleViewController)
+        default:
+            break
+        }
+        
+        
+        let viewController = UIStoryboard(name: kHomeStoryboard, bundle: nil).instantiateViewController(withIdentifier: kHomeViewController)
         
         // Inset the collection view with the height of the menu.
         let insets = UIEdgeInsets(top: menuHeight, left: 0, bottom: 0, right: 0)
@@ -307,16 +318,6 @@ extension MenuViewController: PagingViewControllerDataSource {
             collectionView.scrollIndicatorInsets = insets
             vc.view.bounds = CGRect(x: 0, y: menuHeight, width: view.bounds.width, height: view.bounds.height)
         }
-        
-        switch index {
-        case Screen.chatbot.rawValue:
-            if let vc = UIStoryboard(name: kChatBotStoryboard, bundle: nil).instantiateInitialViewController() as? UIViewController {
-                return vc
-            }
-        default:
-            break
-        }        
-        
         return viewController
     }
     
