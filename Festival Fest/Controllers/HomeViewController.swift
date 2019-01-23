@@ -18,6 +18,7 @@ class HomeViewController: UIViewController {
     
     // MARK: - Variables
     internal var covers = [[String: String]]()
+    internal var names = [[String:String]]()
     
     
     // MARK: - Setup
@@ -103,6 +104,7 @@ extension HomeViewController: UICollectionViewDataSource {
         }
         
         cell.image = UIImage(named: covers[indexPath.row]["picture"]!)!
+        cell.title = covers[indexPath.row]["title"] ?? ""
         
         if let layout = collectionView.collectionViewLayout as? CollectionViewSlantedLayout {
             cell.contentView.transform = CGAffineTransform(rotationAngle: layout.slantingAngle)

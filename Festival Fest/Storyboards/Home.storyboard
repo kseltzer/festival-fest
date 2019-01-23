@@ -40,12 +40,25 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sx-hC-vNb">
+                                                    <rect key="frame" x="12" y="162" width="67.5" height="33"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="24"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="2Sx-hC-vNb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Uiw-AM-sx2" secondAttribute="leadingMargin" constant="12" id="54O-zJ-haw"/>
+                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="2Sx-hC-vNb" secondAttribute="trailing" constant="12" id="9cL-Ub-9bu"/>
+                                            <constraint firstItem="2Sx-hC-vNb" firstAttribute="leading" secondItem="Uiw-AM-sx2" secondAttribute="leadingMargin" constant="4" id="UiP-fP-QTD"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="2Sx-hC-vNb" secondAttribute="bottom" constant="72" id="j3L-4t-UDw"/>
+                                        </constraints>
                                         <size key="customSize" width="375" height="275"/>
                                         <connections>
                                             <outlet property="backgroundView" destination="gRH-J2-Cbg" id="7Ut-hY-VVv"/>
                                             <outlet property="imageView" destination="0yZ-sB-2mz" id="bSy-Ae-9Lt"/>
+                                            <outlet property="titleLabel" destination="2Sx-hC-vNb" id="iuD-jU-SaS"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
