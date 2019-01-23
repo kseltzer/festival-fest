@@ -16,6 +16,7 @@ let kHomeStoryboard = "Home"
 let kChatBotStoryboard = "ChatBot"
 let kScheduleStoryboard = "Schedule"
 let kMapStoryboard = "Map"
+let kFAQStoryboard = "FAQ"
 
 // View Controllers
 let kMenuViewController = "MenuViewController"
@@ -23,8 +24,10 @@ let kHomeViewController = "HomeViewController"
 let kConversationViewController = "ConversationViewController"
 let kScheduleViewController = "ScheduleViewController"
 let kMapViewController = "MapViewController"
+let kFAQViewController = "FAQViewController"
 
 // Cells
 let kSlantedCellReuseIdentifier = "customViewCell"
 let kEventCell = "EventCell"
+let kQACell = "QACell"
 

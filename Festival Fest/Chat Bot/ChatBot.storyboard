@@ -47,13 +47,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="separatorColor" red="0.3411764706" green="0.39607843139999999" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="xIZ-fd-Lji">
+                        <view key="tableFooterView" contentMode="scaleToFill" misplaced="YES" id="xIZ-fd-Lji">
                             <rect key="frame" x="0.0" y="372" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Question" rowHeight="60" id="1zb-Rp-cGN" customClass="ConversationCell" customModule="SwiftEliza" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Question" rowHeight="60" id="1zb-Rp-cGN" customClass="ConversationCell" customModule="Festival_Fest" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="132" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1zb-Rp-cGN" id="kgJ-al-EdW">
@@ -89,7 +89,7 @@
                                     <outlet property="messageLabel" destination="1TU-1K-1uZ" id="1iY-i2-Tf6"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Answer" rowHeight="60" id="h9J-Pk-UWt" customClass="ConversationCell" customModule="SwiftEliza" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Answer" rowHeight="60" id="h9J-Pk-UWt" customClass="ConversationCell" customModule="Festival_Fest" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="192" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h9J-Pk-UWt" id="TJ9-2q-qku">
@@ -125,7 +125,7 @@
                                     <outlet property="messageLabel" destination="zHY-UW-zNu" id="11f-Kh-u28"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Ask" rowHeight="60" id="Fwk-90-M0B" customClass="AskCell" customModule="SwiftEliza" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Ask" rowHeight="60" id="Fwk-90-M0B" customClass="AskCell" customModule="Festival_Fest" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="252" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fwk-90-M0B" id="wgv-0q-BML">
@@ -133,14 +133,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ask a question..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Jc-e8-rmw">
-                                            <rect key="frame" x="16" y="5" width="343" height="49.5"/>
+                                            <rect key="frame" x="16" y="12" width="343" height="42.5"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
                                             <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
                                         </textField>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="9Jc-e8-rmw" firstAttribute="trailing" secondItem="wgv-0q-BML" secondAttribute="trailingMargin" id="8cW-jL-4OJ"/>
-                                        <constraint firstItem="9Jc-e8-rmw" firstAttribute="top" secondItem="wgv-0q-BML" secondAttribute="top" constant="5" id="DR3-i5-xcU"/>
+                                        <constraint firstItem="9Jc-e8-rmw" firstAttribute="top" secondItem="wgv-0q-BML" secondAttribute="top" constant="12" id="DR3-i5-xcU"/>
                                         <constraint firstAttribute="bottom" secondItem="9Jc-e8-rmw" secondAttribute="bottom" constant="5" id="H7L-dy-DS3"/>
                                         <constraint firstItem="9Jc-e8-rmw" firstAttribute="leading" secondItem="wgv-0q-BML" secondAttribute="leadingMargin" id="aeu-HQ-zCc"/>
                                     </constraints>
@@ -149,7 +149,7 @@
                                     <outlet property="textField" destination="9Jc-e8-rmw" id="VRf-oG-uNx"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Thinking" rowHeight="60" id="htb-mq-1bd" customClass="ThinkingCell" customModule="SwiftEliza" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Thinking" rowHeight="60" id="htb-mq-1bd" customClass="ThinkingCell" customModule="Festival_Fest" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="312" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="htb-mq-1bd" id="zuz-Ga-LaF">

@@ -15,13 +15,36 @@ enum Screen: Int {
     case map
     case stages
     case chatbot
-    case faq
     case sustainability
+    case faq
     case about
     case contact
     
     func index() -> Int {
         return self.rawValue
+    }
+    
+    func name() -> String {
+        switch self {
+        case .lineup:
+            return "lineup"
+        case .schedule:
+            return "schedule"
+        case .map:
+            return "map"
+        case .stages:
+            return "stages"
+        case .chatbot:
+            return "chatbot"
+        case .sustainability:
+            return "sustainability"
+        case .faq:
+            return "faq"
+        case .about:
+            return "about"
+        case .contact:
+            return "contact"
+        }
     }
 }
 
@@ -54,93 +77,48 @@ class MenuViewController: UIViewController {
         ImageItem(
             index: Screen.lineup.index(),
             title: "LINEUP",
-            headerImage: UIImage(named: "4")!,
-            images: [
-                UIImage(named: "green-1")!,
-                UIImage(named: "green-2")!,
-                UIImage(named: "green-3")!,
-                UIImage(named: "green-4")!,
-                ]),
+            headerImage: UIImage(named: Screen.lineup.name())!,
+            images: []),
         ImageItem(
             index: Screen.schedule.index(),
             title: "SCHEDULE",
-            headerImage: UIImage(named: "food-1")!,
-            images: [
-                UIImage(named: "food-1")!,
-                UIImage(named: "food-2")!,
-                UIImage(named: "food-3")!,
-                UIImage(named: "food-4")!,
-                ]),
+            headerImage: UIImage(named: Screen.schedule.name())!,
+            images: []),
         ImageItem(
             index: Screen.map.index(),
             title: "MAP",
-            headerImage: UIImage(named: "food-4")!,
-            images: [
-                UIImage(named: "food-1")!,
-                UIImage(named: "food-2")!,
-                UIImage(named: "food-3")!,
-                UIImage(named: "food-4")!,
-                ]),
+            headerImage: UIImage(named: Screen.map.name())!,
+            images: []),
         ImageItem(
             index: Screen.stages.index(),
             title: "STAGES",
-            headerImage: UIImage(named: "food-2")!,
-            images: [
-                UIImage(named: "food-1")!,
-                UIImage(named: "food-2")!,
-                UIImage(named: "food-3")!,
-                UIImage(named: "food-4")!,
-                ]),
+            headerImage: UIImage(named: Screen.stages.name())!,
+            images: []),
         ImageItem(
             index: Screen.chatbot.index(),
             title: "PSYCHOTHERAPY",
-            headerImage: UIImage(named: "food-3")!,
-            images: [
-                UIImage(named: "food-1")!,
-                UIImage(named: "food-2")!,
-                UIImage(named: "food-3")!,
-                UIImage(named: "food-4")!,
-                ]),
-        ImageItem(
-            index: Screen.faq.index(),
-            title: "FAQ",
-            headerImage: UIImage(named: "green-2")!,
-            images: [
-                UIImage(named: "food-1")!,
-                UIImage(named: "food-2")!,
-                UIImage(named: "food-3")!,
-                UIImage(named: "food-4")!,
-                ]),
+            headerImage: UIImage(named: Screen.chatbot.name())!,
+            images: []),
         ImageItem(
             index: Screen.sustainability.index(),
             title: "SUSTAINABILITY",
-            headerImage: UIImage(named: "green-3")!,
-            images: [
-                UIImage(named: "food-1")!,
-                UIImage(named: "food-2")!,
-                UIImage(named: "food-3")!,
-                UIImage(named: "food-4")!,
-                ]),
+            headerImage: UIImage(named: Screen.sustainability.name())!,
+            images: []),
+        ImageItem(
+            index: Screen.faq.index(),
+            title: "FAQ",
+            headerImage: UIImage(named: Screen.faq.name())!,
+            images: []),
         ImageItem(
             index: Screen.about.index(),
             title: "ABOUT",
-            headerImage: UIImage(named: "green-4")!,
-            images: [
-                UIImage(named: "food-1")!,
-                UIImage(named: "food-2")!,
-                UIImage(named: "food-3")!,
-                UIImage(named: "food-4")!,
-                ]),
+            headerImage: UIImage(named: Screen.about.name())!,
+            images: []),
         ImageItem(
             index: Screen.contact.index(),
             title: "CONTACT",
-            headerImage: UIImage(named: "food-2")!,
-            images: [
-                UIImage(named: "food-1")!,
-                UIImage(named: "food-2")!,
-                UIImage(named: "food-3")!,
-                UIImage(named: "food-4")!,
-                ])
+            headerImage: UIImage(named: Screen.contact.name())!,
+            images: [])
     ]
     
     // Create our custom paging view controller.
@@ -296,6 +274,7 @@ class CustomPagingViewController: PagingViewController<ImageItem> {
 extension MenuViewController: PagingViewControllerDataSource {
     
     func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, viewControllerForIndex index: Int) -> UIViewController {
+        
         switch index {
         case Screen.chatbot.rawValue:
             if let vc = UIStoryboard(name: kChatBotStoryboard, bundle: nil).instantiateInitialViewController() {
@@ -305,6 +284,8 @@ extension MenuViewController: PagingViewControllerDataSource {
             return UIStoryboard(name: kScheduleStoryboard, bundle: nil).instantiateViewController(withIdentifier: kScheduleViewController)
         case Screen.map.rawValue:
             return UIStoryboard(name: kMapStoryboard, bundle: nil).instantiateViewController(withIdentifier: kMapViewController)
+        case Screen.faq.rawValue:
+            return UIStoryboard(name: kFAQStoryboard, bundle: nil).instantiateViewController(withIdentifier: kFAQViewController)
         default:
             break
         }
@@ -331,6 +312,9 @@ extension MenuViewController: PagingViewControllerDataSource {
         return items.count
     }
     
+    func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, didScrollToItem pagingItem: T, startingViewController: UIViewController?, destinationViewController: UIViewController, transitionSuccessful: Bool) where T : PagingItem, T : Comparable, T : Hashable {
+        print(pagingItem)
+    }
 }
 
 extension MenuViewController: ImagesViewControllerDelegate {

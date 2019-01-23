@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Yay-bS-BfL">
+            <objects>
+                <viewController storyboardIdentifier="FAQViewController" id="Ugo-hW-OWN" customClass="FAQViewController" customModule="Festival_Fest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xh6-kP-Dzh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HEV-zp-1Wc">
+                                <rect key="frame" x="0.0" y="152" width="375" height="515"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="0.3411764706" green="0.39607843139999999" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QACell0" rowHeight="107" id="KnV-Ev-RvU">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="107"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KnV-Ev-RvU" id="1Y1-nm-7u1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="A3t-kh-ar6">
+                                                    <rect key="frame" x="12" y="12" width="351" height="82.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What should I wear?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wK-jw-2R3">
+                                                            <rect key="frame" x="0.0" y="0.0" width="179.5" height="26"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                                            <color key="textColor" red="0.3411764706" green="0.39607843139999999" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xib-dS-Qrn">
+                                                            <rect key="frame" x="0.0" y="29" width="318" height="53.5"/>
+                                                            <string key="text">Hear from the Emmy-snubbed cast of the overlooked sictom Sandra's Office on their predictions for future episodes of Black Mirror.</string>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="A3t-kh-ar6" secondAttribute="trailing" constant="12" id="HlO-g7-pe7"/>
+                                                <constraint firstAttribute="bottom" secondItem="A3t-kh-ar6" secondAttribute="bottom" constant="12" id="Jp8-ha-79N"/>
+                                                <constraint firstItem="A3t-kh-ar6" firstAttribute="top" secondItem="1Y1-nm-7u1" secondAttribute="top" constant="12" id="Lfl-9Y-myT"/>
+                                                <constraint firstItem="A3t-kh-ar6" firstAttribute="leading" secondItem="1Y1-nm-7u1" secondAttribute="leading" constant="12" id="RK7-Qz-8TU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QACell1" rowHeight="107" id="vQD-lR-5nY">
+                                        <rect key="frame" x="0.0" y="135" width="375" height="107"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vQD-lR-5nY" id="9n6-xW-3eJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="s7C-qi-zD5">
+                                                    <rect key="frame" x="12" y="12" width="351" height="82.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What should I wear?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nt8-yB-Zi2">
+                                                            <rect key="frame" x="0.0" y="0.0" width="179.5" height="26"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                                            <color key="textColor" red="0.3411764706" green="0.39607843139999999" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vv0-A7-X9N">
+                                                            <rect key="frame" x="0.0" y="29" width="318" height="53.5"/>
+                                                            <string key="text">Hear from the Emmy-snubbed cast of the overlooked sictom Sandra's Office on their predictions for future episodes of Black Mirror.</string>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="s7C-qi-zD5" secondAttribute="trailing" constant="12" id="Fbl-dy-lDj"/>
+                                                <constraint firstAttribute="bottom" secondItem="s7C-qi-zD5" secondAttribute="bottom" constant="12" id="I4b-oz-hIK"/>
+                                                <constraint firstItem="s7C-qi-zD5" firstAttribute="leading" secondItem="9n6-xW-3eJ" secondAttribute="leading" constant="12" id="nQF-Bm-yec"/>
+                                                <constraint firstItem="s7C-qi-zD5" firstAttribute="top" secondItem="9n6-xW-3eJ" secondAttribute="top" constant="12" id="vPd-zO-Nqv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QACell2" rowHeight="107" id="UA1-nn-skP">
+                                        <rect key="frame" x="0.0" y="242" width="375" height="107"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UA1-nn-skP" id="i0U-6l-ImP">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="cF0-6P-FqV">
+                                                    <rect key="frame" x="12" y="12" width="351" height="82.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What should I wear?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8L-vf-vUu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="179.5" height="26"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                                            <color key="textColor" red="0.3411764706" green="0.39607843139999999" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFX-FH-1hk">
+                                                            <rect key="frame" x="0.0" y="29" width="318" height="53.5"/>
+                                                            <string key="text">Hear from the Emmy-snubbed cast of the overlooked sictom Sandra's Office on their predictions for future episodes of Black Mirror.</string>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cF0-6P-FqV" firstAttribute="top" secondItem="i0U-6l-ImP" secondAttribute="top" constant="12" id="jhg-y1-ZOm"/>
+                                                <constraint firstAttribute="trailing" secondItem="cF0-6P-FqV" secondAttribute="trailing" constant="12" id="shH-Dv-TnQ"/>
+                                                <constraint firstItem="cF0-6P-FqV" firstAttribute="leading" secondItem="i0U-6l-ImP" secondAttribute="leading" constant="12" id="uo7-9A-ivp"/>
+                                                <constraint firstAttribute="bottom" secondItem="cF0-6P-FqV" secondAttribute="bottom" constant="12" id="w3K-wL-7Pf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QACell3" rowHeight="107" id="jf5-NL-57G">
+                                        <rect key="frame" x="0.0" y="349" width="375" height="107"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jf5-NL-57G" id="QBd-NN-Hp8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="C9F-In-HOA">
+                                                    <rect key="frame" x="12" y="12" width="351" height="82.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What should I wear?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6Q-pV-X6T">
+                                                            <rect key="frame" x="0.0" y="0.0" width="179.5" height="26"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                                            <color key="textColor" red="0.3411764706" green="0.39607843139999999" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUF-q3-Jgc">
+                                                            <rect key="frame" x="0.0" y="29" width="318" height="53.5"/>
+                                                            <string key="text">Hear from the Emmy-snubbed cast of the overlooked sictom Sandra's Office on their predictions for future episodes of Black Mirror.</string>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="C9F-In-HOA" firstAttribute="leading" secondItem="QBd-NN-Hp8" secondAttribute="leading" constant="12" id="H45-nM-Y6Y"/>
+                                                <constraint firstItem="C9F-In-HOA" firstAttribute="top" secondItem="QBd-NN-Hp8" secondAttribute="top" constant="12" id="Lwk-uF-e8K"/>
+                                                <constraint firstAttribute="trailing" secondItem="C9F-In-HOA" secondAttribute="trailing" constant="12" id="MFd-o7-TPn"/>
+                                                <constraint firstAttribute="bottom" secondItem="C9F-In-HOA" secondAttribute="bottom" constant="12" id="iKM-yy-AfP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HEV-zp-1Wc" firstAttribute="bottom" secondItem="SsV-yj-Uco" secondAttribute="bottom" id="FEe-sF-jdp"/>
+                            <constraint firstItem="HEV-zp-1Wc" firstAttribute="trailing" secondItem="SsV-yj-Uco" secondAttribute="trailing" id="NhN-nq-oA9"/>
+                            <constraint firstItem="HEV-zp-1Wc" firstAttribute="top" secondItem="SsV-yj-Uco" secondAttribute="top" constant="132" id="s32-da-PDf"/>
+                            <constraint firstItem="HEV-zp-1Wc" firstAttribute="leading" secondItem="SsV-yj-Uco" secondAttribute="leading" id="sgt-0l-fg3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SsV-yj-Uco"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="HEV-zp-1Wc" id="Hoa-cG-Z33"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LdZ-nY-TbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="125.4872563718141"/>
+        </scene>
+    </scenes>
+</document>
