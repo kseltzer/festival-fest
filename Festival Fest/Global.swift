@@ -13,10 +13,13 @@ import Foundation
 // Storyboards
 let kMainStoryboard = "Main"
 let kHomeStoryboard = "Home"
+let kChatBotStoryboard = "ChatBot"
 
 // View Controllers
 let kMenuViewController = "MenuViewController"
 let kHomeViewController = "HomeViewController"
+let kConversationViewController = "ConversationViewController"
 
 // Cells
 let kSlantedCellReuseIdentifier = "customViewCell"
+

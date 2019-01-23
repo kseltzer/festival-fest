@@ -9,6 +9,22 @@
 import UIKit
 import Parchment
 
+enum Screen: Int {
+    case lineup = 0
+    case schedule
+    case map
+    case stages
+    case chatbot
+    case faq
+    case sustainability
+    case about
+    case contact
+    
+    func index() -> Int {
+        return self.rawValue
+    }
+}
+
 struct ImageItem: PagingItem, Hashable, Comparable {
     let index: Int
     let title: String
@@ -36,7 +52,7 @@ class MenuViewController: UIViewController {
     // MARK: - Variables
     private let items = [
         ImageItem(
-            index: 0,
+            index: Screen.lineup.index(),
             title: "LINEUP",
             headerImage: UIImage(named: "4")!,
             images: [
@@ -46,7 +62,7 @@ class MenuViewController: UIViewController {
                 UIImage(named: "green-4")!,
                 ]),
         ImageItem(
-            index: 1,
+            index: Screen.schedule.index(),
             title: "SCHEDULE",
             headerImage: UIImage(named: "food-1")!,
             images: [
@@ -56,7 +72,7 @@ class MenuViewController: UIViewController {
                 UIImage(named: "food-4")!,
                 ]),
         ImageItem(
-            index: 2,
+            index: Screen.map.index(),
             title: "MAP",
             headerImage: UIImage(named: "food-4")!,
             images: [
@@ -66,7 +82,7 @@ class MenuViewController: UIViewController {
                 UIImage(named: "food-4")!,
                 ]),
         ImageItem(
-            index: 3,
+            index: Screen.stages.index(),
             title: "STAGES",
             headerImage: UIImage(named: "food-2")!,
             images: [
@@ -76,8 +92,8 @@ class MenuViewController: UIViewController {
                 UIImage(named: "food-4")!,
                 ]),
         ImageItem(
-            index: 4,
-            title: "FREE THERAPY",
+            index: Screen.chatbot.index(),
+            title: "PSYCHOTHERAPY",
             headerImage: UIImage(named: "food-3")!,
             images: [
                 UIImage(named: "food-1")!,
@@ -86,7 +102,7 @@ class MenuViewController: UIViewController {
                 UIImage(named: "food-4")!,
                 ]),
         ImageItem(
-            index: 5,
+            index: Screen.faq.index(),
             title: "FAQ",
             headerImage: UIImage(named: "green-2")!,
             images: [
@@ -96,7 +112,7 @@ class MenuViewController: UIViewController {
                 UIImage(named: "food-4")!,
                 ]),
         ImageItem(
-            index: 6,
+            index: Screen.sustainability.index(),
             title: "SUSTAINABILITY",
             headerImage: UIImage(named: "green-3")!,
             images: [
@@ -106,7 +122,7 @@ class MenuViewController: UIViewController {
                 UIImage(named: "food-4")!,
                 ]),
         ImageItem(
-            index: 7,
+            index: Screen.about.index(),
             title: "ABOUT",
             headerImage: UIImage(named: "green-4")!,
             images: [
@@ -116,7 +132,7 @@ class MenuViewController: UIViewController {
                 UIImage(named: "food-4")!,
                 ]),
         ImageItem(
-            index: 8,
+            index: Screen.contact.index(),
             title: "CONTACT",
             headerImage: UIImage(named: "food-2")!,
             images: [
@@ -280,19 +296,42 @@ class CustomPagingViewController: PagingViewController<ImageItem> {
 extension MenuViewController: PagingViewControllerDataSource {
     
     func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, viewControllerForIndex index: Int) -> UIViewController {
-//        let viewController = ImagesViewController(
-//            images: items[index].images,
-//            options: pagingViewController.options
-//        )
+        var viewController = UIStoryboard(name: kHomeStoryboard, bundle: nil).instantiateViewController(withIdentifier: kHomeViewController)
 
-        let viewController = UIStoryboard(name: kHomeStoryboard, bundle: nil).instantiateViewController(withIdentifier: kHomeViewController) as! HomeViewController
+        
+        // Inset the collection view with the height of the menu.
+        let insets = UIEdgeInsets(top: menuHeight, left: 0, bottom: 0, right: 0)
+        
+        if let vc = viewController as? HomeViewController, let collectionView = vc.collectionView {
+            collectionView.contentInset = insets
+            collectionView.scrollIndicatorInsets = insets
+            vc.view.bounds = CGRect(x: 0, y: menuHeight, width: view.bounds.width, height: view.bounds.height)
+        }
+        
+        switch index {
+        case Screen.chatbot.rawValue:
+            let viewController = UIStoryboard(name: kChatBotStoryboard, bundle: nil).instantiateViewController(withIdentifier: kConversationViewController) as! ConversationViewController
+//            viewController.view.frame = CGRect(x: 0, y: menuHeight, width: view.frame.width, height: view.frame.height - menuHeight)
+            viewController.tableView.contentInset = UIEdgeInsets(top: menuHeight, left: 0, bottom: 0, right: 0)
+
+//            let titleLabel = UILabel(frame: CGRect(x: 0, y: -menuHeight, width: viewController.view.frame.width, height: menuInsets.top))
+//            titleLabel.textAlignment = .center
+//            titleLabel.text = "FESTIVAL FEST"
+//            titleLabel.font = UIFont(name: "AvenirNext-Heavy", size: 22.0)
+//            titleLabel.textColor = .white
+//            titleLabel.backgroundColor = .black
+//            viewController.view.addSubview(titleLabel)
+            
+            return viewController
+        default:
+            break
+        }
+        
         
         // Set the `ImagesViewControllerDelegate` that allows us to get
         // notified when the images view controller scrolls.
 //        viewController.delegate = self
         
-        // Inset the collection view with the height of the menu.
-//        let insets = UIEdgeInsets(top: menuHeight, left: 0, bottom: 0, right: 0)
 //        viewController.collectionView.contentInset = insets
 //        viewController.collectionView.scrollIndicatorInsets = insets
 //        viewController.view.bounds = CGRect(x: 0, y: menuHeight, width: view.bounds.width, height: view.bounds.height)
