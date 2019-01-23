@@ -1,20 +1,24 @@
 PODS:
   - CollectionViewSlantedLayout (3.1.1)
   - Parchment (1.5.0)
+  - ZoomImageView (0.6.0)
 
 DEPENDENCIES:
   - CollectionViewSlantedLayout (~> 3.1)
   - Parchment
+  - ZoomImageView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CollectionViewSlantedLayout
     - Parchment
+    - ZoomImageView
 
 SPEC CHECKSUMS:
   CollectionViewSlantedLayout: 24397455acd2461960bc45d394e0ef99c17d03ce
   Parchment: 5a8c9c73549a6d73a7c1b606c27246910d2e5720
+  ZoomImageView: 2a88d0c10ad30b9a06c8f5660d51623fb32beed5
 
-PODFILE CHECKSUM: 8b4b9df5d66b90db79464e680b6c8c2bedeb1971
+PODFILE CHECKSUM: 7364315f3cdc8f5cda32362d4b80a6f58f4eb331
 
 COCOAPODS: 1.5.3

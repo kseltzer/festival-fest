@@ -32,6 +32,7 @@
 		4EB48ADA21F7D9AC00DCDE7D /* AskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB48AD921F7D9AC00DCDE7D /* AskCell.swift */; };
 		4EB48ADC21F7D9C300DCDE7D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB48ADB21F7D9C300DCDE7D /* Message.swift */; };
 		4EB48ADE21F7D9DA00DCDE7D /* ThinkingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB48ADD21F7D9DA00DCDE7D /* ThinkingCell.swift */; };
+		4EC83D5E21F8098000ED75E4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC83D5D21F8098000ED75E4 /* MapViewController.swift */; };
 		4EE0CE7921F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0CE7721F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift */; };
 		4EE0CE7D21F6E61300CB0B3D /* covers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EE0CE7C21F6E61300CB0B3D /* covers.plist */; };
 		861DE70D270D70149F9A45A1 /* Pods_Festival_Fest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D44F15B92493F655CD0265 /* Pods_Festival_Fest.framework */; };
@@ -65,6 +66,7 @@
 		4EB48AD921F7D9AC00DCDE7D /* AskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskCell.swift; sourceTree = "<group>"; };
 		4EB48ADB21F7D9C300DCDE7D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		4EB48ADD21F7D9DA00DCDE7D /* ThinkingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkingCell.swift; sourceTree = "<group>"; };
+		4EC83D5D21F8098000ED75E4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4EE0CE7721F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlantedCollectionViewCell.swift; sourceTree = "<group>"; };
 		4EE0CE7C21F6E61300CB0B3D /* covers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = covers.plist; sourceTree = "<group>"; };
 		A5D44F15B92493F655CD0265 /* Pods_Festival_Fest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Festival_Fest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +129,7 @@
 				4E4CB1BD21F6C63100C7E08C /* HomeViewController.swift */,
 				4E4FE52F21F730E9009DAF02 /* MenuViewController.swift */,
 				4E9931F621F7FE45009C345F /* ScheduleViewController.swift */,
+				4EC83D5D21F8098000ED75E4 /* MapViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -294,11 +297,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Festival Fest/Pods-Festival Fest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CollectionViewSlantedLayout/CollectionViewSlantedLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/Parchment/Parchment.framework",
+				"${BUILT_PRODUCTS_DIR}/ZoomImageView/ZoomImageView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionViewSlantedLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parchment.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZoomImageView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -337,6 +342,7 @@
 				4EB48AD021F7D8A800DCDE7D /* ConversationViewController.swift in Sources */,
 				4EB48AC721F732DF00DCDE7D /* ImagesViewController.swift in Sources */,
 				4EE0CE7921F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift in Sources */,
+				4EC83D5E21F8098000ED75E4 /* MapViewController.swift in Sources */,
 				4EB48AC321F732AF00DCDE7D /* UIView+Constraints.swift in Sources */,
 				4EB48AD721F7D96700DCDE7D /* ConversationCell.swift in Sources */,
 				4EB48ACE21F7D78D00DCDE7D /* ChatBot.swift in Sources */,

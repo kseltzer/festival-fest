@@ -303,6 +303,8 @@ extension MenuViewController: PagingViewControllerDataSource {
             }
         case Screen.schedule.rawValue:
             return UIStoryboard(name: kScheduleStoryboard, bundle: nil).instantiateViewController(withIdentifier: kScheduleViewController)
+        case Screen.map.rawValue:
+            return UIStoryboard(name: kMapStoryboard, bundle: nil).instantiateViewController(withIdentifier: kMapViewController)
         default:
             break
         }

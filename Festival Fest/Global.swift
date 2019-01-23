@@ -15,12 +15,14 @@ let kMainStoryboard = "Main"
 let kHomeStoryboard = "Home"
 let kChatBotStoryboard = "ChatBot"
 let kScheduleStoryboard = "Schedule"
+let kMapStoryboard = "Map"
 
 // View Controllers
 let kMenuViewController = "MenuViewController"
 let kHomeViewController = "HomeViewController"
 let kConversationViewController = "ConversationViewController"
 let kScheduleViewController = "ScheduleViewController"
+let kMapViewController = "MapViewController"
 
 // Cells
 let kSlantedCellReuseIdentifier = "customViewCell"
