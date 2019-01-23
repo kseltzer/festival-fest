@@ -35,6 +35,9 @@
 		4EC83D5E21F8098000ED75E4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC83D5D21F8098000ED75E4 /* MapViewController.swift */; };
 		4EC83D6021F8122000ED75E4 /* FAQ.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC83D5F21F8122000ED75E4 /* FAQ.storyboard */; };
 		4EC83D6221F8126A00ED75E4 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC83D6121F8126A00ED75E4 /* FAQViewController.swift */; };
+		4EC83D6421F82AEE00ED75E4 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC83D6321F82AEE00ED75E4 /* Contact.storyboard */; };
+		4EC83D6621F82B0D00ED75E4 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC83D6521F82B0D00ED75E4 /* ContactViewController.swift */; };
+		4EC83D6921F82BE500ED75E4 /* UIButton+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC83D6821F82BE500ED75E4 /* UIButton+UI.swift */; };
 		4EE0CE7921F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0CE7721F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift */; };
 		4EE0CE7D21F6E61300CB0B3D /* covers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EE0CE7C21F6E61300CB0B3D /* covers.plist */; };
 		861DE70D270D70149F9A45A1 /* Pods_Festival_Fest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D44F15B92493F655CD0265 /* Pods_Festival_Fest.framework */; };
@@ -71,6 +74,9 @@
 		4EC83D5D21F8098000ED75E4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4EC83D5F21F8122000ED75E4 /* FAQ.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FAQ.storyboard; sourceTree = "<group>"; };
 		4EC83D6121F8126A00ED75E4 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		4EC83D6321F82AEE00ED75E4 /* Contact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
+		4EC83D6521F82B0D00ED75E4 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		4EC83D6821F82BE500ED75E4 /* UIButton+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+UI.swift"; sourceTree = "<group>"; };
 		4EE0CE7721F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlantedCollectionViewCell.swift; sourceTree = "<group>"; };
 		4EE0CE7C21F6E61300CB0B3D /* covers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = covers.plist; sourceTree = "<group>"; };
 		A5D44F15B92493F655CD0265 /* Pods_Festival_Fest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Festival_Fest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +120,7 @@
 			children = (
 				4E11BC3721F6DA5700C041F0 /* Global.swift */,
 				4E1E289221F6723800A55FD2 /* AppDelegate.swift */,
+				4EC83D6721F82BC400ED75E4 /* Extensions */,
 				4E1E28A621F6735000A55FD2 /* Models */,
 				4E1E28A521F6734B00A55FD2 /* Views */,
 				4E1E28A421F6734500A55FD2 /* Controllers */,
@@ -135,6 +142,7 @@
 				4E9931F621F7FE45009C345F /* ScheduleViewController.swift */,
 				4EC83D5D21F8098000ED75E4 /* MapViewController.swift */,
 				4EC83D6121F8126A00ED75E4 /* FAQViewController.swift */,
+				4EC83D6521F82B0D00ED75E4 /* ContactViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 				4E9931F421F7FE38009C345F /* Schedule.storyboard */,
 				4E9931F921F8061B009C345F /* Map.storyboard */,
 				4EC83D5F21F8122000ED75E4 /* FAQ.storyboard */,
+				4EC83D6321F82AEE00ED75E4 /* Contact.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -192,6 +201,14 @@
 				4EB48ADD21F7D9DA00DCDE7D /* ThinkingCell.swift */,
 			);
 			path = "Chat Bot";
+			sourceTree = "<group>";
+		};
+		4EC83D6721F82BC400ED75E4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4EC83D6821F82BE500ED75E4 /* UIButton+UI.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		4EE0CE7B21F6E5F500CB0B3D /* Resources */ = {
@@ -282,6 +299,7 @@
 				4EB48ACC21F7D76100DCDE7D /* ChatBot.storyboard in Resources */,
 				4E1E289D21F6723900A55FD2 /* LaunchScreen.storyboard in Resources */,
 				4E9931FA21F8061B009C345F /* Map.storyboard in Resources */,
+				4EC83D6421F82AEE00ED75E4 /* Contact.storyboard in Resources */,
 				4EC83D6021F8122000ED75E4 /* FAQ.storyboard in Resources */,
 				4EE0CE7D21F6E61300CB0B3D /* covers.plist in Resources */,
 				4E1E289A21F6723900A55FD2 /* Assets.xcassets in Resources */,
@@ -345,11 +363,13 @@
 				4E11BC3821F6DA5700C041F0 /* Global.swift in Sources */,
 				4EB48ADA21F7D9AC00DCDE7D /* AskCell.swift in Sources */,
 				4E4FE53021F730E9009DAF02 /* MenuViewController.swift in Sources */,
+				4EC83D6921F82BE500ED75E4 /* UIButton+UI.swift in Sources */,
 				4E9931F721F7FE45009C345F /* ScheduleViewController.swift in Sources */,
 				4EB48AD021F7D8A800DCDE7D /* ConversationViewController.swift in Sources */,
 				4EB48AC721F732DF00DCDE7D /* ImagesViewController.swift in Sources */,
 				4EE0CE7921F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift in Sources */,
 				4EC83D5E21F8098000ED75E4 /* MapViewController.swift in Sources */,
+				4EC83D6621F82B0D00ED75E4 /* ContactViewController.swift in Sources */,
 				4EB48AC321F732AF00DCDE7D /* UIView+Constraints.swift in Sources */,
 				4EB48AD721F7D96700DCDE7D /* ConversationCell.swift in Sources */,
 				4EB48ACE21F7D78D00DCDE7D /* ChatBot.swift in Sources */,

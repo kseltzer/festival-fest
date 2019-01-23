@@ -17,6 +17,7 @@ let kChatBotStoryboard = "ChatBot"
 let kScheduleStoryboard = "Schedule"
 let kMapStoryboard = "Map"
 let kFAQStoryboard = "FAQ"
+let kContactStoryboard = "Contact"
 
 // View Controllers
 let kMenuViewController = "MenuViewController"
@@ -25,6 +26,7 @@ let kConversationViewController = "ConversationViewController"
 let kScheduleViewController = "ScheduleViewController"
 let kMapViewController = "MapViewController"
 let kFAQViewController = "FAQViewController"
+let kContactViewController = "ContactViewController"
 
 // Cells
 let kSlantedCellReuseIdentifier = "customViewCell"

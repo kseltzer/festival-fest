@@ -286,6 +286,8 @@ extension MenuViewController: PagingViewControllerDataSource {
             return UIStoryboard(name: kMapStoryboard, bundle: nil).instantiateViewController(withIdentifier: kMapViewController)
         case Screen.faq.rawValue:
             return UIStoryboard(name: kFAQStoryboard, bundle: nil).instantiateViewController(withIdentifier: kFAQViewController)
+        case Screen.contact.rawValue:
+            return UIStoryboard(name: kContactStoryboard, bundle: nil).instantiateViewController(withIdentifier: kContactViewController)
         default:
             break
         }

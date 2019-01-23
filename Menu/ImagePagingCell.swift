@@ -13,7 +13,7 @@ class ImagePagingCell: PagingCell {
     let label = UILabel(frame: .zero)
     label.font = UIFont.systemFont(ofSize: 13, weight: UIFont.Weight.semibold)
     label.textColor = UIColor.white
-    label.backgroundColor = UIColor(white: 0, alpha: 0.6)
+    label.backgroundColor = UIColor(white: 0, alpha: 0.4)
     label.numberOfLines = 0
     return label
   }()
