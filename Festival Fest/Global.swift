@@ -12,7 +12,7 @@ import Foundation
 
 // Storyboards
 let kMainStoryboard = "Main"
-let kHomeStoryboard = "Home"
+let kLineupStoryboard = "Lineup"
 let kChatBotStoryboard = "ChatBot"
 let kScheduleStoryboard = "Schedule"
 let kMapStoryboard = "Map"
@@ -20,7 +20,7 @@ let kFAQStoryboard = "FAQ"
 
 // View Controllers
 let kMenuViewController = "MenuViewController"
-let kHomeViewController = "HomeViewController"
+let kLineupViewController = "LineupViewController"
 let kConversationViewController = "ConversationViewController"
 let kScheduleViewController = "ScheduleViewController"
 let kMapViewController = "MapViewController"

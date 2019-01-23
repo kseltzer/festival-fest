@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  LineupViewController.swift
 //  Festival Fest
 //
 //  Created by Kimberly Seltzer on 1/21/19.
@@ -9,7 +9,7 @@
 import UIKit
 import CollectionViewSlantedLayout
 
-class HomeViewController: UIViewController {
+class LineupViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var collectionView: UICollectionView!
@@ -89,7 +89,7 @@ class HomeViewController: UIViewController {
 
 
 
-extension HomeViewController: UICollectionViewDataSource {
+extension LineupViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return covers.count
@@ -114,7 +114,7 @@ extension HomeViewController: UICollectionViewDataSource {
     }
 }
 
-extension HomeViewController: CollectionViewDelegateSlantedLayout {
+extension LineupViewController: CollectionViewDelegateSlantedLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         NSLog("Did select item at indexPath: [\(indexPath.section)][\(indexPath.row)]")
@@ -127,7 +127,7 @@ extension HomeViewController: CollectionViewDelegateSlantedLayout {
     }
 }
 
-extension HomeViewController: UIScrollViewDelegate {
+extension LineupViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard let collectionView = collectionView else {return}
         guard let visibleCells = collectionView.visibleCells as? [CustomSlantedCollectionViewCell] else {return}

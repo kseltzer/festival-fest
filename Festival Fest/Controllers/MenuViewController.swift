@@ -141,8 +141,8 @@ class MenuViewController: UIViewController {
 //
 //        // Load each of the view controllers you want to embed
 //        // from the storyboard.
-//        let storyboard = UIStoryboard(name: kHomeStoryboard, bundle: nil)
-//        let firstViewController = storyboard.instantiateViewController(withIdentifier: kHomeViewController)
+//        let storyboard = UIStoryboard(name: kLineupStoryboard, bundle: nil)
+//        let firstViewController = storyboard.instantiateViewController(withIdentifier: kLineupViewController)
 ////        let secondViewController = storyboard.instantiateViewController(withIdentifier: "SecondViewController")
 //
 //        // Initialize a FixedPagingViewController and pass
@@ -291,12 +291,12 @@ extension MenuViewController: PagingViewControllerDataSource {
         }
         
         
-        let viewController = UIStoryboard(name: kHomeStoryboard, bundle: nil).instantiateViewController(withIdentifier: kHomeViewController)
+        let viewController = UIStoryboard(name: kLineupStoryboard, bundle: nil).instantiateViewController(withIdentifier: kLineupViewController)
         
         // Inset the collection view with the height of the menu.
         let insets = UIEdgeInsets(top: menuHeight, left: 0, bottom: 0, right: 0)
         
-        if let vc = viewController as? HomeViewController, let collectionView = vc.collectionView {
+        if let vc = viewController as? LineupViewController, let collectionView = vc.collectionView {
             collectionView.contentInset = insets
             collectionView.scrollIndicatorInsets = insets
             vc.view.bounds = CGRect(x: 0, y: menuHeight, width: view.bounds.width, height: view.bounds.height)
