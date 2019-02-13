@@ -31,7 +31,7 @@ class LineupViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
         collectionViewLayout.isFirstCellExcluded = true
         collectionViewLayout.isLastCellExcluded = true        
-        collectionViewLayout.lineSpacing = 10
+        collectionViewLayout.lineSpacing = 8
     }
     
     override func loadView() {
