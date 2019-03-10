@@ -36,7 +36,15 @@ class LandingViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func proceedTapped(_ sender: Any) {
-        navigateToHomeScreen()
+        DispatchQueue.main.async {
+            if let btn = sender as? UIButton {
+                btn.animateTap(withCompletion: { _ in
+                    self.navigateToHomeScreen()
+                })
+            } else {
+                self.navigateToHomeScreen()
+            }
+        }
     }
     
     
@@ -51,5 +59,23 @@ class LandingViewController: UIViewController {
 extension UIView {
     func roundCorners() {
         layer.cornerRadius = bounds.height / 2.0
+    }
+}
+
+
+// MARK: - Animation
+extension UIView { // animate tapping a button (shrink then grow)
+    func animateTap(scaleTo scale: CGFloat = 0.65, withCompletion completion: ((_ error: Error?) -> Void)?) {
+        UIView.animate(withDuration: 0.1, animations: {
+            self.transform = CGAffineTransform(scaleX: scale, y: scale)
+        }, completion: { _ in
+            UIView.animate(withDuration: 0.1, animations: {
+                self.transform = CGAffineTransform.identity
+            }, completion: { _ in
+                if let completion = completion {
+                    completion(nil)
+                }
+            })
+        })
     }
 }

@@ -14,7 +14,6 @@ enum Screen: Int {
     case schedule
     case map
     case stages
-    case chatbot
     case sustainability
     case faq
     case about
@@ -34,8 +33,6 @@ enum Screen: Int {
             return "map"
         case .stages:
             return "stages"
-        case .chatbot:
-            return "chatbot"
         case .sustainability:
             return "sustainability"
         case .faq:
@@ -76,7 +73,7 @@ class MenuViewController: UIViewController {
     private let items = [
         ImageItem(
             index: Screen.lineup.index(),
-            title: "LINEUP",
+            title: "2018 LINEUP",
             headerImage: UIImage(named: Screen.lineup.name())!,
             images: []),
         ImageItem(
@@ -87,17 +84,12 @@ class MenuViewController: UIViewController {
         ImageItem(
             index: Screen.map.index(),
             title: "MAP",
-            headerImage: UIImage(named: Screen.map.name())!,
+            headerImage: UIImage(named: "\(Screen.map.name())-icon")!,
             images: []),
         ImageItem(
             index: Screen.stages.index(),
             title: "STAGES",
             headerImage: UIImage(named: Screen.stages.name())!,
-            images: []),
-        ImageItem(
-            index: Screen.chatbot.index(),
-            title: "PSYCHOTHERAPY",
-            headerImage: UIImage(named: Screen.chatbot.name())!,
             images: []),
         ImageItem(
             index: Screen.sustainability.index(),
@@ -276,10 +268,6 @@ extension MenuViewController: PagingViewControllerDataSource {
     func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, viewControllerForIndex index: Int) -> UIViewController {
         
         switch index {
-        case Screen.chatbot.rawValue:
-            if let vc = UIStoryboard(name: kChatBotStoryboard, bundle: nil).instantiateInitialViewController() {
-                return vc
-            }
         case Screen.schedule.rawValue:
             return UIStoryboard(name: kScheduleStoryboard, bundle: nil).instantiateViewController(withIdentifier: kScheduleViewController)
         case Screen.map.rawValue:

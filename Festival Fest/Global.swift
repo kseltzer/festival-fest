@@ -13,7 +13,6 @@ import Foundation
 // Storyboards
 let kMainStoryboard = "Main"
 let kLineupStoryboard = "Lineup"
-let kChatBotStoryboard = "ChatBot"
 let kScheduleStoryboard = "Schedule"
 let kMapStoryboard = "Map"
 let kFAQStoryboard = "FAQ"

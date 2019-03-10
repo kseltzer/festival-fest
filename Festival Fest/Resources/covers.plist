@@ -4,63 +4,15 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>HIGHWAY TO PURGATORY</string>
+		<string>TRADER JOE&apos;S CON</string>
 		<key>creator</key>
-		<string>AC/DC</string>
-		<key>picture</key>
-		<string>1</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>IMMIGRANT SONG</string>
-		<key>creator</key>
-		<string>Led Zeppelin</string>
+		<string>A CONVENTION FOR TRADER JOE&apos;S ENTHUSIASTS</string>
 		<key>picture</key>
 		<string>2</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>SUNDAY BLOODY SUNDAY</string>
-		<key>creator</key>
-		<string>U2</string>
-		<key>picture</key>
-		<string>3</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>CHVRCHGOHERS</string>
-		<key>creator</key>
-		<string>Red Hot Chili Peppers</string>
-		<key>picture</key>
-		<string>4</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>ALL ALONG THE WATCHTOWER</string>
-		<key>creator</key>
-		<string>Jimi Hendrix</string>
-		<key>picture</key>
-		<string>5</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>DREAM ON</string>
-		<key>creator</key>
-		<string>Aerosmith</string>
-		<key>picture</key>
-		<string>6</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>ZIGGY STARDUST</string>
-		<key>creator</key>
-		<string>David Bowie</string>
-		<key>picture</key>
-		<string>7</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>LA GRANGE</string>
+		<string>CLICKBAIT FEST</string>
 		<key>creator</key>
 		<string>ZZ Top</string>
 		<key>picture</key>
@@ -68,7 +20,55 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>WON&apos;T GET FOOLED AGAIN</string>
+		<string>JUICE HACKATHON</string>
+		<key>creator</key>
+		<string>&quot;EDWARD SNOWED IN&quot;</string>
+		<key>picture</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>MUSICAS FESTIVALES</string>
+		<key>creator</key>
+		<string>Red Hot Chili Peppers</string>
+		<key>picture</key>
+		<string>4</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>BIRTHDAY CONVENTION</string>
+		<key>creator</key>
+		<string>Jimi Hendrix</string>
+		<key>picture</key>
+		<string>5</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>JUST A BAD AMUSEMENT PARK</string>
+		<key>creator</key>
+		<string>Aerosmith</string>
+		<key>picture</key>
+		<string>6</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>TECH FASHION EXPO</string>
+		<key>creator</key>
+		<string>A DISCOURSE ON SMART AND SEXY TECH WEARABLES</string>
+		<key>picture</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>POLITICAL RIOT FEST</string>
+		<key>creator</key>
+		<string>David Bowie</string>
+		<key>picture</key>
+		<string>7</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>1ST ANNUAL FILM FESTIVAL - FINAL YEAR</string>
 		<key>creator</key>
 		<string>The Who</string>
 		<key>picture</key>
@@ -76,7 +76,7 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>I CAN&apos;T GET NO</string>
+		<string>TED TALK: AN HOUR AT MARGARITAVILLE</string>
 		<key>creator</key>
 		<string>The Rolling Stones</string>
 		<key>picture</key>
@@ -84,7 +84,7 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>ROXANNE</string>
+		<string>NYF FEST (NASTALGIA YOUTH FEST FEST)</string>
 		<key>creator</key>
 		<string>The Police</string>
 		<key>picture</key>
@@ -92,7 +92,7 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>STAIRWAY TO PURGATORY</string>
+		<string>HIPSTER DOG CON</string>
 		<key>creator</key>
 		<string>Led Zeppelin</string>
 		<key>picture</key>

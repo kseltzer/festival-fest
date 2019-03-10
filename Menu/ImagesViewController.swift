@@ -5,6 +5,8 @@ protocol ImagesViewControllerDelegate: class {
   func imagesViewControllerDidScroll(_: ImagesViewController)
 }
 
+let COLOR_MUSTARD = UIColor(red:0.89, green:0.65, blue:0.22, alpha:1.0)
+
 class ImagesViewController: UIViewController {
   
   weak var delegate: ImagesViewControllerDelegate?
@@ -20,7 +22,7 @@ class ImagesViewController: UIViewController {
   
   lazy var collectionView: UICollectionView = {
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: self.collectionViewLayout)
-    collectionView.backgroundColor = .white
+    collectionView.backgroundColor = COLOR_MUSTARD
     return collectionView
   }()
   
@@ -33,9 +35,7 @@ class ImagesViewController: UIViewController {
     
     collectionView.dataSource = self
     collectionView.delegate = self
-    collectionView.register(
-      ImageCollectionViewCell.self,
-      forCellWithReuseIdentifier: ImageCollectionViewCell.reuseIdentifier)
+    collectionView.register(ImageCollectionViewCell.self, forCellWithReuseIdentifier: ImageCollectionViewCell.reuseIdentifier)
   }
   
   required init?(coder: NSCoder) {

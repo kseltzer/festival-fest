@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PHq-xA-3G2">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -8,44 +8,52 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="BungeeInline-Regular.ttf">
+            <string>BungeeInline-Regular</string>
+        </array>
+        <array key="BungeeShade-Regular.ttf">
+            <string>BungeeShade-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Landing View Controller-->
         <scene sceneID="MI7-NF-Vu9">
             <objects>
                 <viewController id="PHq-xA-3G2" customClass="LandingViewController" customModule="Festival_Fest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7bh-iq-SsK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dtla" translatesAutoresizingMaskIntoConstraints="NO" id="6NB-eC-Ftx" userLabel="Background Image">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dtla" translatesAutoresizingMaskIntoConstraints="NO" id="6NB-eC-Ftx" userLabel="Background Image">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XgQ-X6-hNn">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="Es6-6s-1DN">
-                                <rect key="frame" x="39" y="51" width="297.5" height="169.5"/>
+                                <rect key="frame" x="54" y="109" width="306" height="100"/>
                                 <string key="text">FESTIVAL
 FEST</string>
-                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="62"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BungeeShade-Regular" family="Bungee Shade" pointSize="50"/>
+                                <color key="textColor" white="0.25668402777777777" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7T6-qc-AHQ">
-                                <rect key="frame" x="44" y="379.5" width="287" height="190"/>
+                                <rect key="frame" x="44" y="652.5" width="326" height="50"/>
                                 <subviews>
                                     <visualEffectView opaque="NO" clipsSubviews="YES" alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUe-Ta-UNy">
-                                        <rect key="frame" x="0.0" y="0.0" width="287" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="326" height="50"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Khc-8w-615">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="326" height="50"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U4v-YI-FEv">
-                                                    <rect key="frame" x="0.0" y="0.0" width="287" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="326" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="Ldf-rt-Zvf">
-                                                        <rect key="frame" x="0.0" y="0.0" width="287" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="326" height="50"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfm-aB-3b3" userLabel="Allow">
@@ -75,90 +83,10 @@ FEST</string>
                                         </constraints>
                                         <blurEffect style="light"/>
                                     </visualEffectView>
-                                    <visualEffectView opaque="NO" clipsSubviews="YES" alpha="0.85000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qk6-kt-6Gh">
-                                        <rect key="frame" x="0.0" y="70" width="287" height="50"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6Pt-UY-ByT">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="50"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <subviews>
-                                                <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RAN-nh-DuL">
-                                                    <rect key="frame" x="0.0" y="0.0" width="287" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="c1w-uV-GYg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="287" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4C9-n4-1Jm" userLabel="Allow">
-                                                                <rect key="frame" x="120" y="5.5" width="48" height="34"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                                                <state key="normal" title="Allow">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="proceedTapped:" destination="PHq-xA-3G2" eventType="touchUpInside" id="fo3-gk-hOS"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="4C9-n4-1Jm" firstAttribute="centerX" secondItem="c1w-uV-GYg" secondAttribute="centerX" id="BAp-Rc-oa3"/>
-                                                            <constraint firstItem="4C9-n4-1Jm" firstAttribute="centerY" secondItem="c1w-uV-GYg" secondAttribute="centerY" id="lBb-PM-ZIf"/>
-                                                        </constraints>
-                                                    </view>
-                                                    <vibrancyEffect>
-                                                        <blurEffect style="dark"/>
-                                                    </vibrancyEffect>
-                                                </visualEffectView>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="q0Y-zu-fLz"/>
-                                        </constraints>
-                                        <blurEffect style="light"/>
-                                    </visualEffectView>
-                                    <visualEffectView opaque="NO" clipsSubviews="YES" alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e26-H7-mB2">
-                                        <rect key="frame" x="0.0" y="140" width="287" height="50"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="98R-f5-Mvq">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="50"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <subviews>
-                                                <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Zo-hj-hV5">
-                                                    <rect key="frame" x="0.0" y="0.0" width="287" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="h7I-tl-tTU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="287" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQK-dS-NTN" userLabel="Allow">
-                                                                <rect key="frame" x="124" y="5.5" width="38" height="34"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                                                <state key="normal" title="Skip">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="proceedTapped:" destination="PHq-xA-3G2" eventType="touchUpInside" id="ZsT-wW-Dds"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="FQK-dS-NTN" firstAttribute="centerY" secondItem="h7I-tl-tTU" secondAttribute="centerY" id="Gdx-7N-dIQ"/>
-                                                            <constraint firstItem="FQK-dS-NTN" firstAttribute="centerX" secondItem="h7I-tl-tTU" secondAttribute="centerX" id="ebz-ps-v7n"/>
-                                                        </constraints>
-                                                    </view>
-                                                    <vibrancyEffect>
-                                                        <blurEffect style="dark"/>
-                                                    </vibrancyEffect>
-                                                </visualEffectView>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="RNq-T1-Tyy"/>
-                                        </constraints>
-                                        <blurEffect style="light"/>
-                                    </visualEffectView>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMl-bz-BYk">
-                                <rect key="frame" x="44" y="379.5" width="287" height="190"/>
+                                <rect key="frame" x="44" y="652.5" width="326" height="50"/>
                                 <connections>
                                     <action selector="proceedTapped:" destination="PHq-xA-3G2" eventType="touchUpInside" id="f3W-sv-V7P"/>
                                 </connections>
@@ -178,9 +106,9 @@ FEST</string>
                             <constraint firstItem="6NB-eC-Ftx" firstAttribute="leading" secondItem="7bh-iq-SsK" secondAttribute="leading" id="Yjx-cn-8IS"/>
                             <constraint firstItem="7T6-qc-AHQ" firstAttribute="leading" secondItem="lCa-mH-IqF" secondAttribute="leading" constant="44" id="Zxh-tj-U09"/>
                             <constraint firstItem="6NB-eC-Ftx" firstAttribute="trailing" secondItem="7bh-iq-SsK" secondAttribute="trailing" id="bXI-Qn-fkB"/>
-                            <constraint firstItem="7T6-qc-AHQ" firstAttribute="centerY" secondItem="7bh-iq-SsK" secondAttribute="centerY" multiplier="4:3" constant="30" id="cOc-rS-eE1"/>
+                            <constraint firstItem="7T6-qc-AHQ" firstAttribute="centerY" secondItem="7bh-iq-SsK" secondAttribute="centerY" multiplier="4:3" constant="80" id="cOc-rS-eE1"/>
                             <constraint firstItem="XgQ-X6-hNn" firstAttribute="top" secondItem="7bh-iq-SsK" secondAttribute="top" id="d3J-rJ-nQl"/>
-                            <constraint firstItem="Es6-6s-1DN" firstAttribute="top" secondItem="lCa-mH-IqF" secondAttribute="top" constant="31" id="dZK-kr-4rh"/>
+                            <constraint firstItem="Es6-6s-1DN" firstAttribute="top" secondItem="lCa-mH-IqF" secondAttribute="top" constant="65" id="dZK-kr-4rh"/>
                             <constraint firstItem="6NB-eC-Ftx" firstAttribute="top" secondItem="7bh-iq-SsK" secondAttribute="top" id="gPb-If-aUd"/>
                             <constraint firstItem="6NB-eC-Ftx" firstAttribute="bottom" secondItem="7bh-iq-SsK" secondAttribute="bottom" id="v7q-Id-QVK"/>
                             <constraint firstItem="pMl-bz-BYk" firstAttribute="trailing" secondItem="7T6-qc-AHQ" secondAttribute="trailing" id="wCE-vu-axv"/>
@@ -192,11 +120,7 @@ FEST</string>
                     <connections>
                         <outlet property="bgView" destination="6NB-eC-Ftx" id="oQ2-SB-3SW"/>
                         <outletCollection property="blurViews" destination="mUe-Ta-UNy" collectionClass="NSMutableArray" id="qAw-gD-CZ4"/>
-                        <outletCollection property="blurViews" destination="e26-H7-mB2" collectionClass="NSMutableArray" id="eCZ-Pk-9NY"/>
                         <outletCollection property="buttonViews" destination="Khc-8w-615" collectionClass="NSMutableArray" id="zeE-Ny-w4m"/>
-                        <outletCollection property="buttonViews" destination="98R-f5-Mvq" collectionClass="NSMutableArray" id="3O0-hT-0b1"/>
-                        <outletCollection property="blurViews" destination="Qk6-kt-6Gh" collectionClass="NSMutableArray" id="CcU-Uq-chG"/>
-                        <outletCollection property="buttonViews" destination="6Pt-UY-ByT" collectionClass="NSMutableArray" id="aot-ad-b0h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bC8-Gi-yXH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -208,16 +132,17 @@ FEST</string>
             <objects>
                 <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xh0-xy-3CK" customClass="MenuViewController" customModule="Festival_Fest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6G9-af-qFp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FESTIVAL FEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Db1-BD-POU">
-                                <rect key="frame" x="105.5" y="40" width="164" height="31"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="22"/>
+                                <rect key="frame" x="101.5" y="64" width="211" height="26"/>
+                                <fontDescription key="fontDescription" name="BungeeInline-Regular" family="Bungee Inline" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.1803921568627451" blue="0.1764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Db1-BD-POU" firstAttribute="top" secondItem="vFr-JF-JdK" secondAttribute="top" constant="20" id="l0b-lK-9Pf"/>
                             <constraint firstItem="Db1-BD-POU" firstAttribute="centerX" secondItem="6G9-af-qFp" secondAttribute="centerX" id="rS9-zy-CGq"/>
