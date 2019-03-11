@@ -4,99 +4,35 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>TRADER JOE&apos;S CON</string>
-		<key>creator</key>
-		<string>A CONVENTION FOR TRADER JOE&apos;S ENTHUSIASTS</string>
+		<string>LIVERY KEYNOTE</string>
+		<key>subtitle</key>
+		<string>KIM SELTZER &amp; ALIYA KAMALOVA</string>
 		<key>picture</key>
 		<string>2</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>CLICKBAIT FEST</string>
-		<key>creator</key>
-		<string>ZZ Top</string>
+		<string>CANCER FEST</string>
+		<key>subtitle</key>
+		<string>NICK CIARELLI &amp; BRAD EVANS</string>
 		<key>picture</key>
 		<string>9</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>JUICE HACKATHON</string>
-		<key>creator</key>
-		<string>&quot;EDWARD SNOWED IN&quot;</string>
-		<key>picture</key>
-		<string>1</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>MUSICAS FESTIVALES</string>
-		<key>creator</key>
-		<string>Red Hot Chili Peppers</string>
+		<string>WASTE TECH TRADE SHOW</string>
+		<key>subtitle</key>
+		<string>LILY SULLIVAN &amp; KATY FULLAN</string>
 		<key>picture</key>
 		<string>4</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>BIRTHDAY CONVENTION</string>
-		<key>creator</key>
-		<string>Jimi Hendrix</string>
+		<string>COWBOY MUSIC FEST</string>
+		<key>subtitle</key>
+		<string>THE COOTIES</string>
 		<key>picture</key>
-		<string>5</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>JUST A BAD AMUSEMENT PARK</string>
-		<key>creator</key>
-		<string>Aerosmith</string>
-		<key>picture</key>
-		<string>6</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>TECH FASHION EXPO</string>
-		<key>creator</key>
-		<string>A DISCOURSE ON SMART AND SEXY TECH WEARABLES</string>
-		<key>picture</key>
-		<string>3</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>POLITICAL RIOT FEST</string>
-		<key>creator</key>
-		<string>David Bowie</string>
-		<key>picture</key>
-		<string>7</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>1ST ANNUAL FILM FESTIVAL - FINAL YEAR</string>
-		<key>creator</key>
-		<string>The Who</string>
-		<key>picture</key>
-		<string>10</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>TED TALK: AN HOUR AT MARGARITAVILLE</string>
-		<key>creator</key>
-		<string>The Rolling Stones</string>
-		<key>picture</key>
-		<string>12</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>NYF FEST (NASTALGIA YOUTH FEST FEST)</string>
-		<key>creator</key>
-		<string>The Police</string>
-		<key>picture</key>
-		<string>13</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>HIPSTER DOG CON</string>
-		<key>creator</key>
-		<string>Led Zeppelin</string>
-		<key>picture</key>
-		<string>14</string>
+		<string>1</string>
 	</dict>
 </array>
 </plist>

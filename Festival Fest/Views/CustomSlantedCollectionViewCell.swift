@@ -19,6 +19,7 @@ class CustomSlantedCollectionViewCell: CollectionViewSlantedCell {
     // MARK: - Outlets
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
     
     private var gradient = CAGradientLayer()
 
@@ -48,6 +49,12 @@ class CustomSlantedCollectionViewCell: CollectionViewSlantedCell {
     var title: String = "" {
         didSet {
             titleLabel.text = title
+        }
+    }
+    
+    var subtitle: String = "" {
+        didSet {
+            subtitleLabel.text = "ft. \(subtitle)"
         }
     }
     

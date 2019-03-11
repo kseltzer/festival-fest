@@ -9,6 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="JosefinSans-SemiBold.ttf">
+            <string>JosefinSans-SemiBold</string>
+        </array>
         <array key="Shrikhand-Regular.ttf">
             <string>Shrikhand-Regular</string>
         </array>
@@ -24,7 +27,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MiA-6H-Psc">
                                 <rect key="frame" x="0.0" y="152" width="375" height="515"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewLayout key="collectionViewLayout" id="cd2-ji-4Qz" customClass="CollectionViewSlantedLayout" customModule="CollectionViewSlantedLayout"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="customViewCell" reuseIdentifier="customViewCell" id="Uiw-AM-sx2" customClass="CustomSlantedCollectionViewCell" customModule="Festival_Fest" customModuleProvider="target">
@@ -45,24 +48,35 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sx-hC-vNb">
-                                                    <rect key="frame" x="12" y="160" width="70" height="35"/>
-                                                    <fontDescription key="fontDescription" name="Shrikhand-Regular" family="Shrikhand" pointSize="24"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="E5j-3Y-MQr">
+                                                    <rect key="frame" x="-12" y="143" width="212.5" height="52"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sx-hC-vNb">
+                                                            <rect key="frame" x="0.0" y="0.0" width="212.5" height="38"/>
+                                                            <fontDescription key="fontDescription" name="Shrikhand-Regular" family="Shrikhand" pointSize="26"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ft. Kim Seltzer &amp; Aliya Kamalova" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkz-Wi-KuC">
+                                                            <rect key="frame" x="0.0" y="38" width="212.5" height="14"/>
+                                                            <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans SemiBold" pointSize="14"/>
+                                                            <color key="textColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="2Sx-hC-vNb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Uiw-AM-sx2" secondAttribute="leadingMargin" constant="12" id="54O-zJ-haw"/>
-                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="2Sx-hC-vNb" secondAttribute="trailing" constant="12" id="9cL-Ub-9bu"/>
-                                            <constraint firstItem="2Sx-hC-vNb" firstAttribute="leading" secondItem="Uiw-AM-sx2" secondAttribute="leadingMargin" constant="4" id="UiP-fP-QTD"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="2Sx-hC-vNb" secondAttribute="bottom" constant="72" id="j3L-4t-UDw"/>
+                                            <constraint firstItem="E5j-3Y-MQr" firstAttribute="leading" secondItem="Uiw-AM-sx2" secondAttribute="leadingMargin" constant="-20" id="Izt-g8-yp7"/>
+                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="E5j-3Y-MQr" secondAttribute="trailing" constant="12" id="KUE-fB-pBr"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="E5j-3Y-MQr" secondAttribute="bottom" constant="72" id="uyr-hE-ndt"/>
                                         </constraints>
                                         <size key="customSize" width="375" height="275"/>
                                         <connections>
                                             <outlet property="backgroundView" destination="gRH-J2-Cbg" id="7Ut-hY-VVv"/>
                                             <outlet property="imageView" destination="0yZ-sB-2mz" id="bSy-Ae-9Lt"/>
+                                            <outlet property="subtitleLabel" destination="bkz-Wi-KuC" id="mJS-mm-W3x"/>
                                             <outlet property="titleLabel" destination="2Sx-hC-vNb" id="iuD-jU-SaS"/>
                                         </connections>
                                     </collectionViewCell>

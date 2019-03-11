@@ -31,7 +31,7 @@ class LineupViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
         collectionViewLayout.isFirstCellExcluded = true
         collectionViewLayout.isLastCellExcluded = true        
-        collectionViewLayout.lineSpacing = 8
+        collectionViewLayout.lineSpacing = 1
     }
     
     override func loadView() {
@@ -105,6 +105,7 @@ extension LineupViewController: UICollectionViewDataSource {
         
         cell.image = UIImage(named: covers[indexPath.row]["picture"]!)!
         cell.title = covers[indexPath.row]["title"] ?? ""
+        cell.subtitle = covers[indexPath.row]["subtitle"] ?? ""
         
         if let layout = collectionView.collectionViewLayout as? CollectionViewSlantedLayout {
             cell.contentView.transform = CGAffineTransform(rotationAngle: layout.slantingAngle)

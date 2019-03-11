@@ -73,7 +73,7 @@ class MenuViewController: UIViewController {
     private let items = [
         ImageItem(
             index: Screen.lineup.index(),
-            title: "2018 LINEUP",
+            title: "FESTIVAL LINEUP",
             headerImage: UIImage(named: Screen.lineup.name())!,
             images: []),
         ImageItem(
@@ -88,7 +88,7 @@ class MenuViewController: UIViewController {
             images: []),
         ImageItem(
             index: Screen.stages.index(),
-            title: "STAGES",
+            title: "TALENT",
             headerImage: UIImage(named: Screen.stages.name())!,
             images: []),
         ImageItem(

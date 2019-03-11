@@ -29,27 +29,27 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="nze-lD-jZG">
-                                <rect key="frame" x="50" y="51" width="275" height="144.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="oAr-Bj-izz">
+                                <rect key="frame" x="34.5" y="85" width="306" height="100"/>
                                 <string key="text">FESTIVAL
 FEST</string>
-                                <fontDescription key="fontDescription" name="BungeeShade-Regular" family="Bungee Shade" pointSize="62"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BungeeShade-Regular" family="Bungee Shade" pointSize="50"/>
+                                <color key="textColor" white="0.25668402779999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="oAr-Bj-izz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3QT-hx-ex9" secondAttribute="leading" constant="20" id="07H-Mm-gGN"/>
                             <constraint firstItem="hV9-80-19A" firstAttribute="top" secondItem="5qE-2F-6jR" secondAttribute="top" id="9nX-Aq-bwI"/>
-                            <constraint firstItem="3QT-hx-ex9" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nze-lD-jZG" secondAttribute="trailing" constant="20" id="H84-XD-fWJ"/>
-                            <constraint firstItem="nze-lD-jZG" firstAttribute="top" secondItem="3QT-hx-ex9" secondAttribute="top" constant="31" id="RsF-vh-j62"/>
-                            <constraint firstItem="nze-lD-jZG" firstAttribute="centerX" secondItem="5qE-2F-6jR" secondAttribute="centerX" id="Z1b-Qv-yRH"/>
+                            <constraint firstItem="oAr-Bj-izz" firstAttribute="top" secondItem="3QT-hx-ex9" secondAttribute="top" constant="65" id="aQF-rQ-iqf"/>
                             <constraint firstAttribute="trailing" secondItem="Bfq-Yy-JQx" secondAttribute="trailing" id="azX-vR-37F"/>
                             <constraint firstItem="hV9-80-19A" firstAttribute="bottom" secondItem="5qE-2F-6jR" secondAttribute="bottom" id="ggX-dx-Hbl"/>
                             <constraint firstItem="Bfq-Yy-JQx" firstAttribute="bottom" secondItem="5qE-2F-6jR" secondAttribute="bottom" id="iEt-K1-GAe"/>
                             <constraint firstItem="hV9-80-19A" firstAttribute="trailing" secondItem="5qE-2F-6jR" secondAttribute="trailing" id="leS-yl-b3M"/>
                             <constraint firstItem="hV9-80-19A" firstAttribute="leading" secondItem="5qE-2F-6jR" secondAttribute="leading" constant="-60" id="m7U-8I-tOC"/>
-                            <constraint firstItem="nze-lD-jZG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3QT-hx-ex9" secondAttribute="leading" constant="20" id="oNo-yL-dS8"/>
+                            <constraint firstItem="3QT-hx-ex9" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oAr-Bj-izz" secondAttribute="trailing" constant="20" id="o1F-lk-Zzy"/>
+                            <constraint firstItem="oAr-Bj-izz" firstAttribute="centerX" secondItem="5qE-2F-6jR" secondAttribute="centerX" id="smA-km-yYW"/>
                             <constraint firstItem="Bfq-Yy-JQx" firstAttribute="top" secondItem="5qE-2F-6jR" secondAttribute="top" id="wk2-10-ETN"/>
                             <constraint firstItem="Bfq-Yy-JQx" firstAttribute="leading" secondItem="5qE-2F-6jR" secondAttribute="leading" id="yyY-kW-YSB"/>
                         </constraints>
