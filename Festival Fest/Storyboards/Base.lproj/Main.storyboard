@@ -43,7 +43,7 @@ FEST</string>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7T6-qc-AHQ">
                                 <rect key="frame" x="44" y="652.5" width="326" height="50"/>
                                 <subviews>
-                                    <visualEffectView opaque="NO" clipsSubviews="YES" alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUe-Ta-UNy">
+                                    <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUe-Ta-UNy">
                                         <rect key="frame" x="0.0" y="0.0" width="326" height="50"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Khc-8w-615">
                                             <rect key="frame" x="0.0" y="0.0" width="326" height="50"/>
