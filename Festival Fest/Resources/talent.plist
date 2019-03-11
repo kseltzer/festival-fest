@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>ALIYA KAMALOVA</string>
+		<key>picture</key>
+		<string>aliya</string>
+		<key>subtitle</key>
+		<string>shows: LIVERY KEYNOTE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>KIM SELTZER</string>
+		<key>picture</key>
+		<string>kim</string>
+		<key>subtitle</key>
+		<string>shows: LIVERY KEYNOTE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>IAN ABRAMSON</string>
+		<key>picture</key>
+		<string>ian</string>
+		<key>subtitle</key>
+		<string>shows: LIVERY KEYNOTE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>THE COOTIES</string>
+		<key>picture</key>
+		<string>cooties</string>
+		<key>subtitle</key>
+		<string>shows: COWBOY MUSIC FEST</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>LILY SULLIVAN</string>
+		<key>picture</key>
+		<string>lily</string>
+		<key>subtitle</key>
+		<string>shows: WASTE TECH TRADE SHOW</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>KATY FULLAN</string>
+		<key>picture</key>
+		<string>katy</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>JOSH RUBEN</string>
+		<key>picture</key>
+		<string>josh</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>BRAD EVANS</string>
+		<key>picture</key>
+		<string>brad</string>
+		<key>subtitle</key>
+		<string>sponsor for 2019 Fuck You To Cancer</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>NICK CIARELLI</string>
+		<key>picture</key>
+		<string>nick</string>
+		<key>subtitle</key>
+		<string>sponsor for 2019 Fuck You To Cancer</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>MARY SASSON</string>
+		<key>picture</key>
+		<string>mary</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>JUSTIN MICHAEL</string>
+		<key>picture</key>
+		<string>justin</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>MANO AGAPIAN</string>
+		<key>picture</key>
+		<string>mano</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>DAN LIPPERT</string>
+		<key>picture</key>
+		<string>dan</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>JON MACKEY</string>
+		<key>picture</key>
+		<string>jon</string>
+	</dict>
+</array>
+</plist>

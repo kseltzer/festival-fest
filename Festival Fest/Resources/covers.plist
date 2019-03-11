@@ -6,7 +6,7 @@
 		<key>title</key>
 		<string>LIVERY KEYNOTE</string>
 		<key>subtitle</key>
-		<string>KIM SELTZER &amp; ALIYA KAMALOVA</string>
+		<string>ft. KIM SELTZER &amp; ALIYA KAMALOVA</string>
 		<key>picture</key>
 		<string>2</string>
 	</dict>
@@ -14,25 +14,25 @@
 		<key>title</key>
 		<string>CANCER FEST</string>
 		<key>subtitle</key>
-		<string>NICK CIARELLI &amp; BRAD EVANS</string>
+		<string>ft. NICK CIARELLI &amp; BRAD EVANS</string>
 		<key>picture</key>
 		<string>9</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>WASTE TECH TRADE SHOW</string>
+		<string>COWBOY MUSIC FEST</string>
 		<key>subtitle</key>
-		<string>LILY SULLIVAN &amp; KATY FULLAN</string>
+		<string>ft. THE COOTIES</string>
 		<key>picture</key>
-		<string>4</string>
+		<string>1</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>COWBOY MUSIC FEST</string>
+		<string>WASTE TECH TRADE SHOW</string>
 		<key>subtitle</key>
-		<string>THE COOTIES</string>
+		<string>ft. LILY SULLIVAN &amp; KATY FULLAN</string>
 		<key>picture</key>
-		<string>1</string>
+		<string>4</string>
 	</dict>
 </array>
 </plist>

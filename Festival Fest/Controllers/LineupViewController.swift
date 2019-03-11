@@ -11,14 +11,21 @@ import CollectionViewSlantedLayout
 
 class LineupViewController: UIViewController {
     
+    enum ContentType {
+        case lineup
+        case talent
+    }
+    
     // MARK: - Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewLayout: CollectionViewSlantedLayout!
     
     
     // MARK: - Variables
+    internal var talent = [[String:String]]()
     internal var covers = [[String: String]]()
     internal var names = [[String:String]]()
+    var contentType: ContentType = .talent
     
     
     // MARK: - Setup
@@ -39,6 +46,11 @@ class LineupViewController: UIViewController {
         if let url = Bundle.main.url(forResource: "covers", withExtension: "plist"),
             let contents = NSArray(contentsOf: url) as? [[String: String]] {
             covers = contents
+        }
+        
+        if let url = Bundle.main.url(forResource: "talent", withExtension: "plist"),
+            let contents = NSArray(contentsOf: url) as? [[String: String]] {
+            talent = contents
         }
     }
     
@@ -92,7 +104,12 @@ class LineupViewController: UIViewController {
 extension LineupViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return covers.count
+        switch contentType {
+        case .talent:
+            return talent.count
+        case .lineup:
+            return covers.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -103,9 +120,17 @@ extension LineupViewController: UICollectionViewDataSource {
                 fatalError()
         }
         
-        cell.image = UIImage(named: covers[indexPath.row]["picture"]!)!
-        cell.title = covers[indexPath.row]["title"] ?? ""
-        cell.subtitle = covers[indexPath.row]["subtitle"] ?? ""
+        switch contentType {
+        case .lineup:
+            cell.image = UIImage(named: covers[indexPath.row]["picture"]!)!
+            cell.title = covers[indexPath.row]["title"] ?? ""
+            cell.subtitle = covers[indexPath.row]["subtitle"] ?? ""
+        case .talent:
+            cell.image = UIImage(named: talent[indexPath.row]["picture"]!)!
+            cell.title = talent[indexPath.row]["name"] ?? ""
+            cell.subtitle = "🎤 \(talent[indexPath.row]["subtitle"] ?? "")"
+        }
+        
         
         if let layout = collectionView.collectionViewLayout as? CollectionViewSlantedLayout {
             cell.contentView.transform = CGAffineTransform(rotationAngle: layout.slantingAngle)

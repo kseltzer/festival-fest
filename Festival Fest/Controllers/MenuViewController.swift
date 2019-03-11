@@ -13,7 +13,7 @@ enum Screen: Int {
     case lineup = 0
     case schedule
     case map
-    case stages
+    case talent
     case sustainability
     case faq
     case about
@@ -31,8 +31,8 @@ enum Screen: Int {
             return "schedule"
         case .map:
             return "map"
-        case .stages:
-            return "stages"
+        case .talent:
+            return "talent"
         case .sustainability:
             return "sustainability"
         case .faq:
@@ -73,7 +73,7 @@ class MenuViewController: UIViewController {
     private let items = [
         ImageItem(
             index: Screen.lineup.index(),
-            title: "FESTIVAL LINEUP",
+            title: "LINEUP",
             headerImage: UIImage(named: Screen.lineup.name())!,
             images: []),
         ImageItem(
@@ -87,9 +87,9 @@ class MenuViewController: UIViewController {
             headerImage: UIImage(named: "\(Screen.map.name())-icon")!,
             images: []),
         ImageItem(
-            index: Screen.stages.index(),
+            index: Screen.talent.index(),
             title: "TALENT",
-            headerImage: UIImage(named: Screen.stages.name())!,
+            headerImage: UIImage(named: Screen.talent.name())!,
             images: []),
         ImageItem(
             index: Screen.sustainability.index(),
@@ -276,6 +276,14 @@ extension MenuViewController: PagingViewControllerDataSource {
             return UIStoryboard(name: kFAQStoryboard, bundle: nil).instantiateViewController(withIdentifier: kFAQViewController)
         case Screen.contact.rawValue:
             return UIStoryboard(name: kContactStoryboard, bundle: nil).instantiateViewController(withIdentifier: kContactViewController)
+        case Screen.lineup.rawValue:
+            let viewController = UIStoryboard(name: kLineupStoryboard, bundle: nil).instantiateViewController(withIdentifier: kLineupViewController) as! LineupViewController
+            viewController.contentType = .lineup
+            return viewController
+        case Screen.talent.rawValue:
+            let viewController = UIStoryboard(name: kLineupStoryboard, bundle: nil).instantiateViewController(withIdentifier: kLineupViewController) as! LineupViewController
+            viewController.contentType = .talent
+            return viewController
         default:
             break
         }
@@ -290,6 +298,7 @@ extension MenuViewController: PagingViewControllerDataSource {
             collectionView.contentInset = insets
             collectionView.scrollIndicatorInsets = insets
             vc.view.bounds = CGRect(x: 0, y: menuHeight, width: view.bounds.width, height: view.bounds.height)
+            
         }
         return viewController
     }

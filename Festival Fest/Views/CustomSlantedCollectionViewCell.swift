@@ -54,7 +54,7 @@ class CustomSlantedCollectionViewCell: CollectionViewSlantedCell {
     
     var subtitle: String = "" {
         didSet {
-            subtitleLabel.text = "ft. \(subtitle)"
+            subtitleLabel.text = subtitle
         }
     }
     
