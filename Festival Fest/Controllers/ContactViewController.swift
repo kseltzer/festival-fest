@@ -17,6 +17,10 @@ class ContactViewController: UIViewController {
     }
     
 
+    @IBAction func callSenatorButtonTapped(_ sender: UIButton) {
+        print("call senator tapped")
+    }
+    
     /*
     // MARK: - Navigation
 

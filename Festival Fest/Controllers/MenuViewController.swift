@@ -123,7 +123,7 @@ class MenuViewController: UIViewController {
     private var menuInsets: UIEdgeInsets {
         var top: CGFloat = 42
         switch phoneType {
-        case .six:
+        case .six, .sixPlus:
             top = 42
         case .xsMax, .xr, .x:
             top = 94
