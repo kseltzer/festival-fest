@@ -49,7 +49,7 @@
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="E5j-3Y-MQr">
-                                                    <rect key="frame" x="-12" y="143" width="212.5" height="52"/>
+                                                    <rect key="frame" x="-12" y="139" width="212.5" height="52"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sx-hC-vNb">
                                                             <rect key="frame" x="0.0" y="0.0" width="212.5" height="38"/>
@@ -70,7 +70,7 @@
                                         <constraints>
                                             <constraint firstItem="E5j-3Y-MQr" firstAttribute="leading" secondItem="Uiw-AM-sx2" secondAttribute="leadingMargin" constant="-20" id="Izt-g8-yp7"/>
                                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="E5j-3Y-MQr" secondAttribute="trailing" constant="12" id="KUE-fB-pBr"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="E5j-3Y-MQr" secondAttribute="bottom" constant="72" id="uyr-hE-ndt"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="E5j-3Y-MQr" secondAttribute="bottom" constant="76" id="uyr-hE-ndt"/>
                                         </constraints>
                                         <size key="customSize" width="375" height="275"/>
                                         <connections>
@@ -95,6 +95,7 @@
                     <connections>
                         <outlet property="collectionView" destination="MiA-6H-Psc" id="T6b-ws-0Ub"/>
                         <outlet property="collectionViewLayout" destination="cd2-ji-4Qz" id="T0T-t5-fVf"/>
+                        <outlet property="collectionViewTopConstraint" destination="PCR-n8-97P" id="Aac-P7-WlC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xSx-Is-ooM" userLabel="First Responder" sceneMemberID="firstResponder"/>

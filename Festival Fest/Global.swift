@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 // MARK: - Storyboard Ids
 
@@ -32,3 +33,17 @@ let kSlantedCellReuseIdentifier = "customViewCell"
 let kEventCell = "EventCell"
 let kQACell = "QACell"
 
+
+// MARK: - Phone Type
+var phoneType: PhoneType = .x
+enum PhoneType: CGFloat { // float = screen height
+    case six = 1334 // 6, 6s, 7, 8
+    case x = 2436 // x and xs
+    case xr = 1792
+    case xsMax = 2688
+    case se = 1136
+    
+    func height() -> CGFloat {
+        return rawValue
+    }
+}

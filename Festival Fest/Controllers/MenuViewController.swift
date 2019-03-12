@@ -119,7 +119,20 @@ class MenuViewController: UIViewController {
     // Store the menu insets and item size and use that to calculate
     // the height of the collection view. We will use these values later
     // to calculate the height of the menu based on the scroll.
-    private let menuInsets = UIEdgeInsets(top: 42, left: 8, bottom: 12, right: 8)
+//    private let menuInsets = UIEdgeInsets(top: 42, left: 8, bottom: 12, right: 8)
+    private var menuInsets: UIEdgeInsets {
+        var top: CGFloat = 42
+        switch phoneType {
+        case .six:
+            top = 42
+        case .xsMax, .xr, .x:
+            top = 94
+        default:
+            break
+        }
+        return UIEdgeInsets(top: top, left: 8, bottom: 12, right: 8)
+    }
+    
     private let menuItemSize = CGSize(width: 120, height: 80)
     
     private var menuHeight: CGFloat {
@@ -279,6 +292,14 @@ extension MenuViewController: PagingViewControllerDataSource {
         case Screen.lineup.rawValue:
             let viewController = UIStoryboard(name: kLineupStoryboard, bundle: nil).instantiateViewController(withIdentifier: kLineupViewController) as! LineupViewController
             viewController.contentType = .lineup
+            
+            let insets = UIEdgeInsets(top: menuHeight, left: 0, bottom: 0, right: 0)
+            
+            if let collectionView = viewController.collectionView {
+                collectionView.contentInset = insets
+                collectionView.scrollIndicatorInsets = insets
+                viewController.view.bounds = CGRect(x: 0, y: menuHeight, width: view.bounds.width, height: view.bounds.height)
+            }
             return viewController
         case Screen.talent.rawValue:
             let viewController = UIStoryboard(name: kLineupStoryboard, bundle: nil).instantiateViewController(withIdentifier: kLineupViewController) as! LineupViewController
@@ -298,7 +319,6 @@ extension MenuViewController: PagingViewControllerDataSource {
             collectionView.contentInset = insets
             collectionView.scrollIndicatorInsets = insets
             vc.view.bounds = CGRect(x: 0, y: menuHeight, width: view.bounds.width, height: view.bounds.height)
-            
         }
         return viewController
     }

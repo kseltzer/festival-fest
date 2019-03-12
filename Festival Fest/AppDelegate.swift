@@ -17,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        // determine phone size
+        let screenSize = UIScreen.main.nativeBounds.size
+        phoneType = PhoneType(rawValue: screenSize.height) ?? .x
+        
+        // print names of fonts
         for family: String in UIFont.familyNames
         {
             print(family)

@@ -19,6 +19,7 @@ class LineupViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewLayout: CollectionViewSlantedLayout!
+    @IBOutlet weak var collectionViewTopConstraint: NSLayoutConstraint!
     
     
     // MARK: - Variables
@@ -39,6 +40,15 @@ class LineupViewController: UIViewController {
         collectionViewLayout.isFirstCellExcluded = true
         collectionViewLayout.isLastCellExcluded = true        
         collectionViewLayout.lineSpacing = 1
+        
+        switch phoneType {
+        case .six:
+            collectionViewTopConstraint.constant = 132
+        case .xr, .xsMax, .x:
+            collectionViewTopConstraint.constant = 160
+        default:
+            break
+        }
     }
     
     override func loadView() {
@@ -128,9 +138,8 @@ extension LineupViewController: UICollectionViewDataSource {
         case .talent:
             cell.image = UIImage(named: talent[indexPath.row]["picture"]!)!
             cell.title = talent[indexPath.row]["name"] ?? ""
-            cell.subtitle = "🎤 \(talent[indexPath.row]["subtitle"] ?? "")"
+            cell.subtitle = talent[indexPath.row]["subtitle"] ?? ""
         }
-        
         
         if let layout = collectionView.collectionViewLayout as? CollectionViewSlantedLayout {
             cell.contentView.transform = CGAffineTransform(rotationAngle: layout.slantingAngle)
