@@ -8,6 +8,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="JosefinSans-Bold.ttf">
+            <string>JosefinSans-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Contact View Controller-->
         <scene sceneID="DRw-wM-52u">
@@ -18,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CR2-bl-Cya">
-                                <rect key="frame" x="77.5" y="219.5" width="220" height="328"/>
+                                <rect key="frame" x="77.5" y="195.5" width="220" height="376"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enJ-oU-7w3" customClass="RoundedCornersButton" customModule="Festival_Fest" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="220" height="40"/>
@@ -42,7 +47,7 @@
                                             <constraint firstAttribute="width" constant="220" id="KUf-wi-gvT"/>
                                             <constraint firstAttribute="height" constant="40" id="cw3-RK-NXd"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                         <state key="normal" title="Call Your Senator">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -57,7 +62,7 @@
                                             <constraint firstAttribute="height" constant="40" id="iXd-L2-0bw"/>
                                             <constraint firstAttribute="width" constant="220" id="yQW-M9-peT"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                         <state key="normal" title="Call Your Senator">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -72,7 +77,7 @@
                                             <constraint firstAttribute="height" constant="40" id="jE8-Wl-4Q6"/>
                                             <constraint firstAttribute="width" constant="220" id="lGD-H1-5YX"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                         <state key="normal" title="Call Your Senator">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -87,7 +92,7 @@
                                             <constraint firstAttribute="height" constant="40" id="X8T-s5-fNT"/>
                                             <constraint firstAttribute="width" constant="220" id="maL-cY-zYl"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                         <state key="normal" title="Call Your Senator">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -95,14 +100,29 @@
                                             <action selector="callSenatorButtonTapped:" destination="3Hd-vF-qBO" eventType="touchUpInside" id="ByM-yP-lCE"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bze-aI-hXS" customClass="RoundedCornersButton" customModule="Festival_Fest" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uf1-YZ-XKr" customClass="RoundedCornersButton" customModule="Festival_Fest" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="240" width="220" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="JSd-cl-UNF"/>
+                                            <constraint firstAttribute="height" constant="40" id="lvp-o8-jgB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
+                                        <state key="normal" title="Contact Festival Fest">
+                                            <color key="titleColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="contactFestButtonTapped:" destination="3Hd-vF-qBO" eventType="touchUpInside" id="qvX-fS-zHB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bze-aI-hXS" customClass="RoundedCornersButton" customModule="Festival_Fest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="288" width="220" height="40"/>
                                         <color key="backgroundColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="220" id="JaD-i5-Fej"/>
                                             <constraint firstAttribute="height" constant="40" id="MZJ-Wq-591"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                         <state key="normal" title="Call Your Senator">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -111,13 +131,13 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqI-hs-Cf3" customClass="RoundedCornersButton" customModule="Festival_Fest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="288" width="220" height="40"/>
+                                        <rect key="frame" x="0.0" y="336" width="220" height="40"/>
                                         <color key="backgroundColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Zcf-46-fpo"/>
                                             <constraint firstAttribute="width" constant="220" id="vJx-XE-NDx"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                         <state key="normal" title="Call Your Senator">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -135,6 +155,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ahb-BQ-yfU"/>
                     </view>
+                    <connections>
+                        <outlet property="contactFestButton" destination="Uf1-YZ-XKr" id="wlP-P8-7b3"/>
+                        <outletCollection property="callSenatorButtons" destination="enJ-oU-7w3" collectionClass="NSMutableArray" id="1Bg-0p-Zh6"/>
+                        <outletCollection property="callSenatorButtons" destination="5ID-Hd-ib4" collectionClass="NSMutableArray" id="y7V-Mp-4gn"/>
+                        <outletCollection property="callSenatorButtons" destination="KqI-hs-Cf3" collectionClass="NSMutableArray" id="RXG-sK-yei"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LgU-uW-rcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

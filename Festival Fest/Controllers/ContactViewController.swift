@@ -10,25 +10,38 @@ import UIKit
 
 class ContactViewController: UIViewController {
 
+    // MARK: - Outlets
+    @IBOutlet var callSenatorButtons: [RoundedCornersButton]!
+    @IBOutlet weak var contactFestButton: RoundedCornersButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    
+    // MARK: - Actions
+    @IBAction func contactFestButtonTapped(_ sender: UIButton) {
+        print("conact fest tapped")
+        sender.animateTap()
+        
+        let email = "thebestfriendsshowla@gmail.com"
+        if let url = URL(string: "mailto:\(email)") {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
     }
     
 
     @IBAction func callSenatorButtonTapped(_ sender: UIButton) {
         print("call senator tapped")
+        sender.animateTap()
+        
+        let senatorHotlineNumber = "2022243121"
+        guard let number = URL(string: "tel://" + senatorHotlineNumber) else { return }
+        UIApplication.shared.open(number)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
