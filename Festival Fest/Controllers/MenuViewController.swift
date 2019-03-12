@@ -305,6 +305,8 @@ extension MenuViewController: PagingViewControllerDataSource {
             let viewController = UIStoryboard(name: kLineupStoryboard, bundle: nil).instantiateViewController(withIdentifier: kLineupViewController) as! LineupViewController
             viewController.contentType = .talent
             return viewController
+        case Screen.about.rawValue:
+            return UIStoryboard(name: kAboutStoryboard, bundle: nil).instantiateViewController(withIdentifier: kAboutViewController)
         default:
             break
         }

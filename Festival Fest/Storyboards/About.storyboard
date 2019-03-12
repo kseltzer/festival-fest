@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About View Controller-->
+        <scene sceneID="yTP-69-hSl">
+            <objects>
+                <viewController storyboardIdentifier="AboutViewController" id="qxC-u9-ILu" customClass="AboutViewController" customModule="Festival_Fest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4P5-lQ-4aM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gIr-g8-meB">
+                                <rect key="frame" x="0.0" y="132" width="375" height="535"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.1803921568627451" blue="0.17647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AboutCell" rowHeight="425" id="n4u-zb-8DL">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="425"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n4u-zb-8DL" id="jQ6-5J-EBg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="425"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="qOj-3F-Qf8">
+                                                    <rect key="frame" x="12" y="12" width="351" height="401"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ABOUT FESTIVAL FEST" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQq-ma-qGM">
+                                                            <rect key="frame" x="0.0" y="0.0" width="240.5" height="30.5"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFN-gp-pfU">
+                                                            <rect key="frame" x="0.0" y="36.5" width="351" height="364.5"/>
+                                                            <mutableString key="text">Festival Fest is a long overdue celebration of festival culture. 
+
+Horrifyingly, 9 in 10 festivals go their entire existence without being SXSW or even just being JFL. To raise awareness of this chilling statistic and to make a pretty penny, The Best Friends Show is proud to introduce the first and yeah, last, annual one-off Festival Fest.
+
+In 2019, Festival Fest came flying out of the psychotic minds of Kim &amp; Aliya and has undeniably come to life (perhaps sentiently--PLEASE let us know if you find evidence of this) with the help of producer Katherine Leon. Together, these stupid, stupid women embarked on what would soon be canonically known as a “potentially huge mistake” where they simply planned the festival. They brought together the top engineers, chefs, dancers, innovators, podcasters, extroverts, and narcissists from all across LA (or as we like to call it, per a hilarious inside joke that I'm sorry but there is just NOT time to explain: “The Pond”) for one impressively long night of festivals, one after the other.
+
+Fest Fest is the perfect festival for any Angeleno that is simply in the wrong headspace for traveling. This is in the Arts District, honey. And that's one of our selling points.
+
+Still have questions? Call your senator cuz we're busy freaking the F out about whether or not this will all come together.
+
+Festival Fest. A festival for the rest of all.</mutableString>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qOj-3F-Qf8" secondAttribute="bottom" constant="12" id="I0j-RC-n2V"/>
+                                                <constraint firstItem="qOj-3F-Qf8" firstAttribute="leading" secondItem="jQ6-5J-EBg" secondAttribute="leading" constant="12" id="jUR-5K-kNZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="qOj-3F-Qf8" secondAttribute="trailing" constant="12" id="oYb-oE-btC"/>
+                                                <constraint firstItem="qOj-3F-Qf8" firstAttribute="top" secondItem="jQ6-5J-EBg" secondAttribute="top" constant="12" id="sdj-0Y-53u"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.20392156859999999" green="0.18039215689999999" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gIr-g8-meB" firstAttribute="leading" secondItem="4P5-lQ-4aM" secondAttribute="leading" id="9cZ-Cv-ylj"/>
+                            <constraint firstItem="pgw-HE-4H6" firstAttribute="trailing" secondItem="gIr-g8-meB" secondAttribute="trailing" id="Ygg-z4-6wx"/>
+                            <constraint firstItem="gIr-g8-meB" firstAttribute="top" secondItem="4P5-lQ-4aM" secondAttribute="top" constant="132" id="ecm-xO-Xor"/>
+                            <constraint firstItem="pgw-HE-4H6" firstAttribute="bottom" secondItem="gIr-g8-meB" secondAttribute="bottom" id="h0u-6t-56y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pgw-HE-4H6"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="gIr-g8-meB" id="YEb-BJ-VyR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v5W-9r-nqW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="211.84407796101951"/>
+        </scene>
+    </scenes>
+</document>
