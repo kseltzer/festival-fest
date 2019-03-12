@@ -19,6 +19,7 @@ let kMapStoryboard = "Map"
 let kFAQStoryboard = "FAQ"
 let kContactStoryboard = "Contact"
 let kAboutStoryboard = "About"
+let kVenueStoryboard = "Venue"
 
 // View Controllers
 let kMenuViewController = "MenuViewController"
@@ -29,12 +30,14 @@ let kMapViewController = "MapViewController"
 let kFAQViewController = "FAQViewController"
 let kContactViewController = "ContactViewController"
 let kAboutViewController = "AboutViewController"
+let kVenueViewController = "VenueViewController"
 
 // Cells
 let kSlantedCellReuseIdentifier = "customViewCell"
 let kEventCell = "EventCell"
 let kQACell = "QACell"
 let kAboutCell = "AboutCell"
+let kMapCell = "MapCell"
 
 
 // MARK: - Phone Type

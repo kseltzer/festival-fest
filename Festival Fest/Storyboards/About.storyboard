@@ -42,13 +42,13 @@
                                                             <rect key="frame" x="0.0" y="36.5" width="351" height="364.5"/>
                                                             <mutableString key="text">Festival Fest is a long overdue celebration of festival culture. 
 
-Horrifyingly, 9 in 10 festivals go their entire existence without being SXSW or even just being JFL. To raise awareness of this chilling statistic and to make a pretty penny, The Best Friends Show is proud to introduce the first and yeah, last, annual one-off Festival Fest.
+Horrifyingly, 9 in 10 festivals go their entire existence without being SXSW or even just being JFL. To raise awareness of this chilling statistic and to make a pretty penny, The Best Friends Show is proud to introduce the first and yeah, last, annual one-off Festival Fest: a festival in which every act is from different festival.
 
-In 2019, Festival Fest came flying out of the psychotic minds of Kim &amp; Aliya and has undeniably come to life (perhaps sentiently--PLEASE let us know if you find evidence of this) with the help of producer Katherine Leon. Together, these stupid, stupid women embarked on what would soon be canonically known as a “potentially huge mistake” where they simply planned the festival. They brought together the top engineers, chefs, dancers, innovators, podcasters, extroverts, and narcissists from all across LA (or as we like to call it, per a hilarious inside joke that I'm sorry but there is just NOT time to explain: “The Pond”) for one impressively long night of festivals, one after the other.
+In 2019, Festival Fest came flying out of the psychotic minds of Kim &amp; Aliya and has come to life (perhaps sentiently--PLEASE let us know if you find evidence of this) with the help of producer Katherine Leon. Together, these stupid, stupid women embarked on what would soon be canonically known as a “potentially huge mistake” where they simply planned the festival. They brought together the top engineers, chefs, waste management technicians, dancers, innovators, podcasters, extroverts, and narcissists from all across LA (or as we like to call it, per a hilarious inside joke that I'm sorry but there is just NOT time to explain: “The Pond”) for one impressively long night of festivals, one after the other.
 
 Fest Fest is the perfect festival for any Angeleno that is simply in the wrong headspace for traveling. This is in the Arts District, honey. And that's one of our selling points.
 
-Still have questions? Call your senator cuz we're busy freaking the F out about whether or not this will all come together.
+Still have questions? So do we.
 
 Festival Fest. A festival for the rest of all.</mutableString>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
@@ -81,6 +81,7 @@ Festival Fest. A festival for the rest of all.</mutableString>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="gIr-g8-meB" id="YEb-BJ-VyR"/>
+                        <outlet property="tableViewTopConstraint" destination="ecm-xO-Xor" id="y3a-fb-keZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v5W-9r-nqW" userLabel="First Responder" sceneMemberID="firstResponder"/>

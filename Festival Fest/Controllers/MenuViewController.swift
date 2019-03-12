@@ -11,10 +11,10 @@ import Parchment
 
 enum Screen: Int {
     case lineup = 0
-    case schedule
     case map
     case talent
-    case sustainability
+    case schedule
+    case venue
     case faq
     case about
     case contact
@@ -27,14 +27,14 @@ enum Screen: Int {
         switch self {
         case .lineup:
             return "lineup"
-        case .schedule:
-            return "schedule"
         case .map:
             return "map"
+        case .schedule:
+            return "schedule"
         case .talent:
             return "talent"
-        case .sustainability:
-            return "sustainability"
+        case .venue:
+            return "venue"
         case .faq:
             return "faq"
         case .about:
@@ -77,14 +77,14 @@ class MenuViewController: UIViewController {
             headerImage: UIImage(named: Screen.lineup.name())!,
             images: []),
         ImageItem(
-            index: Screen.schedule.index(),
-            title: "SCHEDULE",
-            headerImage: UIImage(named: Screen.schedule.name())!,
-            images: []),
-        ImageItem(
             index: Screen.map.index(),
             title: "MAP",
             headerImage: UIImage(named: "\(Screen.map.name())-icon")!,
+            images: []),
+        ImageItem(
+            index: Screen.schedule.index(),
+            title: "SCHEDULE",
+            headerImage: UIImage(named: Screen.schedule.name())!,
             images: []),
         ImageItem(
             index: Screen.talent.index(),
@@ -92,9 +92,9 @@ class MenuViewController: UIViewController {
             headerImage: UIImage(named: Screen.talent.name())!,
             images: []),
         ImageItem(
-            index: Screen.sustainability.index(),
-            title: "SUSTAINABILITY",
-            headerImage: UIImage(named: Screen.sustainability.name())!,
+            index: Screen.venue.index(),
+            title: "VENUE",
+            headerImage: UIImage(named: Screen.venue.name())!,
             images: []),
         ImageItem(
             index: Screen.faq.index(),
@@ -111,7 +111,9 @@ class MenuViewController: UIViewController {
             title: "CONTACT",
             headerImage: UIImage(named: Screen.contact.name())!,
             images: [])
-    ]
+        ].sorted { (x, y) -> Bool in
+            x.index < y.index
+        }
     
     // Create our custom paging view controller.
     private let pagingViewController = CustomPagingViewController()
@@ -307,6 +309,8 @@ extension MenuViewController: PagingViewControllerDataSource {
             return viewController
         case Screen.about.rawValue:
             return UIStoryboard(name: kAboutStoryboard, bundle: nil).instantiateViewController(withIdentifier: kAboutViewController)
+        case Screen.venue.rawValue:
+            return UIStoryboard(name: kVenueStoryboard, bundle: nil).instantiateViewController(withIdentifier: kVenueViewController)
         default:
             break
         }

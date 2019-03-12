@@ -16,6 +16,9 @@
 		4E4CB1BC21F6C61A00C7E08C /* Lineup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4CB1BB21F6C61A00C7E08C /* Lineup.storyboard */; };
 		4E4CB1BE21F6C63100C7E08C /* LineupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4CB1BD21F6C63100C7E08C /* LineupViewController.swift */; };
 		4E4FE53021F730E9009DAF02 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4FE52F21F730E9009DAF02 /* MenuViewController.swift */; };
+		4E82898722385D1A00A23338 /* Venue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E82898622385D1A00A23338 /* Venue.storyboard */; };
+		4E82898922385DF300A23338 /* VenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E82898822385DF300A23338 /* VenueViewController.swift */; };
+		4E82898B223871A900A23338 /* UIView+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E82898A223871A900A23338 /* UIView+Animate.swift */; };
 		4E981E13223456240002DEA4 /* BungeeShade-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E981E12223456240002DEA4 /* BungeeShade-Regular.ttf */; };
 		4E981E292234563F0002DEA4 /* Shrikhand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E981E282234563F0002DEA4 /* Shrikhand-Regular.ttf */; };
 		4E981E2C2235C7A30002DEA4 /* BungeeInline-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E981E2B2235C7A30002DEA4 /* BungeeInline-Regular.ttf */; };
@@ -55,6 +58,9 @@
 		4E4CB1BB21F6C61A00C7E08C /* Lineup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lineup.storyboard; sourceTree = "<group>"; };
 		4E4CB1BD21F6C63100C7E08C /* LineupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupViewController.swift; sourceTree = "<group>"; };
 		4E4FE52F21F730E9009DAF02 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		4E82898622385D1A00A23338 /* Venue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Venue.storyboard; sourceTree = "<group>"; };
+		4E82898822385DF300A23338 /* VenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueViewController.swift; sourceTree = "<group>"; };
+		4E82898A223871A900A23338 /* UIView+Animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animate.swift"; sourceTree = "<group>"; };
 		4E981E12223456240002DEA4 /* BungeeShade-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BungeeShade-Regular.ttf"; sourceTree = "<group>"; };
 		4E981E282234563F0002DEA4 /* Shrikhand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shrikhand-Regular.ttf"; sourceTree = "<group>"; };
 		4E981E2B2235C7A30002DEA4 /* BungeeInline-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BungeeInline-Regular.ttf"; sourceTree = "<group>"; };
@@ -143,6 +149,7 @@
 				4EC83D6121F8126A00ED75E4 /* FAQViewController.swift */,
 				4EC83D6521F82B0D00ED75E4 /* ContactViewController.swift */,
 				4E981E3522373C310002DEA4 /* AboutViewController.swift */,
+				4E82898822385DF300A23338 /* VenueViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -173,6 +180,7 @@
 				4EC83D5F21F8122000ED75E4 /* FAQ.storyboard */,
 				4EC83D6321F82AEE00ED75E4 /* Contact.storyboard */,
 				4E981E3722373C3F0002DEA4 /* About.storyboard */,
+				4E82898622385D1A00A23338 /* Venue.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -205,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				4EC83D6821F82BE500ED75E4 /* UIButton+UI.swift */,
+				4E82898A223871A900A23338 /* UIView+Animate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -312,6 +321,7 @@
 				4E9931F521F7FE38009C345F /* Schedule.storyboard in Resources */,
 				4E981E322235CF780002DEA4 /* JosefinSans-Regular.ttf in Resources */,
 				4E981E342235FCE90002DEA4 /* talent.plist in Resources */,
+				4E82898722385D1A00A23338 /* Venue.storyboard in Resources */,
 				4E981E312235CF780002DEA4 /* JosefinSans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,9 +380,11 @@
 				4E4FE53021F730E9009DAF02 /* MenuViewController.swift in Sources */,
 				4EC83D6921F82BE500ED75E4 /* UIButton+UI.swift in Sources */,
 				4E9931F721F7FE45009C345F /* ScheduleViewController.swift in Sources */,
+				4E82898B223871A900A23338 /* UIView+Animate.swift in Sources */,
 				4EB48AC721F732DF00DCDE7D /* ImagesViewController.swift in Sources */,
 				4EE0CE7921F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift in Sources */,
 				4EC83D5E21F8098000ED75E4 /* MapViewController.swift in Sources */,
+				4E82898922385DF300A23338 /* VenueViewController.swift in Sources */,
 				4EC83D6621F82B0D00ED75E4 /* ContactViewController.swift in Sources */,
 				4EB48AC321F732AF00DCDE7D /* UIView+Constraints.swift in Sources */,
 				4EB48AC921F732DF00DCDE7D /* ImagePagingCell.swift in Sources */,

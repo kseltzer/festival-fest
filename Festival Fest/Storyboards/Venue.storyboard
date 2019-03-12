@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="JosefinSans-Regular.ttf">
+            <string>JosefinSans-Regular</string>
+        </array>
+        <array key="JosefinSans-SemiBold.ttf">
+            <string>JosefinSans-SemiBold</string>
+        </array>
+        <array key="Shrikhand-Regular.ttf">
+            <string>Shrikhand-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Venue View Controller-->
+        <scene sceneID="lB4-Ei-d17">
+            <objects>
+                <viewController storyboardIdentifier="VenueViewController" id="V5U-Jf-viF" customClass="VenueViewController" customModule="Festival_Fest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZUX-Hm-uYn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qiB-Nb-tZc">
+                                <rect key="frame" x="0.0" y="132" width="375" height="535"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mcF-6h-8PZ">
+                                        <rect key="frame" x="74" y="83" width="227" height="329.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="BRM-JI-exl" userLabel="Date Stack View">
+                                                <rect key="frame" x="38.5" y="0.0" width="150.5" height="39"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DATE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBJ-6h-jgD">
+                                                        <rect key="frame" x="60.5" y="0.0" width="29" height="11"/>
+                                                        <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="11"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="March 23, 2019" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGz-81-G7N">
+                                                        <rect key="frame" x="0.0" y="17" width="150.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="d59-ce-NxI"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="rj7-Z9-rFb" userLabel="Time Stack View">
+                                                <rect key="frame" x="41.5" y="69" width="144.5" height="61"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3n-a4-QGT">
+                                                        <rect key="frame" x="58.5" y="0.0" width="27.5" height="11"/>
+                                                        <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="11"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6e-JG-1w1">
+                                                        <rect key="frame" x="0.0" y="17" width="144.5" height="44"/>
+                                                        <string key="text">Doors 7pm
+Showtime 8pm</string>
+                                                        <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="Q9C-to-VYA"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="VQn-i2-Fqk">
+                                                <rect key="frame" x="0.0" y="160" width="227" height="99.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VENUE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7N-LL-UM8">
+                                                        <rect key="frame" x="93.5" y="0.0" width="40" height="11"/>
+                                                        <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="11"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE HUB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKs-bb-EXq">
+                                                        <rect key="frame" x="60" y="17" width="107" height="32.5"/>
+                                                        <fontDescription key="fontDescription" name="Shrikhand-Regular" family="Shrikhand" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjS-eO-l4P">
+                                                        <rect key="frame" x="0.0" y="55.5" width="227" height="44"/>
+                                                        <string key="text">830 Traction Ave
+Los Angeles, CA 90013</string>
+                                                        <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgv-vc-rxt" customClass="RoundedCornersButton" customModule="Festival_Fest" customModuleProvider="target">
+                                                <rect key="frame" x="27.5" y="289.5" width="172" height="40"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="172" id="Q1F-s4-g6H"/>
+                                                    <constraint firstAttribute="height" constant="40" id="rxh-DM-FF9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans SemiBold" pointSize="21"/>
+                                                <state key="normal" title="DIRECTIONS">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="V5U-Jf-viF" eventType="touchUpInside" id="utf-dz-fKt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="mcF-6h-8PZ" firstAttribute="centerX" secondItem="qiB-Nb-tZc" secondAttribute="centerX" id="CoM-oa-CcQ"/>
+                                    <constraint firstItem="mcF-6h-8PZ" firstAttribute="centerY" secondItem="qiB-Nb-tZc" secondAttribute="centerY" constant="-20" id="hi0-cH-Rc0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Hp-Hq-otK" firstAttribute="trailing" secondItem="qiB-Nb-tZc" secondAttribute="trailing" id="Hm9-6c-iEK"/>
+                            <constraint firstItem="qiB-Nb-tZc" firstAttribute="leading" secondItem="4Hp-Hq-otK" secondAttribute="leading" id="bBz-s5-ZZE"/>
+                            <constraint firstItem="qiB-Nb-tZc" firstAttribute="top" secondItem="ZUX-Hm-uYn" secondAttribute="top" constant="132" id="mZS-iS-XdJ"/>
+                            <constraint firstItem="4Hp-Hq-otK" firstAttribute="bottom" secondItem="qiB-Nb-tZc" secondAttribute="bottom" id="o68-Dg-iqb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Hp-Hq-otK"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentViewTopConstraint" destination="mZS-iS-XdJ" id="aYs-mt-QI4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efh-Jb-8Lu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="220"/>
+        </scene>
+    </scenes>
+</document>

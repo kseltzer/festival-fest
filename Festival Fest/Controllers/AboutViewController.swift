@@ -13,7 +13,7 @@ class AboutViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var tableViewTopConstraint: NSLayoutConstraint!
     
     // MARK: - Setup
     override func viewDidLoad() {
@@ -21,6 +21,16 @@ class AboutViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        // adjust vertical positioning
+        switch phoneType {
+        case .six:
+            tableViewTopConstraint.constant = 132
+        case .xr, .xsMax, .x:
+            tableViewTopConstraint.constant = 184
+        default:
+            break
+        }
     }
     
     
