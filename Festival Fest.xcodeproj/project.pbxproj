@@ -19,6 +19,9 @@
 		4E82898722385D1A00A23338 /* Venue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E82898622385D1A00A23338 /* Venue.storyboard */; };
 		4E82898922385DF300A23338 /* VenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E82898822385DF300A23338 /* VenueViewController.swift */; };
 		4E82898B223871A900A23338 /* UIView+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E82898A223871A900A23338 /* UIView+Animate.swift */; };
+		4E82898D2238760C00A23338 /* Tickets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E82898C2238760C00A23338 /* Tickets.storyboard */; };
+		4E82898F2238762A00A23338 /* TicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E82898E2238762A00A23338 /* TicketsViewController.swift */; };
+		4E82899122387FC500A23338 /* JosefinSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E82899022387FC400A23338 /* JosefinSans-Italic.ttf */; };
 		4E981E13223456240002DEA4 /* BungeeShade-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E981E12223456240002DEA4 /* BungeeShade-Regular.ttf */; };
 		4E981E292234563F0002DEA4 /* Shrikhand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E981E282234563F0002DEA4 /* Shrikhand-Regular.ttf */; };
 		4E981E2C2235C7A30002DEA4 /* BungeeInline-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E981E2B2235C7A30002DEA4 /* BungeeInline-Regular.ttf */; };
@@ -61,6 +64,9 @@
 		4E82898622385D1A00A23338 /* Venue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Venue.storyboard; sourceTree = "<group>"; };
 		4E82898822385DF300A23338 /* VenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueViewController.swift; sourceTree = "<group>"; };
 		4E82898A223871A900A23338 /* UIView+Animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animate.swift"; sourceTree = "<group>"; };
+		4E82898C2238760C00A23338 /* Tickets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tickets.storyboard; sourceTree = "<group>"; };
+		4E82898E2238762A00A23338 /* TicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsViewController.swift; sourceTree = "<group>"; };
+		4E82899022387FC400A23338 /* JosefinSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Italic.ttf"; sourceTree = "<group>"; };
 		4E981E12223456240002DEA4 /* BungeeShade-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BungeeShade-Regular.ttf"; sourceTree = "<group>"; };
 		4E981E282234563F0002DEA4 /* Shrikhand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shrikhand-Regular.ttf"; sourceTree = "<group>"; };
 		4E981E2B2235C7A30002DEA4 /* BungeeInline-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BungeeInline-Regular.ttf"; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 				4EC83D6521F82B0D00ED75E4 /* ContactViewController.swift */,
 				4E981E3522373C310002DEA4 /* AboutViewController.swift */,
 				4E82898822385DF300A23338 /* VenueViewController.swift */,
+				4E82898E2238762A00A23338 /* TicketsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 				4EC83D6321F82AEE00ED75E4 /* Contact.storyboard */,
 				4E981E3722373C3F0002DEA4 /* About.storyboard */,
 				4E82898622385D1A00A23338 /* Venue.storyboard */,
+				4E82898C2238760C00A23338 /* Tickets.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -188,6 +196,7 @@
 		4E981E2A223456450002DEA4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				4E82899022387FC400A23338 /* JosefinSans-Italic.ttf */,
 				4E981E2E2235CF780002DEA4 /* JosefinSans-Bold.ttf */,
 				4E981E2F2235CF780002DEA4 /* JosefinSans-Regular.ttf */,
 				4E981E2D2235CF770002DEA4 /* JosefinSans-SemiBold.ttf */,
@@ -305,8 +314,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E82899122387FC500A23338 /* JosefinSans-Italic.ttf in Resources */,
 				4E981E292234563F0002DEA4 /* Shrikhand-Regular.ttf in Resources */,
 				4E1E289D21F6723900A55FD2 /* LaunchScreen.storyboard in Resources */,
+				4E82898D2238760C00A23338 /* Tickets.storyboard in Resources */,
 				4E9931FA21F8061B009C345F /* Map.storyboard in Resources */,
 				4EC83D6421F82AEE00ED75E4 /* Contact.storyboard in Resources */,
 				4E981E3822373C3F0002DEA4 /* About.storyboard in Resources */,
@@ -376,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E82898F2238762A00A23338 /* TicketsViewController.swift in Sources */,
 				4E11BC3821F6DA5700C041F0 /* Global.swift in Sources */,
 				4E4FE53021F730E9009DAF02 /* MenuViewController.swift in Sources */,
 				4EC83D6921F82BE500ED75E4 /* UIButton+UI.swift in Sources */,

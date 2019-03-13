@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="JosefinSans-Italic.ttf">
+            <string>JosefinSans-Italic</string>
+        </array>
+        <array key="JosefinSans-Regular.ttf">
+            <string>JosefinSans-Regular</string>
+        </array>
+        <array key="JosefinSans-SemiBold.ttf">
+            <string>JosefinSans-SemiBold</string>
+        </array>
+        <array key="Shrikhand-Regular.ttf">
+            <string>Shrikhand-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tickets View Controller-->
+        <scene sceneID="Ic6-j7-UrF">
+            <objects>
+                <viewController storyboardIdentifier="TicketsViewController" id="TY7-n8-psL" customClass="TicketsViewController" customModule="Festival_Fest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b1O-jA-dQh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hks-Yw-kie">
+                                <rect key="frame" x="0.0" y="112" width="375" height="555"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JqV-kO-dl6">
+                                        <rect key="frame" x="58" y="128.5" width="259.5" height="258"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Kwi-IG-V34">
+                                                <rect key="frame" x="0.0" y="0.0" width="259.5" height="188"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cR3-Fi-yeF">
+                                                        <rect key="frame" x="3.5" y="0.0" width="252" height="73"/>
+                                                        <string key="text">Single Day
+General Admission</string>
+                                                        <fontDescription key="fontDescription" name="Shrikhand-Regular" family="Shrikhand" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$8 online / $10 at door" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzo-bK-JLd">
+                                                        <rect key="frame" x="25" y="93" width="209.5" height="20"/>
+                                                        <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans SemiBold" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="AAg-6S-cpJ">
+                                                        <rect key="frame" x="0.0" y="133" width="259.5" height="55"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="includes:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nG-9n-akE">
+                                                                <rect key="frame" x="105" y="0.0" width="49.5" height="13"/>
+                                                                <fontDescription key="fontDescription" name="JosefinSans-Italic" family="Josefin Sans" pointSize="13"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="access to all Festival Fest festivals" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rha-p7-PtP">
+                                                                <rect key="frame" x="0.0" y="17" width="259.5" height="17"/>
+                                                                <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="free drinks &amp; snacks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrI-LV-dVo">
+                                                                <rect key="frame" x="52.5" y="38" width="154" height="17"/>
+                                                                <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qP-CK-Osp" customClass="RoundedCornersButton" customModule="Festival_Fest" customModuleProvider="target">
+                                                <rect key="frame" x="43.5" y="218" width="172" height="40"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="a0c-rZ-f4n"/>
+                                                    <constraint firstAttribute="width" constant="172" id="dpr-gu-MCW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans SemiBold" pointSize="21"/>
+                                                <state key="normal" title="GET TICKETS">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="getTicketsButtonTapped:" destination="TY7-n8-psL" eventType="touchUpInside" id="mrg-Pv-msz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="JqV-kO-dl6" firstAttribute="centerY" secondItem="Hks-Yw-kie" secondAttribute="centerY" constant="-20" id="Q4v-3F-u9s"/>
+                                    <constraint firstItem="JqV-kO-dl6" firstAttribute="centerX" secondItem="Hks-Yw-kie" secondAttribute="centerX" id="jM3-Op-3oP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bqy-cK-3S7" firstAttribute="trailing" secondItem="Hks-Yw-kie" secondAttribute="trailing" id="Gom-jN-All"/>
+                            <constraint firstItem="Bqy-cK-3S7" firstAttribute="bottom" secondItem="Hks-Yw-kie" secondAttribute="bottom" id="N7V-rP-E3K"/>
+                            <constraint firstItem="Hks-Yw-kie" firstAttribute="leading" secondItem="b1O-jA-dQh" secondAttribute="leading" id="T3Y-TL-EOv"/>
+                            <constraint firstItem="Hks-Yw-kie" firstAttribute="top" secondItem="b1O-jA-dQh" secondAttribute="top" constant="112" id="uE8-9E-bc1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bqy-cK-3S7"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentViewTopLayoutConstraint" destination="uE8-9E-bc1" id="r8j-3U-6Mg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUH-BI-H6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="203"/>
+        </scene>
+    </scenes>
+</document>

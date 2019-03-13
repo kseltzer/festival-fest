@@ -13,8 +13,9 @@ enum Screen: Int {
     case lineup = 0
     case map
     case talent
-    case schedule
+//    case schedule
     case venue
+    case tickets
     case faq
     case about
     case contact
@@ -29,12 +30,14 @@ enum Screen: Int {
             return "lineup"
         case .map:
             return "map"
-        case .schedule:
-            return "schedule"
+//        case .schedule:
+//            return "schedule"
         case .talent:
             return "talent"
         case .venue:
             return "venue"
+        case .tickets:
+            return "tickets"
         case .faq:
             return "faq"
         case .about:
@@ -81,11 +84,11 @@ class MenuViewController: UIViewController {
             title: "MAP",
             headerImage: UIImage(named: "\(Screen.map.name())-icon")!,
             images: []),
-        ImageItem(
-            index: Screen.schedule.index(),
-            title: "SCHEDULE",
-            headerImage: UIImage(named: Screen.schedule.name())!,
-            images: []),
+//        ImageItem(
+//            index: Screen.schedule.index(),
+//            title: "SCHEDULE",
+//            headerImage: UIImage(named: Screen.schedule.name())!,
+//            images: []),
         ImageItem(
             index: Screen.talent.index(),
             title: "TALENT",
@@ -95,6 +98,11 @@ class MenuViewController: UIViewController {
             index: Screen.venue.index(),
             title: "VENUE",
             headerImage: UIImage(named: Screen.venue.name())!,
+            images: []),
+        ImageItem(
+            index: Screen.tickets.index(),
+            title: "TICKETS",
+            headerImage: UIImage(named: Screen.tickets.name())!,
             images: []),
         ImageItem(
             index: Screen.faq.index(),
@@ -283,8 +291,8 @@ extension MenuViewController: PagingViewControllerDataSource {
     func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, viewControllerForIndex index: Int) -> UIViewController {
         
         switch index {
-        case Screen.schedule.rawValue:
-            return UIStoryboard(name: kScheduleStoryboard, bundle: nil).instantiateViewController(withIdentifier: kScheduleViewController)
+//        case Screen.schedule.rawValue:
+//            return UIStoryboard(name: kScheduleStoryboard, bundle: nil).instantiateViewController(withIdentifier: kScheduleViewController)
         case Screen.map.rawValue:
             return UIStoryboard(name: kMapStoryboard, bundle: nil).instantiateViewController(withIdentifier: kMapViewController)
         case Screen.faq.rawValue:
@@ -311,6 +319,8 @@ extension MenuViewController: PagingViewControllerDataSource {
             return UIStoryboard(name: kAboutStoryboard, bundle: nil).instantiateViewController(withIdentifier: kAboutViewController)
         case Screen.venue.rawValue:
             return UIStoryboard(name: kVenueStoryboard, bundle: nil).instantiateViewController(withIdentifier: kVenueViewController)
+        case Screen.tickets.rawValue:
+            return UIStoryboard(name: kTicketsStoryboard, bundle: nil).instantiateViewController(withIdentifier: kTicketsViewController)
         default:
             break
         }

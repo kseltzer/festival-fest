@@ -20,6 +20,7 @@ let kFAQStoryboard = "FAQ"
 let kContactStoryboard = "Contact"
 let kAboutStoryboard = "About"
 let kVenueStoryboard = "Venue"
+let kTicketsStoryboard = "Tickets"
 
 // View Controllers
 let kMenuViewController = "MenuViewController"
@@ -31,6 +32,7 @@ let kFAQViewController = "FAQViewController"
 let kContactViewController = "ContactViewController"
 let kAboutViewController = "AboutViewController"
 let kVenueViewController = "VenueViewController"
+let kTicketsViewController = "TicketsViewController"
 
 // Cells
 let kSlantedCellReuseIdentifier = "customViewCell"
