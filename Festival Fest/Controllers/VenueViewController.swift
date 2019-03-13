@@ -9,11 +9,12 @@
 import UIKit
 import MapKit
 
-class VenueViewController: UIViewController {
+class VenueViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     // MARK: - Outlets
     @IBOutlet weak var contentViewTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var tableView: UITableView!
     
     
     // MARK: - Setup
@@ -29,6 +30,23 @@ class VenueViewController: UIViewController {
         default:
             break
         }
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    
+    // MARK: - Table View
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return tableView.dequeueReusableCell(withIdentifier: kVenueCell) ?? UITableViewCell()
     }
     
     

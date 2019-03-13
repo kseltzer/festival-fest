@@ -40,7 +40,7 @@ let kEventCell = "EventCell"
 let kQACell = "QACell"
 let kAboutCell = "AboutCell"
 let kMapCell = "MapCell"
-
+let kVenueCell = "VenueCell"
 
 // MARK: - Phone Type
 var phoneType: PhoneType = .x
