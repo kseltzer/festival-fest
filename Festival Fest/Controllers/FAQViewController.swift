@@ -12,6 +12,7 @@ class FAQViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableViewTopConstraint: NSLayoutConstraint!
     
     
     // MARK: - Setup
@@ -20,6 +21,16 @@ class FAQViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        // adjust vertical positioning
+        switch phoneType {
+        case .six:
+            tableViewTopConstraint.constant = 132
+        case .xr, .xsMax, .x:
+            tableViewTopConstraint.constant = 184
+        default:
+            break
+        }
     }
     
     
@@ -29,10 +40,10 @@ class FAQViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "\(kQACell)\(indexPath.row % 4)") ?? UITableViewCell()
+        return tableView.dequeueReusableCell(withIdentifier: "\(kQACell)\(indexPath.row)") ?? UITableViewCell()
     }
 }

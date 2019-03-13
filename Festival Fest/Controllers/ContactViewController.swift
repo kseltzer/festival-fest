@@ -11,11 +11,22 @@ import UIKit
 class ContactViewController: UIViewController {
 
     // MARK: - Outlets
+    @IBOutlet weak var contentViewTopConstraint: NSLayoutConstraint!
     @IBOutlet var callSenatorButtons: [RoundedCornersButton]!
     @IBOutlet weak var contactFestButton: RoundedCornersButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // adjust vertical positioning
+        switch phoneType {
+        case .six:
+            contentViewTopConstraint.constant = 132
+        case .xr, .xsMax, .x:
+            contentViewTopConstraint.constant = 184
+        default:
+            break
+        }
     }
     
     
