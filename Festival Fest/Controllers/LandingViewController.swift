@@ -35,16 +35,12 @@ class LandingViewController: UIViewController {
     
     
     // MARK: - Actions
-    @IBAction func proceedTapped(_ sender: Any) {
-        DispatchQueue.main.async {
-            if let btn = sender as? UIButton {
-                btn.animateTap(withCompletion: { _ in
-                    self.navigateToHomeScreen()
-                })
-            } else {
-                self.navigateToHomeScreen()
-            }
-        }
+    @IBAction func proceedTapped(_ sender: UIButton) {
+        sender.animateTap()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+            self.navigateToHomeScreen()
+        })
     }
     
     

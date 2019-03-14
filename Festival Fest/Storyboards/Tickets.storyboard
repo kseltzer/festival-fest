@@ -35,7 +35,7 @@
                                 <rect key="frame" x="0.0" y="112" width="375" height="555"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JqV-kO-dl6">
-                                        <rect key="frame" x="58" y="128.5" width="259.5" height="258"/>
+                                        <rect key="frame" x="58" y="100.5" width="259.5" height="314"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Kwi-IG-V34">
                                                 <rect key="frame" x="0.0" y="0.0" width="259.5" height="188"/>
@@ -79,21 +79,41 @@ General Admission</string>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qP-CK-Osp" customClass="RoundedCornersButton" customModule="Festival_Fest" customModuleProvider="target">
-                                                <rect key="frame" x="43.5" y="218" width="172" height="40"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="a0c-rZ-f4n"/>
-                                                    <constraint firstAttribute="width" constant="172" id="dpr-gu-MCW"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans SemiBold" pointSize="21"/>
-                                                <state key="normal" title="GET TICKETS">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="getTicketsButtonTapped:" destination="TY7-n8-psL" eventType="touchUpInside" id="mrg-Pv-msz"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jZt-0f-41E" userLabel="Buttons Stack View">
+                                                <rect key="frame" x="37.5" y="218" width="184" height="96"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qP-CK-Osp" customClass="RoundedCornersButton" customModule="Festival_Fest" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="184" height="40"/>
+                                                        <color key="backgroundColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="a0c-rZ-f4n"/>
+                                                            <constraint firstAttribute="width" constant="184" id="dpr-gu-MCW"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans SemiBold" pointSize="21"/>
+                                                        <state key="normal" title="GET TICKETS">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="getTicketsButtonTapped:" destination="TY7-n8-psL" eventType="touchUpInside" id="mrg-Pv-msz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b33-Lb-yRX" customClass="RoundedCornersButton" customModule="Festival_Fest" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="56" width="184" height="40"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="NjI-FB-HTs"/>
+                                                            <constraint firstAttribute="width" constant="184" id="bFB-ta-1DQ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans SemiBold" pointSize="21"/>
+                                                        <state key="normal" title="SHARE">
+                                                            <color key="titleColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="shareTapped:" destination="TY7-n8-psL" eventType="touchUpInside" id="OcX-cu-52c"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>

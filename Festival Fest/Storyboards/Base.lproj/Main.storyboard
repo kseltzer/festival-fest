@@ -33,7 +33,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="Es6-6s-1DN">
-                                <rect key="frame" x="54" y="109" width="306" height="100"/>
+                                <rect key="frame" x="54" y="100" width="306" height="100"/>
                                 <string key="text">FESTIVAL
 FEST</string>
                                 <fontDescription key="fontDescription" name="BungeeShade-Regular" family="Bungee Shade" pointSize="50"/>
@@ -57,7 +57,7 @@ FEST</string>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfm-aB-3b3" userLabel="Allow">
-                                                                <rect key="frame" x="120" y="5.5" width="47" height="34"/>
+                                                                <rect key="frame" x="139" y="6" width="47" height="34"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                                 <state key="normal" title="Enter">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,7 +68,7 @@ FEST</string>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstItem="Zfm-aB-3b3" firstAttribute="centerX" secondItem="Ldf-rt-Zvf" secondAttribute="centerX" id="UNE-Dq-oFg"/>
+                                                            <constraint firstItem="Zfm-aB-3b3" firstAttribute="centerX" secondItem="Ldf-rt-Zvf" secondAttribute="centerX" id="O78-hV-6gJ"/>
                                                             <constraint firstItem="Zfm-aB-3b3" firstAttribute="centerY" secondItem="Ldf-rt-Zvf" secondAttribute="centerY" id="iPf-0b-HD7"/>
                                                         </constraints>
                                                     </view>
@@ -88,7 +88,7 @@ FEST</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMl-bz-BYk">
                                 <rect key="frame" x="44" y="652.5" width="326" height="50"/>
                                 <connections>
-                                    <action selector="proceedTapped:" destination="PHq-xA-3G2" eventType="touchUpInside" id="f3W-sv-V7P"/>
+                                    <action selector="proceedTapped:" destination="PHq-xA-3G2" eventType="touchUpInside" id="ql6-9i-MVq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -108,11 +108,11 @@ FEST</string>
                             <constraint firstItem="6NB-eC-Ftx" firstAttribute="trailing" secondItem="7bh-iq-SsK" secondAttribute="trailing" id="bXI-Qn-fkB"/>
                             <constraint firstItem="7T6-qc-AHQ" firstAttribute="centerY" secondItem="7bh-iq-SsK" secondAttribute="centerY" multiplier="4:3" constant="80" id="cOc-rS-eE1"/>
                             <constraint firstItem="XgQ-X6-hNn" firstAttribute="top" secondItem="7bh-iq-SsK" secondAttribute="top" id="d3J-rJ-nQl"/>
-                            <constraint firstItem="Es6-6s-1DN" firstAttribute="top" secondItem="lCa-mH-IqF" secondAttribute="top" constant="65" id="dZK-kr-4rh"/>
+                            <constraint firstItem="Es6-6s-1DN" firstAttribute="top" secondItem="7bh-iq-SsK" secondAttribute="top" constant="100" id="dZK-kr-4rh"/>
                             <constraint firstItem="6NB-eC-Ftx" firstAttribute="top" secondItem="7bh-iq-SsK" secondAttribute="top" id="gPb-If-aUd"/>
                             <constraint firstItem="6NB-eC-Ftx" firstAttribute="bottom" secondItem="7bh-iq-SsK" secondAttribute="bottom" id="v7q-Id-QVK"/>
                             <constraint firstItem="pMl-bz-BYk" firstAttribute="trailing" secondItem="7T6-qc-AHQ" secondAttribute="trailing" id="wCE-vu-axv"/>
-                            <constraint firstItem="lCa-mH-IqF" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Es6-6s-1DN" secondAttribute="trailing" constant="20" id="wO6-DQ-9lI"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Es6-6s-1DN" secondAttribute="trailing" constant="20" id="wO6-DQ-9lI"/>
                             <constraint firstItem="pMl-bz-BYk" firstAttribute="leading" secondItem="7T6-qc-AHQ" secondAttribute="leading" id="ywp-sg-JYB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lCa-mH-IqF"/>
@@ -136,7 +136,7 @@ FEST</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FESTIVAL FEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Db1-BD-POU">
-                                <rect key="frame" x="101.5" y="64" width="211" height="26"/>
+                                <rect key="frame" x="114.5" y="64" width="185.5" height="30.5"/>
                                 <fontDescription key="fontDescription" name="BungeeInline-Regular" family="Bungee Inline" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>

@@ -25,7 +25,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="HEV-zp-1Wc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="HEV-zp-1Wc">
                                 <rect key="frame" x="0.0" y="152" width="375" height="515"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -34,7 +34,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="104"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KnV-Ev-RvU" id="1Y1-nm-7u1">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="103.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="A3t-kh-ar6">
@@ -54,12 +54,22 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTg-mC-ZbN">
+                                                    <rect key="frame" x="16" y="102.5" width="343" height="1"/>
+                                                    <color key="backgroundColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="gpB-3u-Ppu"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="A3t-kh-ar6" secondAttribute="trailing" constant="20" id="HlO-g7-pe7"/>
                                                 <constraint firstAttribute="bottom" secondItem="A3t-kh-ar6" secondAttribute="bottom" constant="24" id="Jp8-ha-79N"/>
                                                 <constraint firstItem="A3t-kh-ar6" firstAttribute="top" secondItem="1Y1-nm-7u1" secondAttribute="top" constant="24" id="Lfl-9Y-myT"/>
                                                 <constraint firstItem="A3t-kh-ar6" firstAttribute="leading" secondItem="1Y1-nm-7u1" secondAttribute="leading" constant="20" id="RK7-Qz-8TU"/>
+                                                <constraint firstAttribute="trailing" secondItem="VTg-mC-ZbN" secondAttribute="trailing" constant="16" id="gg7-Cb-eak"/>
+                                                <constraint firstItem="VTg-mC-ZbN" firstAttribute="leading" secondItem="1Y1-nm-7u1" secondAttribute="leading" constant="16" id="lCq-yc-xk2"/>
+                                                <constraint firstAttribute="bottom" secondItem="VTg-mC-ZbN" secondAttribute="bottom" id="o6K-0f-n01"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.20392156859999999" green="0.18039215689999999" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -68,11 +78,11 @@
                                         <rect key="frame" x="0.0" y="132" width="375" height="233"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vQD-lR-5nY" id="9n6-xW-3eJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="232.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="233"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="s7C-qi-zD5">
-                                                    <rect key="frame" x="20" y="24" width="335" height="184.5"/>
+                                                    <rect key="frame" x="20" y="24" width="335" height="185"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="757" text="Can I perform at Festival Fest?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nt8-yB-Zi2">
                                                             <rect key="frame" x="0.0" y="0.0" width="314" height="0.0"/>
@@ -81,7 +91,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="758" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vv0-A7-X9N">
-                                                            <rect key="frame" x="0.0" y="12" width="324.5" height="172.5"/>
+                                                            <rect key="frame" x="0.0" y="12" width="324.5" height="173"/>
                                                             <string key="text">If you are in any of the following acts, the answer is yes! Otherwise, absolutely not.
 
 Simon Cowell, Brain Wilson and His Beach Bums, Gary Cobain, Martha Steward in conversation with Harry Potter, Kristen Steward in conversation with Ed Cullen, Directors Cut of prison comedy, “Get Hard”, Paddington Bear, The Masked Singer, James Harden (alone), Late Late Show With James Harden, The Echoplex Panthers, Calidega Knights.</string>
@@ -91,11 +101,21 @@ Simon Cowell, Brain Wilson and His Beach Bums, Gary Cobain, Martha Steward in co
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOP-RM-bUO">
+                                                    <rect key="frame" x="16" y="221" width="343" height="1"/>
+                                                    <color key="backgroundColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="MxY-tR-IkM"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="s7C-qi-zD5" secondAttribute="trailing" constant="20" id="Fbl-dy-lDj"/>
                                                 <constraint firstAttribute="bottom" secondItem="s7C-qi-zD5" secondAttribute="bottom" constant="24" id="I4b-oz-hIK"/>
+                                                <constraint firstItem="JOP-RM-bUO" firstAttribute="leading" secondItem="9n6-xW-3eJ" secondAttribute="leadingMargin" constant="1" id="Qds-iB-2hh"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="JOP-RM-bUO" secondAttribute="bottom" id="dtD-JN-Sgi"/>
                                                 <constraint firstItem="s7C-qi-zD5" firstAttribute="leading" secondItem="9n6-xW-3eJ" secondAttribute="leading" constant="20" id="nQF-Bm-yec"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="JOP-RM-bUO" secondAttribute="trailing" constant="1" id="rhH-T5-2ap"/>
                                                 <constraint firstItem="s7C-qi-zD5" firstAttribute="top" secondItem="9n6-xW-3eJ" secondAttribute="top" constant="24" id="vPd-zO-Nqv"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -105,11 +125,11 @@ Simon Cowell, Brain Wilson and His Beach Bums, Gary Cobain, Martha Steward in co
                                         <rect key="frame" x="0.0" y="365" width="375" height="107"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UA1-nn-skP" id="i0U-6l-ImP">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="107"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="753" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="cF0-6P-FqV">
-                                                    <rect key="frame" x="20" y="24" width="335" height="58.5"/>
+                                                    <rect key="frame" x="20" y="24" width="335" height="59"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="759" text="What time does Festival Fest end?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8L-vf-vUu">
                                                             <rect key="frame" x="0.0" y="0.0" width="252.5" height="0.0"/>
@@ -118,7 +138,7 @@ Simon Cowell, Brain Wilson and His Beach Bums, Gary Cobain, Martha Steward in co
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="760" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFX-FH-1hk">
-                                                            <rect key="frame" x="0.0" y="12" width="310.5" height="46.5"/>
+                                                            <rect key="frame" x="0.0" y="12" width="310.5" height="47"/>
                                                             <string key="text">10ish. Dare we say the perfect time to leave you wanting more?
 </string>
                                                             <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="18"/>
@@ -127,18 +147,63 @@ Simon Cowell, Brain Wilson and His Beach Bums, Gary Cobain, Martha Steward in co
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxN-Wx-H7h">
+                                                    <rect key="frame" x="16" y="106" width="343" height="1"/>
+                                                    <color key="backgroundColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="sBp-UL-aO0"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="gxN-Wx-H7h" secondAttribute="trailing" constant="16" id="AaH-yC-Oxo"/>
+                                                <constraint firstAttribute="bottom" secondItem="gxN-Wx-H7h" secondAttribute="bottom" id="Xwp-va-Qv4"/>
                                                 <constraint firstItem="cF0-6P-FqV" firstAttribute="top" secondItem="i0U-6l-ImP" secondAttribute="top" constant="24" id="jhg-y1-ZOm"/>
                                                 <constraint firstAttribute="trailing" secondItem="cF0-6P-FqV" secondAttribute="trailing" constant="20" id="shH-Dv-TnQ"/>
                                                 <constraint firstItem="cF0-6P-FqV" firstAttribute="leading" secondItem="i0U-6l-ImP" secondAttribute="leading" constant="20" id="uo7-9A-ivp"/>
                                                 <constraint firstAttribute="bottom" secondItem="cF0-6P-FqV" secondAttribute="bottom" constant="24" id="w3K-wL-7Pf"/>
+                                                <constraint firstItem="gxN-Wx-H7h" firstAttribute="leading" secondItem="i0U-6l-ImP" secondAttribute="leading" constant="16" id="zyf-Ho-Fgw"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.20392156859999999" green="0.18039215689999999" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QACell3" rowHeight="107" id="jf5-NL-57G">
-                                        <rect key="frame" x="0.0" y="472" width="375" height="107"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QACell3" rowHeight="153" id="mAn-5t-RNC">
+                                        <rect key="frame" x="0.0" y="472" width="375" height="153"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mAn-5t-RNC" id="gF6-ce-WTF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="153"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="756" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="vei-dd-CSP">
+                                                    <rect key="frame" x="20" y="24" width="335" height="104.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="763" text="Is Festival Fest all ages?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXI-h4-Lob">
+                                                            <rect key="frame" x="0.0" y="0.0" width="245.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans SemiBold" pointSize="22"/>
+                                                            <color key="textColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="764" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVK-K0-YBF">
+                                                            <rect key="frame" x="0.0" y="32.5" width="335" height="72"/>
+                                                            <string key="text">This event is 21+. Thank God you have to be 21+ to legally use an iPhone, so this answer won't disappoint anyone reading it. Thank you, Apple!!</string>
+                                                            <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="18"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vei-dd-CSP" firstAttribute="top" secondItem="gF6-ce-WTF" secondAttribute="top" constant="24" id="2uW-9a-qif"/>
+                                                <constraint firstAttribute="bottom" secondItem="vei-dd-CSP" secondAttribute="bottom" constant="24" id="5CX-sD-qvq"/>
+                                                <constraint firstItem="vei-dd-CSP" firstAttribute="leading" secondItem="gF6-ce-WTF" secondAttribute="leading" constant="20" id="AbZ-AI-Q4H"/>
+                                                <constraint firstAttribute="trailing" secondItem="vei-dd-CSP" secondAttribute="trailing" constant="20" id="g07-aD-Phb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.20392156859999999" green="0.18039215689999999" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QACell4" rowHeight="107" id="jf5-NL-57G">
+                                        <rect key="frame" x="0.0" y="625" width="375" height="107"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jf5-NL-57G" id="QBd-NN-Hp8">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
@@ -167,40 +232,6 @@ Simon Cowell, Brain Wilson and His Beach Bums, Gary Cobain, Martha Steward in co
                                                 <constraint firstItem="C9F-In-HOA" firstAttribute="top" secondItem="QBd-NN-Hp8" secondAttribute="top" constant="24" id="Lwk-uF-e8K"/>
                                                 <constraint firstAttribute="trailing" secondItem="C9F-In-HOA" secondAttribute="trailing" constant="20" id="MFd-o7-TPn"/>
                                                 <constraint firstAttribute="bottom" secondItem="C9F-In-HOA" secondAttribute="bottom" constant="24" id="iKM-yy-AfP"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.20392156859999999" green="0.18039215689999999" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QACell4" rowHeight="153" id="mAn-5t-RNC">
-                                        <rect key="frame" x="0.0" y="579" width="375" height="153"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mAn-5t-RNC" id="gF6-ce-WTF">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="152.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="756" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="vei-dd-CSP">
-                                                    <rect key="frame" x="20" y="24" width="335" height="104.5"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="763" text="Is Festival Fest all ages?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXI-h4-Lob">
-                                                            <rect key="frame" x="0.0" y="0.0" width="245.5" height="20.5"/>
-                                                            <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans SemiBold" pointSize="22"/>
-                                                            <color key="textColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="764" text="This event is 21+. Thank God you have to be 21+ to legally use an iPhone, so this answer won't disappoint anyone reading it." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVK-K0-YBF">
-                                                            <rect key="frame" x="0.0" y="32.5" width="335" height="72"/>
-                                                            <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="18"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="vei-dd-CSP" firstAttribute="top" secondItem="gF6-ce-WTF" secondAttribute="top" constant="24" id="2uW-9a-qif"/>
-                                                <constraint firstAttribute="bottom" secondItem="vei-dd-CSP" secondAttribute="bottom" constant="24" id="5CX-sD-qvq"/>
-                                                <constraint firstItem="vei-dd-CSP" firstAttribute="leading" secondItem="gF6-ce-WTF" secondAttribute="leading" constant="20" id="AbZ-AI-Q4H"/>
-                                                <constraint firstAttribute="trailing" secondItem="vei-dd-CSP" secondAttribute="trailing" constant="20" id="g07-aD-Phb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.20392156859999999" green="0.18039215689999999" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
