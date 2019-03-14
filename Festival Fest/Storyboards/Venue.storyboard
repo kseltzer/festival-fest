@@ -44,19 +44,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" axis="vertical" distribution="equalSpacing" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="mcF-6h-8PZ">
-                                                    <rect key="frame" x="20" y="20" width="335" height="529.5"/>
+                                                    <rect key="frame" x="20" y="20" width="335" height="536"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="BRM-JI-exl" userLabel="Date Stack View">
-                                                            <rect key="frame" x="90.5" y="0.0" width="154" height="41"/>
+                                                            <rect key="frame" x="76.5" y="0.0" width="182" height="34"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="757" text="DATE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBJ-6h-jgD">
-                                                                    <rect key="frame" x="63.5" y="0.0" width="27" height="13"/>
+                                                                    <rect key="frame" x="76.5" y="0.0" width="29" height="0.0"/>
                                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="11"/>
                                                                     <color key="textColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="758" text="March 23, 2019" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGz-81-G7N">
-                                                                    <rect key="frame" x="0.0" y="15" width="154" height="26"/>
+                                                                    <rect key="frame" x="0.0" y="2" width="182" height="32"/>
                                                                     <fontDescription key="fontDescription" name="Shrikhand-Regular" family="Shrikhand" pointSize="22"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -65,16 +65,16 @@
                                                             <viewLayoutGuide key="safeArea" id="d59-ce-NxI"/>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="753" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="rj7-Z9-rFb" userLabel="Time Stack View">
-                                                            <rect key="frame" x="113" y="77" width="109.5" height="66.5"/>
+                                                            <rect key="frame" x="103" y="70" width="129" height="77.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="759" text="TIME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3n-a4-QGT">
-                                                                    <rect key="frame" x="42" y="0.0" width="25.5" height="13"/>
+                                                                    <rect key="frame" x="50.5" y="0.0" width="28" height="11"/>
                                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="11"/>
                                                                     <color key="textColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="760" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6e-JG-1w1">
-                                                                    <rect key="frame" x="0.0" y="15" width="109.5" height="51.5"/>
+                                                                    <rect key="frame" x="0.0" y="13" width="129" height="64.5"/>
                                                                     <string key="text">Doors 7pm
 Show 8pm</string>
                                                                     <fontDescription key="fontDescription" name="Shrikhand-Regular" family="Shrikhand" pointSize="22"/>
@@ -85,22 +85,22 @@ Show 8pm</string>
                                                             <viewLayoutGuide key="safeArea" id="Q9C-to-VYA"/>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="754" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="VQn-i2-Fqk" userLabel="Venue Stack View">
-                                                            <rect key="frame" x="84" y="179.5" width="167.5" height="80.5"/>
+                                                            <rect key="frame" x="85" y="183.5" width="165.5" height="79.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="761" text="VENUE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7N-LL-UM8">
-                                                                    <rect key="frame" x="65.5" y="0.0" width="36.5" height="13"/>
+                                                                    <rect key="frame" x="62.5" y="0.0" width="40.5" height="11"/>
                                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="11"/>
                                                                     <color key="textColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="762" text="Hub LA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKs-bb-EXq">
-                                                                    <rect key="frame" x="46.5" y="15" width="74" height="26"/>
+                                                                    <rect key="frame" x="41.5" y="13" width="82.5" height="32.5"/>
                                                                     <fontDescription key="fontDescription" name="Shrikhand-Regular" family="Shrikhand" pointSize="22"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="763" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjS-eO-l4P">
-                                                                    <rect key="frame" x="0.0" y="43" width="167.5" height="37.5"/>
+                                                                    <rect key="frame" x="0.0" y="47.5" width="165.5" height="32"/>
                                                                     <string key="text">830 Traction Ave
 Los Angeles, CA 90013</string>
                                                                     <fontDescription key="fontDescription" name="JosefinSans-Italic" family="Josefin Sans" pointSize="16"/>
@@ -110,16 +110,16 @@ Los Angeles, CA 90013</string>
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="755" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="JOK-Rh-q3Q" userLabel="Parking Stack View">
-                                                            <rect key="frame" x="138" y="296" width="59" height="41"/>
+                                                            <rect key="frame" x="132" y="299" width="71.5" height="45.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="764" text="PARKING" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGe-No-tO1">
-                                                                    <rect key="frame" x="6" y="0.0" width="47.5" height="13"/>
+                                                                    <rect key="frame" x="10" y="0.0" width="51" height="11"/>
                                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="11"/>
                                                                     <color key="textColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="765" text="Street" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjQ-T9-XLw">
-                                                                    <rect key="frame" x="0.0" y="15" width="59" height="26"/>
+                                                                    <rect key="frame" x="0.0" y="13" width="71.5" height="32.5"/>
                                                                     <fontDescription key="fontDescription" name="Shrikhand-Regular" family="Shrikhand" pointSize="22"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -128,22 +128,22 @@ Los Angeles, CA 90013</string>
                                                             <viewLayoutGuide key="safeArea" id="us4-9M-bO5"/>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="755" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="yBm-Rp-0Ol" userLabel="Parking Stack View">
-                                                            <rect key="frame" x="57.5" y="373" width="220" height="80.5"/>
+                                                            <rect key="frame" x="57.5" y="380.5" width="220" height="79.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="764" text="ENTRANCE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9m-4a-sKd">
-                                                                    <rect key="frame" x="81" y="0.0" width="58.5" height="13"/>
+                                                                    <rect key="frame" x="78.5" y="0.0" width="63" height="11"/>
                                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="11"/>
                                                                     <color key="textColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="765" text="Take the staircase" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvq-l4-sO8">
-                                                                    <rect key="frame" x="22" y="15" width="176.5" height="26"/>
+                                                                    <rect key="frame" x="3" y="13" width="214.5" height="32.5"/>
                                                                     <fontDescription key="fontDescription" name="Shrikhand-Regular" family="Shrikhand" pointSize="22"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="766" text="located in the parking lot next to Arts District Brewing Co." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLF-ym-eGz">
-                                                                    <rect key="frame" x="0.0" y="43" width="220" height="37.5"/>
+                                                                    <rect key="frame" x="0.0" y="47.5" width="220" height="32"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="220" id="e86-n2-geI"/>
                                                                     </constraints>
@@ -155,13 +155,14 @@ Los Angeles, CA 90013</string>
                                                             <viewLayoutGuide key="safeArea" id="M5W-nJ-uZ0"/>
                                                         </stackView>
                                                         <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="756" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgv-vc-rxt" customClass="RoundedCornersButton" customModule="Festival_Fest" customModuleProvider="target">
-                                                            <rect key="frame" x="81.5" y="489.5" width="172" height="40"/>
+                                                            <rect key="frame" x="81.5" y="496" width="172" height="40"/>
                                                             <color key="backgroundColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="172" id="Q1F-s4-g6H"/>
                                                                 <constraint firstAttribute="height" constant="40" id="rxh-DM-FF9"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans SemiBold" pointSize="21"/>
+                                                            <inset key="titleEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
                                                             <state key="normal" title="DIRECTIONS">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </state>

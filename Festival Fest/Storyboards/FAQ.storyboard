@@ -175,16 +175,16 @@ Simon Cowell, Brain Wilson and His Beach Bums, Gary Cobain, Martha Steward in co
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="756" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="vei-dd-CSP">
-                                                    <rect key="frame" x="20" y="24" width="335" height="104.5"/>
+                                                    <rect key="frame" x="20" y="24" width="335" height="105"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="763" text="Is Festival Fest all ages?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXI-h4-Lob">
-                                                            <rect key="frame" x="0.0" y="0.0" width="245.5" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="245.5" height="21"/>
                                                             <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans SemiBold" pointSize="22"/>
                                                             <color key="textColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="764" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVK-K0-YBF">
-                                                            <rect key="frame" x="0.0" y="32.5" width="335" height="72"/>
+                                                            <rect key="frame" x="0.0" y="33" width="335" height="72"/>
                                                             <string key="text">This event is 21+. Thank God you have to be 21+ to legally use an iPhone, so this answer won't disappoint anyone reading it. Thank you, Apple!!</string>
                                                             <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="18"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -192,12 +192,22 @@ Simon Cowell, Brain Wilson and His Beach Bums, Gary Cobain, Martha Steward in co
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKP-g9-VJ2">
+                                                    <rect key="frame" x="16" y="141" width="343" height="1"/>
+                                                    <color key="backgroundColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="eTN-ft-9K1"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="vei-dd-CSP" firstAttribute="top" secondItem="gF6-ce-WTF" secondAttribute="top" constant="24" id="2uW-9a-qif"/>
                                                 <constraint firstAttribute="bottom" secondItem="vei-dd-CSP" secondAttribute="bottom" constant="24" id="5CX-sD-qvq"/>
                                                 <constraint firstItem="vei-dd-CSP" firstAttribute="leading" secondItem="gF6-ce-WTF" secondAttribute="leading" constant="20" id="AbZ-AI-Q4H"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="nKP-g9-VJ2" secondAttribute="bottom" id="fLg-Jh-YBO"/>
                                                 <constraint firstAttribute="trailing" secondItem="vei-dd-CSP" secondAttribute="trailing" constant="20" id="g07-aD-Phb"/>
+                                                <constraint firstItem="nKP-g9-VJ2" firstAttribute="leading" secondItem="gF6-ce-WTF" secondAttribute="leadingMargin" constant="1" id="q9X-le-fhd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="nKP-g9-VJ2" secondAttribute="trailing" constant="1" id="yUe-Tk-dS2"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.20392156859999999" green="0.18039215689999999" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -206,7 +216,7 @@ Simon Cowell, Brain Wilson and His Beach Bums, Gary Cobain, Martha Steward in co
                                         <rect key="frame" x="0.0" y="625" width="375" height="107"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jf5-NL-57G" id="QBd-NN-Hp8">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="107"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="754" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="C9F-In-HOA">

@@ -20,6 +20,14 @@
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>KATHERINE LEON</string>
+		<key>picture</key>
+		<string>katherine</string>
+		<key>subtitle</key>
+		<string>shows: BEING KATHERINE LEON BEING JOHN MALKOVICH Q&amp;A</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>IAN ABRAMSON</string>
 		<key>picture</key>
 		<string>ian</string>
@@ -32,7 +40,15 @@
 		<key>picture</key>
 		<string>cooties</string>
 		<key>subtitle</key>
-		<string>shows: COWBOY MUSIC FEST</string>
+		<string>shows: ECLECTIC MUSIC FEST</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>ATSUKO OKATSUKA</string>
+		<key>picture</key>
+		<string>atsuko</string>
+		<key>subtitle</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -60,7 +76,7 @@
 		<key>picture</key>
 		<string>brad</string>
 		<key>subtitle</key>
-		<string>sponsor for 2019 Fuck You To Cancer</string>
+		<string>just a sponsor</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -68,7 +84,7 @@
 		<key>picture</key>
 		<string>nick</string>
 		<key>subtitle</key>
-		<string>sponsor for 2019 Fuck You To Cancer</string>
+		<string>just a sponsor</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -78,7 +94,7 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>MANO AGAPIAN</string>
+		<string>MANO AGAPION</string>
 		<key>picture</key>
 		<string>mano</string>
 	</dict>
