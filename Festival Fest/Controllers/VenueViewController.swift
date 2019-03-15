@@ -26,7 +26,7 @@ class VenueViewController: UIViewController, UITableViewDelegate, UITableViewDat
         case .six:
             contentViewTopConstraint.constant = 132
         case .xr, .xsMax, .x:
-            contentViewTopConstraint.constant = 160
+            contentViewTopConstraint.constant = 170
         default:
             break
         }

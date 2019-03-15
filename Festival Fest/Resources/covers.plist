@@ -34,5 +34,13 @@
 		<key>picture</key>
 		<string>4</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>BATMAN FEST</string>
+		<key>subtitle</key>
+		<string>ft. JOSH RUBEN</string>
+		<key>picture</key>
+		<string>batman</string>
+	</dict>
 </array>
 </plist>

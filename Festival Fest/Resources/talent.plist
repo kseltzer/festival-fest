@@ -69,6 +69,8 @@
 		<string>JOSH RUBEN</string>
 		<key>picture</key>
 		<string>josh</string>
+		<key>subtitle</key>
+		<string>shows: BATMAN FEST</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -76,7 +78,7 @@
 		<key>picture</key>
 		<string>brad</string>
 		<key>subtitle</key>
-		<string>just a sponsor</string>
+		<string>&quot;Fuck You To Cancer&quot; sponsor</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -84,7 +86,7 @@
 		<key>picture</key>
 		<string>nick</string>
 		<key>subtitle</key>
-		<string>just a sponsor</string>
+		<string>&quot;Fuck You To Cancer&quot; sponsor</string>
 	</dict>
 	<dict>
 		<key>name</key>

@@ -38,8 +38,10 @@ class TicketsViewController: UIViewController, UIActivityItemSource {
     
     func openTicketLink() {
         guard let url = URL(string: "https://thebestfriendsshow.ticketleap.com/festival-fest/dates/Mar-23-2019_at_0800PM") else { return }
-        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 0.1) {            
-            UIApplication.shared.open(url)
+        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 0.1) {
+            DispatchQueue.main.async {
+                UIApplication.shared.open(url)
+            }
         }
     }
 
