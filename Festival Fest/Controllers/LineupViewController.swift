@@ -14,6 +14,7 @@ class LineupViewController: UIViewController {
     enum ContentType {
         case lineup
         case talent
+        case maybes
     }
     
     // MARK: - Outlets
@@ -24,7 +25,8 @@ class LineupViewController: UIViewController {
     
     // MARK: - Variables
     internal var talent = [[String:String]]()
-    internal var covers = [[String: String]]()
+    internal var covers = [[String:String]]()
+    internal var maybes = [[String:String]]()
     internal var names = [[String:String]]()
     var contentType: ContentType = .talent
     
@@ -61,6 +63,11 @@ class LineupViewController: UIViewController {
         if let url = Bundle.main.url(forResource: "talent", withExtension: "plist"),
             let contents = NSArray(contentsOf: url) as? [[String: String]] {
             talent = contents
+        }
+        
+        if let url = Bundle.main.url(forResource: "maybes", withExtension: "plist"),
+            let contents = NSArray(contentsOf: url) as? [[String: String]] {
+            maybes = contents
         }
     }
     
@@ -119,6 +126,8 @@ extension LineupViewController: UICollectionViewDataSource {
             return talent.count
         case .lineup:
             return covers.count
+        case .maybes:
+            return maybes.count
         }
     }
     
@@ -139,6 +148,10 @@ extension LineupViewController: UICollectionViewDataSource {
             cell.image = UIImage(named: talent[indexPath.row]["picture"]!)!
             cell.title = talent[indexPath.row]["name"] ?? ""
             cell.subtitle = talent[indexPath.row]["subtitle"] ?? ""
+        case .maybes:
+            cell.image = UIImage(named: maybes[indexPath.row]["picture"]!)!
+            cell.title = maybes[indexPath.row]["name"] ?? ""
+            cell.subtitle = maybes[indexPath.row]["subtitle"] ?? ""
         }
         
         if let layout = collectionView.collectionViewLayout as? CollectionViewSlantedLayout {

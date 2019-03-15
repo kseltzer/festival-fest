@@ -46,6 +46,7 @@
 		4EC83D6921F82BE500ED75E4 /* UIButton+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC83D6821F82BE500ED75E4 /* UIButton+UI.swift */; };
 		4EE0CE7921F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0CE7721F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift */; };
 		4EE0CE7D21F6E61300CB0B3D /* covers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EE0CE7C21F6E61300CB0B3D /* covers.plist */; };
+		4EF73315223B20F900C54DFA /* maybes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EF73314223B20F900C54DFA /* maybes.plist */; };
 		861DE70D270D70149F9A45A1 /* Pods_Festival_Fest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D44F15B92493F655CD0265 /* Pods_Festival_Fest.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		4EC83D6821F82BE500ED75E4 /* UIButton+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+UI.swift"; sourceTree = "<group>"; };
 		4EE0CE7721F6E59700CB0B3D /* CustomSlantedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlantedCollectionViewCell.swift; sourceTree = "<group>"; };
 		4EE0CE7C21F6E61300CB0B3D /* covers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = covers.plist; sourceTree = "<group>"; };
+		4EF73314223B20F900C54DFA /* maybes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = maybes.plist; sourceTree = "<group>"; };
 		A5D44F15B92493F655CD0265 /* Pods_Festival_Fest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Festival_Fest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B65F2AF122928CFA08C809 /* Pods-Festival Fest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Festival Fest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Festival Fest/Pods-Festival Fest.release.xcconfig"; sourceTree = "<group>"; };
 		ED3522D42F2C0BD47EF528EC /* Pods-Festival Fest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Festival Fest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Festival Fest/Pods-Festival Fest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				4E981E2A223456450002DEA4 /* Fonts */,
 				4EE0CE7C21F6E61300CB0B3D /* covers.plist */,
 				4E981E332235FCE90002DEA4 /* talent.plist */,
+				4EF73314223B20F900C54DFA /* maybes.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				4E82899122387FC500A23338 /* JosefinSans-Italic.ttf in Resources */,
 				4E981E292234563F0002DEA4 /* Shrikhand-Regular.ttf in Resources */,
 				4E1E289D21F6723900A55FD2 /* LaunchScreen.storyboard in Resources */,
+				4EF73315223B20F900C54DFA /* maybes.plist in Resources */,
 				4E82898D2238760C00A23338 /* Tickets.storyboard in Resources */,
 				4E9931FA21F8061B009C345F /* Map.storyboard in Resources */,
 				4EC83D6421F82AEE00ED75E4 /* Contact.storyboard in Resources */,

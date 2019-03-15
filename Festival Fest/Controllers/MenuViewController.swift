@@ -13,6 +13,7 @@ enum Screen: Int {
     case lineup = 0
     case map
     case talent
+    case maybes
 //    case schedule
     case venue
     case tickets
@@ -34,6 +35,8 @@ enum Screen: Int {
 //            return "schedule"
         case .talent:
             return "talent"
+        case .maybes:
+            return "maybes"
         case .venue:
             return "venue"
         case .tickets:
@@ -93,6 +96,11 @@ class MenuViewController: UIViewController {
             index: Screen.talent.index(),
             title: "TALENT",
             headerImage: UIImage(named: Screen.talent.name())!,
+            images: []),
+        ImageItem(
+            index: Screen.maybes.index(),
+            title: "MAYBES",
+            headerImage: UIImage(named: Screen.maybes.name())!,
             images: []),
         ImageItem(
             index: Screen.venue.index(),
@@ -314,6 +322,10 @@ extension MenuViewController: PagingViewControllerDataSource {
         case Screen.talent.rawValue:
             let viewController = UIStoryboard(name: kLineupStoryboard, bundle: nil).instantiateViewController(withIdentifier: kLineupViewController) as! LineupViewController
             viewController.contentType = .talent
+            return viewController
+        case Screen.maybes.rawValue:
+            let viewController = UIStoryboard(name: kLineupStoryboard, bundle: nil).instantiateViewController(withIdentifier: kLineupViewController) as! LineupViewController
+            viewController.contentType = .maybes
             return viewController
         case Screen.about.rawValue:
             return UIStoryboard(name: kAboutStoryboard, bundle: nil).instantiateViewController(withIdentifier: kAboutViewController)

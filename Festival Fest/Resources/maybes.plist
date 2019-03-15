@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Martha Steward</string>
+		<key>picture</key>
+		<string>martha</string>
+		<key>subtitle</key>
+		<string>in conversation with William H. Macy</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Netflix CEO Sandra Bullock</string>
+		<key>picture</key>
+		<string>sandra</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ramón</string>
+		<key>picture</key>
+		<string>ramon</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>John Malkovich</string>
+		<key>picture</key>
+		<string>john</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Paddington</string>
+		<key>picture</key>
+		<string>paddington</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Michael, the florist in Barefoot Contessa</string>
+		<key>picture</key>
+		<string>michael</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Destiny Hope Cyrus</string>
+		<key>picture</key>
+		<string>destiny</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>The Real Ted Bundy</string>
+		<key>picture</key>
+		<string>ted</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>The Hills Reboot</string>
+		<key>picture</key>
+		<string>mtv</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+</array>
+</plist>
