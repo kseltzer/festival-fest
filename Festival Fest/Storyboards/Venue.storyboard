@@ -65,17 +65,17 @@
                                                             <viewLayoutGuide key="safeArea" id="d59-ce-NxI"/>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="753" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="rj7-Z9-rFb" userLabel="Time Stack View">
-                                                            <rect key="frame" x="103" y="70" width="129" height="77.5"/>
+                                                            <rect key="frame" x="83.5" y="70" width="168" height="77.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="759" text="TIME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3n-a4-QGT">
-                                                                    <rect key="frame" x="50.5" y="0.0" width="28" height="11"/>
+                                                                    <rect key="frame" x="70" y="0.0" width="28" height="11"/>
                                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="11"/>
                                                                     <color key="textColor" red="0.89019607840000003" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="760" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6e-JG-1w1">
-                                                                    <rect key="frame" x="0.0" y="13" width="129" height="64.5"/>
-                                                                    <string key="text">Doors 7pm
+                                                                    <rect key="frame" x="0.0" y="13" width="168" height="64.5"/>
+                                                                    <string key="text">Doors 7:30pm
 Show 8pm</string>
                                                                     <fontDescription key="fontDescription" name="Shrikhand-Regular" family="Shrikhand" pointSize="22"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
